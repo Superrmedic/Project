@@ -56,9 +56,13 @@ header {
 }
 
 .top_banner a {
+  display: block;
+  width: 40%;
+  text-align: center;
   text-decoration: none;
   color: white;
   font-size: 1.1em;
+  font-weight: bold;
 }
 
 header div.logo {

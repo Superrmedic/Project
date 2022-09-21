@@ -286,111 +286,111 @@ header>ul .login_info li a {
 
 /* ---------------------main-------------------------- */
 main {
-    height: 60vh;
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(15, 0.5fr);
-    grid-template-rows: repeat(14, 0.5fr);
+  height: 60vh;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(15, 0.5fr);
+  grid-template-rows: repeat(14, 0.5fr);
 }
 
 main div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .welcome {
-    color: #ff798c
+  color: #ff798c
 }
 
 .title {
-    grid-column: 6 / 11;
-    grid-row: 2 / 4;
-    font-size: 3rem;
+  grid-column: 6 / 11;
+  grid-row: 2 / 4;
+  font-size: 3rem;
 }
 
 .cont {
-    color: #ff798c;
-    font-size: 1.2rem;
-    grid-column: 5 / 12;
-    grid-row: 4 / 6;
+  color: #ff798c;
+  font-size: 1.2rem;
+  grid-column: 5 / 12;
+  grid-row: 4 / 6;
 }
 
 .go_to_login {
-    grid-column: 7 / 10;
-    grid-row: 7 / 9;
+  grid-column: 7 / 10;
+  grid-row: 7 / 9;
 }
 
 .go_to_login>button {
-    width: 200px;
-    height: 50px;
-    background-color: #ff798c;
+  width: 200px;
+  height: 50px;
+  background-color: #ff798c;
 }
 
 
 /* -----------------footer부분-------------------- */
 
 footer {
-    margin-top: 5em;
-    width: 100%;
+  margin-top: 5em;
+  width: 100%;
 }
 
 footer .hr_footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 footer>.under {
-    width: 1450px;
-    margin: 5px auto;
-    display: flex;
+  width: 1450px;
+  margin: 5px auto;
+  display: flex;
 }
 
 footer .under_menu1 {
-    font-size: 12px;
-    padding: 10px;
-    display: flex;
-    position: relative;
-    margin-left: -50px;
+  font-size: 12px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  margin-left: -50px;
 }
 
 footer .under_menu1>li {
-    margin: 0 50px;
-    display: flex;
+  margin: 0 50px;
+  display: flex;
 }
 
 footer .under_menu1 a,
 footer .info,
 footer .info button {
-    color: hwb(0 49% 50%);
+  color: hwb(0 49% 50%);
 }
 
 /* -----------------footer 좌측하단 부분--------------- */
 footer .info {
-    font-size: 12px;
-    width: 1450px;
-    margin: 40px auto 0 auto;
-    line-height: 150%;
-    padding-bottom: 40px;
+  font-size: 12px;
+  width: 1450px;
+  margin: 40px auto 0 auto;
+  line-height: 150%;
+  padding-bottom: 40px;
 }
 
 footer .info>p {
-    text-align: end;
+  text-align: end;
 }
 
 footer ul>li>button {
-    cursor: pointer;
-    background: none;
-    border: none;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 /* -----------------footer 우측하단 부분-------------- */
 footer .icon {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 footer .icon a {
-    margin: 1em;
-    margin-top: -50px;
+  margin: 1em;
+  margin-top: -50px;
 }

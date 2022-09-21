@@ -395,7 +395,7 @@ main .customer_list li a {
   /* text-indent: -9999em; */
   /* display: inline-block; */
   transition: .5s;
-  color:#ff798c;
+  color: #ff798c;
   border: 1px dotted #ff798c;
 }
 

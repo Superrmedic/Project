@@ -1,34 +1,34 @@
 /* ------------ 기본 세팅 --------------- */
 * {
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-  }
-  
-  @font-face {
-    font-family: 'S-CoreDream-3Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  body {
-    font-family: S-CoreDream-3Light;
-  }
-  
-  header,
-  nav,
-  main {
-    width: 80%;
-    margin: auto;
-    min-width: 1500px;
-  }
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: S-CoreDream-3Light;
+}
+
+header,
+nav,
+main {
+  width: 80%;
+  margin: auto;
+  min-width: 1500px;
+}
 
 hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
 main .container_title {
-    text-align: center;
+  text-align: center;
 }

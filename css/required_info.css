@@ -348,7 +348,7 @@ main {
 
 /* --------------------inner box------------------------- */
 main .inner_box {
-  width: 600px; 
+  width: 600px;
   height: 1000px;
   margin: auto;
   /* -------------req_info에서만 하위항목 세로정렬위해 flex처리------------ */
@@ -382,15 +382,15 @@ main .inner_box {
 }
 
 label {
-    width: 100%;
-    font-weight: bold;
-    margin: 1em;
-    align-items: center;
-  
+  width: 100%;
+  font-weight: bold;
+  margin: 1em;
+  align-items: center;
+
 }
 
 label sub {
-    width: 160px;
+  width: 160px;
 }
 
 input {
