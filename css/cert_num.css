@@ -284,69 +284,18 @@ header>ul .login_info li a {
   color: white;
 }
 
-
-/* main */
+/* ----------------------main---------------------- */
 main {
-  height: 500px;
+  height: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-evenly;
 }
 
-/* ------------------title--------------------------- */
-main .find_id_title {
-  width: 25%;
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-/* --------------------choice tool---------------------------- */
-main .choice_tool {
-  width: 25%;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-}
-
-main .choice_tool>a {
-  padding: 20px;
-  color: black;
-  font-size: 1.5em;
-}
-
-main .choice_tool>a:hover {
-  border-bottom: 2px solid #ff798c;
-}
-
-/*------------------- form -------------------*/
-main .certification {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25%;
-}
-
-main #name,
-main #phnum {
-  width: 100%;
-  height: 3em;
-}
-
-main .cert_info {
-  padding-bottom: 10px;
-}
-
-main .cert_btn {
-  display: flex;
-  justify-content: center;
-}
-
-main .cert_btn input {
-  width: 100%;
-  height: 3rem;
+.OK_btn input {
+  width: 200px;
+  font-size: 1.5rem;
   background-color: #ff798c
 }
 
