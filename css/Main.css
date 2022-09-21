@@ -18,8 +18,9 @@ body {
 
 header,
 nav,
-main,
-footer {
+footer,
+article,
+section {
   width: 80%;
   margin: auto;
   min-width: 1500px;
