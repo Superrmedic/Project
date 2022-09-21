@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,56 +7,108 @@
   <title>비밀번호 찾기</title>
   <link rel="stylesheet" href="../css/find.css">
 </head>
-
 <body>
+  <div class="top_banner">
+    <a href="./terms_agree.html">지금 가입하고 적립금 500원 받아가세요!
+    </a>
+  </div>
+
   <header>
-    <div class="set_header"><a href="../index.html"></a></div>
-  </header>
-  <main>
-
-    <div class="find">
-      <div class="find_id"><a href="#">아이디 찾기</a></div>
-      <div class="find_pw"><a href="">비밀번호 찾기</a></div>
-      <div class="find_info">
-        <div class="user id">
-          <legend>아이디</legend>
-          <input type="text" name="id" required>
-        </div>
-
-        <div class="user name">
-          <legend>가입하신분 성함</legend>
-          <input type="text" name=" user_name" required>
-        </div>
-
-        <div class="user mail">
-          <legend>가입시 입력한 이메일</legend>
-          <input type="email" name="email_id">@
-
-          <select name="email_domain" id="">
-            <option value="naver.com">naver.com</option>
-            <option value="google.com">google.com</option>
-            <option value="daum.net">daum.net</option>
-            <option value="outlook.com">outlook.com</option>
-          </select>
-        </div>
-
-        <div class="find_btn">
-          <a style="color: white;" href="../../Main_page/Main.html">비밀번호 찾기</a>
-        </div>
-      </div>
+    <div class="logo">
+      <h1>
+        <a href="../index.html" class="banner"><img src="../image/main_banner.png" alt="로고"></a>
+      </h1>
     </div>
-  </main>
+    <div class="search">
+      <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~">
+    </div>
+    <ul class="login">
+      <li class="mypage">
+        <ul class="login_info">
+          <li><a href="./html/mypage.html">MY PAGE</a></li>
+          <li><a href="./html/welcome.html">로그인</a></li>
+          <li><a href="./html/terms_agree.html">회원가입</a></li>
+        </ul>
+      </li>
+      <li class="cart"><a href="./html/shopping_cart.html" class="go_login">장바구니</a></li>
+      <li class="like"><a href="./html/shopping_like.html" class="go_login">좋아요</a></li>
+    </ul>
+  </header>
+  <nav class="category_bar">
+    <div>
+      <ul class="category">
+        <li class="cate_Best"><a href="#Best">BEST</a>
+        </li>
+        <li class="cate_New"><a href="#New">NEW</a></li>
+        <!-- <li class="cate_Acc"><a href="">ACC</a>
+          <ul>
+            <li><a href="./html/catg_page.html">그립톡</a></li>
+            <li><a href="./html/catg_page.html">핸드폰 케이스</a></li>
+            <li><a href="./html/catg_page.html">키링</a></li>
+          </ul>
+        </li> -->
+        <li class="cate_Toy"><a href="">피규어</a>
+          <ul>
+            <li><a href="./html/faq.html">FAQ</a></li>
+            <li><a href="./html/notice.html">공지사항</a></li>
+          </ul>
+        </li>
+        <li class="cate_Kids"><a href="">봉제인형</a>
+          <ul>
+            <li><a href="./html/catg_page.html">소형</a></li>
+            <li><a href="./html/catg_page.html">중형</a></li>
+            <li><a href="./html/catg_page.html">대형</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main>
+    <div class="find_id_title">아이디찾기</div>
+    <div class="choice_tool">
+    <a href="#">휴대폰 인증</a>
+    <a href="./email_find.html">이메일 인증</a>
+    </div>
+
+    <form class="certification" action="./cert_num.html" method="post">
+    <div>
+        <div class="cert_info NAME">
+            <label for="name">이름</label>
+        </div>
+        <div>
+            <input type="text" id="name" minlength="2" maxlength="5" placeholder="이름을 입력해 주세요" required>
+        </div>
+    </div>
+
+    <div>
+        <div class="cert_info PHNUM">
+            <label for="phnum">휴대폰 번호</label>
+        </div>
+        <div>
+            <input type="number" minlength="11" maxlength="11" id="phnum" placeholder="휴대폰 번호를 입력해 주세요" required>
+        </div>
+    </div>
+
+    <div class="cert_btn">
+        <input type="submit" value="인증번호 받기">
+    </div>
+
+    </form>
+</main>
 
   <footer>
     <hr class="hr_footer">
     <div class="under">
       <ul class="under_menu1">
-        <li><a href="">PSYC소개</a>
+        <li><a
+            href="https://image.musinsa.com/mfile_s01/2019/10/23/6bd8407bf6d5ceee8602e3fad4c3511f093523.jpg">PSYC소개</a>
         </li>
         <li><a href="">이용안내</a></li>
         <li><a href="">개인정보처리방침</a></li>
         <li><a href="">이용약관</a></li>
-        <li><a href="../html/notice.html">고객센터</a></li>
+        <li><a href="../jungsunzoo/html/notice.html">고객센터</a></li>
       </ul>
     </div>
 
@@ -82,6 +133,6 @@
     </div>
   </footer>
 
-</body>
 
+</body>
 </html>
