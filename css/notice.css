@@ -449,7 +449,7 @@ main .board_table td {
 }
 
 main .board_table p {
-  background-color: hsl(170, 76%, 80%);
+  background-color: #ff798c;
   color: white;
   width: 50px;
   height: 25px;

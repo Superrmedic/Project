@@ -294,7 +294,8 @@ main>.fixed-banner a>.right_TOP {
   right: 5px;
   bottom: 100px;
   Z-index: 1;
-  background-color: #f0efe9;
+  background-color: lightgray;
+  border-radius: 50px;
 }
 
 main>.fixed-banner a>.right_TOP {
