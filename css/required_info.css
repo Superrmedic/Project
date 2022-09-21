@@ -347,15 +347,16 @@ main {
 }
 
 /* --------------------inner box------------------------- */
-.inner_box {
-  width: 550px;
-  height: 600px;
-  margin: 15px auto;
+main .inner_box {
+  width: 600px; 
+  height: 1000px;
+  margin: auto;
   /* -------------req_info에서만 하위항목 세로정렬위해 flex처리------------ */
   display: flex;
   flex-wrap: wrap;
   align-content: space-evenly;
   justify-content: center;
+  font-size: 1.1em;
 }
 
 .inner_title {
@@ -363,7 +364,7 @@ main {
   height: 1.2em;
   padding: 5px;
   text-align: center;
-  font-size: 32px;
+  font-size: 2em;
   color: white;
   border-radius: 5px;
   background-color: #ff798c;
@@ -371,33 +372,32 @@ main {
 
 
 /* ----------------inner box 자손-------------------- */
-.req_info_title {
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-}
 
 .input_req_info {
   /* height: 75%; */
   width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: 0;
+  /* justify-content: space-between; */
 }
 
 label {
-  font-weight: bold;
+    width: 100%;
+    font-weight: bold;
+    margin: 1em;
+    align-items: center;
+  
+}
+
+label sub {
+    width: 160px;
 }
 
 input {
-  width: 150px;
-  margin-left: 15px;
-  border-top: 0;
-  border-bottom: 1px solid;
-  border-left: 0;
-  border-right: 0;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 50PX;
+  border: none;
+  border-bottom: #c8c8c8 1px solid;
   text-align: center;
 }
 
@@ -425,23 +425,21 @@ input {
   font-weight: bold;
   border: 2px solid #ff798c;
   color: black;
-  /* color: #ff798c; */
 }
 
 .gogo {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .gogo input {
-  height: 3rem;
   position: absolute;
-  left: calc(50% - 75px);
   margin-top: 40px;
-  margin-left: 0;
-  color: darkslateblue;
-  background-color: transparent;
-  border: 2px solid #ff798c;
-
+  color: white;
+  background-color: #ff798c;
+  width: 120px;
+  border-radius: 5px;
 }
 
 /* -----------------footer부분-------------------- */

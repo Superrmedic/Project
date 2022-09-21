@@ -333,10 +333,6 @@ main>.fixed-banner a>.right_FAQ {
 
 /* ---------------------------------------- */
 
-main .inner_box {
-    margin: 5px auto;
-}
-
 main .flex-terms {
     width: 100%;
     height: 90%;
@@ -346,7 +342,7 @@ main .flex-terms {
 }
 
 main .terms {
-    margin: 5em;
+    margin: 3em;
     text-align: center;
 }
 
@@ -376,7 +372,6 @@ main .agreement {
 main .agree_btn {
     height: 3rem;
     display: flex;
-    /* flex-direction: row-reverse; */
     justify-content: center;
     border: none;
     font-size: 1.1em;
@@ -384,14 +379,13 @@ main .agree_btn {
     border-radius: 50px;
     cursor: pointer;
 }
-  
+
 
 main .agree_btn>.Y {
     width: 200px;
     height: 100%;
     background-color: #ff798c;
 }
-
 
 
 /* -----------------footer부분-------------------- */
