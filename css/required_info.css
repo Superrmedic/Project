@@ -348,7 +348,7 @@ main {
 
 /* --------------------inner box------------------------- */
 main .inner_box {
-  width: 600px;
+  width: 600px; 
   height: 1000px;
   margin: auto;
   /* -------------req_info에서만 하위항목 세로정렬위해 flex처리------------ */
@@ -359,7 +359,7 @@ main .inner_box {
   font-size: 1.1em;
 }
 
-.inner_title {
+main .inner_title {
   width: 600px;
   height: 1.2em;
   padding: 5px;
@@ -373,7 +373,7 @@ main .inner_box {
 
 /* ----------------inner box 자손-------------------- */
 
-.input_req_info {
+main .inner_box .input_req_info {
   /* height: 75%; */
   width: 70%;
   display: flex;
@@ -382,15 +382,15 @@ main .inner_box {
 }
 
 label {
-  width: 100%;
-  font-weight: bold;
-  margin: 1em;
-  align-items: center;
-
+    /* width: 100%; */
+    font-weight: bold;
+    margin: 1em;
+    align-items: center;
+  
 }
 
 label sub {
-  width: 160px;
+    width: 160px;
 }
 
 input {
@@ -402,11 +402,12 @@ input {
 }
 
 .inner_box select {
-  height: 1.4rem;
+  height: 40px;
+  margin: 10px;
 }
 
 .gender {
-  width: 30px;
+  width: 15px;
 }
 
 .flex_info_birth,
