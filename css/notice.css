@@ -384,48 +384,54 @@ main .left_list>h1 {
 
 main .customer_list li,
 main .customer_list li a {
-  width: 163px;
-  height: 55px;
-  margin: 0;
+  /* width: 163px; */
+  /* height: 55px; */
+  display: block;
+  padding: 5px;
 }
 
 main .customer_list li a {
-  background: url(../image/left_list.png);
-  display: inline-block;
-  text-indent: -9999em;
+  /* background: url(../image/left_list.png); */
+  /* text-indent: -9999em; */
+  /* display: inline-block; */
   transition: .5s;
+  color:#ff798c;
+  border: 1px dotted #ff798c;
 }
 
 main .customer_list li:nth-child(2) a {
-  background-position: 0 -55px;
+  /* background-position: 0 -55px; */
 }
 
 main .customer_list li:nth-child(3) a {
-  background-position: 0 calc(-55px * 2);
-  margin-bottom: -1px;
+  /* background-position: 0 calc(-55px * 2); */
+  /* margin-bottom: -1px; */
 }
 
 main .customer_list li:nth-child(4) a {
-  margin-top: -1px;
-  background-position: 0 calc(-55px * 3);
+  /* margin-top: -1px; */
+  /* background-position: 0 calc(-55px * 3); */
 }
 
 /* <------ 왼쪽 메뉴 : 호버 ------> */
 main .customer_list li:hover a {
-  background: url(../image/left_list_hover.png);
+  /* background: url(../image/left_list_hover.png); */
+  /* color: black; */
   transition: .5s;
+  background-color: antiquewhite;
+  color: black;
 }
 
 main .customer_list li:hover:nth-child(2) a {
-  background-position: 0 -55px;
+  /* background-position: 0 -55px; */
 }
 
 main .customer_list li:hover:nth-child(3) a {
-  background-position: 0 calc(-55px * 2);
+  /* background-position: 0 calc(-55px * 2); */
 }
 
 main .customer_list li:hover:nth-child(4) a {
-  background-position: 0 calc(-55px * 3);
+  /* background-position: 0 calc(-55px * 3); */
 }
 
 
