@@ -44,12 +44,12 @@ header {
   flex-direction: row;
   padding: 10px;
   margin-top: 20px;
-  /* background-color: #5ce5cf; */
+  /* background-color: #ff798c; */
 }
 
 .top_banner {
   display: flex;
-  background-color: #5ce5cf;
+  background-color: #ff798c;
   justify-content: center;
   align-items: center;
   height: 50px;
@@ -89,7 +89,7 @@ header div.search input {
   background-color: white;
   padding-left: 20px;
   box-sizing: border-box;
-  border: 3px solid #5ce5cf;
+  border: 3px solid #ff798c;
   border-radius: 30px;
 }
 
@@ -126,7 +126,7 @@ header ul>.mypage:hover>.login_info {
 
 header ul>.mypage>.login_info li:hover {
   font-weight: bold;
-  background-color: #5ce5cf;
+  background-color: #ff798c;
   transition: 1s;
 }
 
@@ -217,7 +217,7 @@ header>ul .login_info li a {
 
 .category_bar ul>li li:hover {
   font-weight: bold;
-  background-color: #5ce5cf;
+  background-color: #ff798c;
   transition: 1s;
 }
 
@@ -231,11 +231,11 @@ header>ul .login_info li a {
 }
 
 .category_bar ul.category>li:hover>a {
-  color: #5ce5cf;
+  color: #ff798c;
 }
 
 .category_bar ul>li:hover {
-  border-bottom-color: #5ce5cf;
+  border-bottom-color: #ff798c;
 }
 
 .category_bar>div>ul.category>li {
@@ -333,58 +333,66 @@ main>.fixed-banner a>.right_FAQ {
 
 /* ---------------------------------------- */
 
-.inner_box{
-    width: 550px;
-    height: 600px;
+main .inner_box {
     margin: 5px auto;
-  }
-  
-  .inner_title{
-  text-align: center;
-  font-size: 32px;
-  padding: 5px;
-  font-weight: bold;
-  border-radius: 5px;
-  color: white;
-  background-color: #5ce5cf
 }
 
-.flex-terms{
+main .flex-terms {
     width: 100%;
     height: 90%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: space-evenly;
+    grid-template: 1fr / 1fr 1fr;
 }
 
-#terms_text{
-    width: 99%;
-    height: 100px;
+main .terms {
+    margin: 5em;
+    text-align: center;
 }
 
-.terms_text{
+main .title_area {
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 100px;
+}
+
+main .all_agree {
+    font-size: 1em;
+    text-align: center;
+    margin: 2em;
+    font-weight: bold;
+}
+
+
+main .agreement {
+    width: 400px;
+    height: 500px;
     overflow: scroll;
-    margin: auto;
+    padding: 20px;
 }
 
-.agree_btn{
+main .agree_btn {
     height: 3rem;
     display: flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     justify-content: center;
-  }
+    border: none;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
   
-  .Y{
-    width: 300px;
+
+main .agree_btn>.Y {
+    width: 200px;
     height: 100%;
-    background-color: #5ce5cf;
-    
+    background-color: #ff798c;
 }
 
-.checking_term,
-.all_agree{
-  font-weight: bold;
-}
+
 
 /* -----------------footer부분-------------------- */
 
