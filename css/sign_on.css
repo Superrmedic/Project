@@ -231,6 +231,7 @@ header>ul .login_info li a {
 }
 
 .category_bar ul.category>li>a {
+  display: block;
   color: black;
 }
 
@@ -276,6 +277,7 @@ header>ul .login_info li a {
 }
 
 .category_bar ul.category ul>li>a {
+  display: block;
   color: black;
 }
 

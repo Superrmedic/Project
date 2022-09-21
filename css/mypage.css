@@ -295,16 +295,21 @@ main h1 {
   margin-top: 80px;
 }
 
-main>.fixed-banner a>.right_TOP,
-main>.fixed-banner a>.right_FAQ,
-main>.fixed-banner a>.right_kakao {
+
+main .fixed-banner {
+  display: flex;
+  position: relative;
+}
+
+main>.fixed-banner a>.right_TOP {
   position: fixed;
   width: 40px;
   height: 40px;
   right: 5px;
   bottom: 100px;
   Z-index: 1;
-  background-color: #f0efe9;
+  background-color: lightgray;
+  border-radius: 50px;
 }
 
 main>.fixed-banner a>.right_TOP {
