@@ -1,0 +1,614 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: block;
+    min-width: 1000px;
+    font-family: S-CoreDream-3Light;
+}
+
+main {
+    margin-top: 50px;
+}
+
+main,
+section {
+    width: calc(1920px * .7);
+    padding: 20px;
+}
+
+/* ============================== */
+/* main part */
+
+main h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.cartselect_info i,
+.cartselect_info ul,
+.cartselect_info li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.cartselect_info i {
+    padding-right: 0;
+}
+
+main hr {
+    border: 0px;
+    height: 1px;
+    background-color: #CACACA;
+}
+
+/* ============================== */
+/* 장바구니 상세 상품 */
+
+.cartcheckbox {
+    display: flex;
+    padding: 20px 15px;
+    line-height: 120px;
+    position: relative;
+}
+
+.cartcheckbox input {
+    margin: 10px;
+    width: 15px;
+}
+
+.cartimage1 {
+    width: 120px;
+    height: 120px;
+    margin: 0 30px;
+}
+
+.cartcheckbox span {
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cartcheckbox strong {
+    position: absolute;
+    right: 170px;
+    font-size: 18px;
+}
+
+.cartcheck_bt {
+    display: flex;
+    height: 30px;
+    border: 1px solid rgb(207, 207, 207);
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: calc((120px - 30px)/2);
+    position: absolute;
+    right: 300px;
+}
+
+.cartcheck_bt button {
+    font-size: 24px;
+    width: 50px;
+    border: 0px;
+    background-color: white;
+}
+
+.cartcheckbox i {
+    position: absolute;
+    margin-top: calc((120px - 24px)/2);
+    font-size: 24px;
+}
+
+.carticons i:nth-child(1) {
+    right: 100px;
+    color: rgb(165, 165, 165);
+}
+
+.carticons i:nth-child(2) {
+    right: 70px;
+}
+
+.carticons i:nth-child(1):active {
+    color: rgb(184, 0, 0);
+}
+
+/* =============================== */
+
+.cartdeliveryinfo {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgb(170, 170, 170);
+}
+
+/* =============================== */
+/* table 결제 예정 금액 시작 */
+
+section hr {
+    border: 0px;
+    width: 1200px;
+    height: 1px;
+    background-color: #a0a0a0;
+}
+
+.cartpaybox {
+    width: 1200px;
+}
+
+.cartpaytable td,
+.cartpaytable th {
+    padding: 20px;
+}
+
+.cartpaytable td {
+    border-right: solid 1px rgb(236, 236, 236);
+    border-top: solid 1px rgb(236, 236, 236);
+}
+
+.cartpaytable .carttable3 {
+    border-right: 0;
+}
+
+.carttable1,
+.carttable2 {
+    width: 200px;
+    text-align: center;
+}
+
+.carttable3 {
+    width: 800px;
+    text-align: center;
+}
+
+tbody .carttable3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* =============================== */
+/* 결제 버튼 */
+
+.cartbuttons {
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.cartallpay_bt,
+.cartscpay_bt,
+.cartcontin_bt {
+    width: 150px;
+    height: 35px;
+    font-family: S-CoreDream-3Light;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cartallpay_bt {
+    border: 0;
+    background-color: #ff798c;
+    color: white;
+}
+
+.cartscpay_bt {
+    border: 1px solid rgb(214, 214, 214);
+    background-color: #f8f8f8;
+    color: #696969;
+}
+
+.cartcontin_bt {
+    border: 1px solid rgb(214, 214, 214);
+    background-color: #f8f8f8;
+    color: #696969;
+    position: absolute;
+    right: 80px;
+}
+
+.cartbuttonscenter {
+    margin-left: calc((100% - 305px)/2);
+}
+
+/* button hover */
+
+.cartallpay_bt:hover {
+    background-color: #cf6674;
+}
+
+.cartscpay_bt:hover {
+    background-color: #d8d8d8;
+}
+
+.cartcontin_bt:hover {
+    background-color: #d8d8d8;
+}
+
+/* ============================= */
+
+/* =================================== */
+header,
+nav,
+main,
+footer {
+    width: 80%;
+    margin: auto;
+    min-width: 1500px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.slide_end {
+    margin-top: 10px;
+}
+
+/* ----------- .logo 부분 --------------- */
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 20px;
+    /* background-color: #ff798c; */
+}
+
+.top_banner {
+    display: flex;
+    background-color: #ff798c;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.top_banner a {
+    display: block;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+header div.logo {
+    margin-right: 20px;
+}
+
+header div a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+/* ----------- .search 부분 --------------- */
+header div.search {
+    flex: 1;
+    margin-left: 800px;
+    display: flex;
+    align-items: center;
+}
+
+header div.search input {
+    all: unset;
+    width: 40%;
+    min-width: 300px;
+    margin-top: 55px;
+    height: 40%;
+    background-color: white;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border: 3px solid #ff798c;
+    border-radius: 30px;
+}
+
+/* ----------- .login 부분 --------------- */
+header ul.login {
+    display: flex;
+    flex-direction: row;
+    min-width: 50px;
+    margin-top: 50px;
+}
+
+
+header ul.login .go_login {
+    display: block;
+    width: 50px;
+    height: 55px;
+    text-indent: -9999em;
+}
+
+header ul .login_info {
+    background-color: white;
+    width: 200px;
+    display: none;
+    box-shadow: 3px 3px 3px rgb(197, 197, 197);
+}
+
+header ul>.mypage:hover>.login_info {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: 100%;
+}
+
+header ul>.mypage>.login_info li:hover {
+    font-weight: bold;
+    background-color: #ff798c;
+    transition: 1s;
+}
+
+header>ul .login_info li:hover a {
+    color: white;
+}
+
+header>ul .login_info li a {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    display: block;
+}
+
+/* ----------- .mypage 부분 --------------- */
+.mypage {
+    position: relative;
+    background: url(../icon/user\ icon-1.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+.mypage:hover {
+    background: url(../icon/user\ icon\ hover.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+/* ----------- .cart 부분 --------------- */
+.cart {
+    background: url(../icon/cart.png) center/80% 80% no-repeat;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 55px;
+    height: 55px;
+}
+
+.cart:hover {
+    background: url(../icon/cart\ hover.png) center/80% 80% no-repeat;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 55px;
+    height: 55px;
+}
+
+/* ----------- .like 부분 --------------- */
+.like {
+    background: url(../icon/heart.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.like:hover {
+    background: url(../icon/heart_hover.png) center/80% 80% no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+
+/* ----------- .category 부분 --------------- */
+
+.category_bar ul.category {
+    box-sizing: border-box;
+}
+
+.category_bar ul.category>li {
+    border-bottom: 5px solid white;
+}
+
+.category_bar>div>ul.category {
+    /* background-color: #ffe4c4; */
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.category_bar ul>li {
+    position: relative;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+
+}
+
+.category_bar ul>li li:hover {
+    font-weight: bold;
+    background-color: #ff798c;
+    transition: 1s;
+}
+
+.category_bar ul>li li {
+    font-size: 16px;
+    font-weight: initial;
+}
+
+.category_bar ul.category>li>a {
+    display: block;
+    color: black;
+}
+
+.category_bar ul.category>li:hover>a {
+    color: #ff798c;
+}
+
+.category_bar ul>li:hover {
+    border-bottom-color: #ff798c;
+}
+
+.category_bar>div>ul.category>li {
+    float: left;
+    line-height: 50px;
+    padding: 10px;
+}
+
+.category_bar::after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+.category_bar ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: gray;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgb(197, 197, 197);
+}
+
+.category_bar ul.category ul li {
+    width: 100%;
+}
+
+.category_bar ul>li:hover ul {
+    display: block;
+    z-index: 1;
+}
+
+.category_bar ul.category ul>li>a {
+    display: block;
+    color: black;
+}
+
+.category_bar ul.category ul>li:hover>a {
+    color: white;
+}
+
+/* ----------- .main 부분 --------------- */
+
+main .fixed-banner {
+    display: flex;
+    position: relative;
+}
+
+main>.fixed-banner a>.right_TOP {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 5px;
+    bottom: 100px;
+    Z-index: 1;
+    background-color: lightgray;
+    border-radius: 50px;
+}
+
+main>.fixed-banner a>.right_TOP {
+    bottom: 140px;
+}
+
+main>.fixed-banner a>.right_FAQ {
+    bottom: 60px;
+}
+
+main>div.small_box {
+    display: flex;
+    justify-content: space-around;
+    line-height: 100px;
+    text-indent: -9999px;
+}
+
+/* -----------------footer부분-------------------- */
+
+footer {
+    margin-top: 5em;
+    width: 100%;
+    /* background-color: hsla(53, 100%, 98%, 0.955); */
+}
+
+footer .hr_footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer>.under {
+    width: 1450px;
+    margin: 5px auto;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+footer .under_menu1 {
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    margin-left: -50px;
+}
+
+footer .under_menu1>li {
+    margin: 0 50px;
+    display: flex;
+}
+
+footer .under_menu1 a,
+footer .info,
+footer .info button {
+    color: hwb(0 49% 50%);
+}
+
+footer .info {
+    font-size: 12px;
+    width: 1450px;
+    margin: 40px auto 0 auto;
+    line-height: 150%;
+    padding-bottom: 40px;
+}
+
+footer .info>p {
+    text-align: end;
+}
+
+footer ul>li>button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+footer .icon {
+    display: flex;
+    justify-content: end;
+}
+
+footer .icon a {
+    margin: 1em;
+    margin-top: -50px;
+}

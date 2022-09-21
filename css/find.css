@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration-line: none;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  height: 25vh;
+}
+
+/* ---------------------------------------------------- */
+.find>div:nth-of-type(1),
+.find>div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find {
+  display: grid;
+  width: 100vh;
+  height: 500px;
+  margin: auto;
+  grid-template: repeat(8, 1fr)/ repeat(6, 1fr);
+}
+
+.set_header {
+  height: 100%;
+  width: 300px;
+  background-image: url(../../Main_page/image/main_banner.png);
+  background-size: 100% 100%;
+  margin: 50px auto 0;
+}
+
+
+.find_id {
+  font-size: 1.2rem;
+  border: 1px solid #ff798c;
+  border-bottom: 0;
+  border-start-end-radius: 5px;
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+
+.find_pw {
+  font-size: 1.2rem;
+  border: 1px solid #ff798c;
+  border-bottom: 0;
+  border-radius: 5px;
+  grid-area: 2 / 4 / 3 / 6;
+}
+
+/* ---------------------------------------------------- */
+.find_id a,
+.find_pw a {
+  color: gray;
+}
+
+.find_id:hover,
+.find_id:hover a,
+.find_pw:hover,
+.find_pw:hover a {
+  color: white;
+  background-color: #ff798c;
+}
+
+.find_info {
+  display: grid;
+  grid-template: repeat(7, 1fr) / 2fr repeat(2, 1fr);
+  grid-area: 3 / 2 / 8 / span 4;
+  border: 1px solid #ff798c;
+}
+
+.user input {
+  width: 50%;
+  height: 25px;
+  margin: 5px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+  border-bottom: 1px solid
+}
+
+.id {
+  margin-top: 10px;
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.name {
+  grid-area: 3 / 1 / 5 / 3;
+}
+
+.mail {
+  grid-area: 5 / 1 / 7 / 3;
+}
+
+.find_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  grid-area: -2 / 1 / -1 / 4;
+  background-color: #ff798c;
+}
+
+
+/* -----------------footer부분-------------------- */
+
+footer {
+  margin-top: 5em;
+  width: 100%;
+}
+
+footer .hr_footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer>.under {
+  width: 1450px;
+  margin: 5px auto;
+  display: flex;
+}
+
+footer .under_menu1 {
+  font-size: 12px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  margin-left: -50px;
+}
+
+footer .under_menu1>li {
+  margin: 0 50px;
+  display: flex;
+}
+
+footer .under_menu1 a,
+footer .info,
+footer .info button {
+  color: hwb(0 49% 50%);
+}
+
+/* -----------------footer 좌측하단 부분--------------- */
+footer .info {
+  font-size: 12px;
+  width: 1450px;
+  margin: 40px auto 0 auto;
+  line-height: 150%;
+  padding-bottom: 40px;
+}
+
+footer .info>p {
+  text-align: end;
+}
+
+footer ul>li>button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* -----------------footer 우측하단 부분-------------- */
+footer .icon {
+  display: flex;
+  justify-content: end;
+}
+
+footer .icon a {
+  margin: 1em;
+  margin-top: -50px;
+}
