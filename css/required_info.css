@@ -370,11 +370,13 @@ input[type="password"]{
 }
 
 input[type="text"],
-input[type="email"]{
+input[type="email"],
+input[type="password"]{
     width: 170%;
 }
 
-input[type="number"]{
+#info_phnum input,
+#info_birth input{
     width: 50px;
     text-align: center;
 }
