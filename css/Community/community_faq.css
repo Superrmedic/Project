@@ -1,0 +1,577 @@
+/* ------------ 기본 세팅 --------------- */
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: S-CoreDream-3Light;
+}
+
+header,
+nav,
+main,
+footer {
+  width: 80%;
+  margin: auto;
+  min-width: 1500px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slide_end {
+  margin-top: 10px;
+}
+
+/* ----------- .logo 부분 --------------- */
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.top_banner {
+  display: flex;
+  background-color: #ff798c;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.top_banner a {
+  display: block;
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+header div.logo {
+  margin-right: 20px;
+}
+
+header div a>img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+/* ----------- .search 부분 --------------- */
+header div.search {
+  flex: 1;
+  margin-left: 800px;
+  display: flex;
+  align-items: center;
+}
+
+header div.search input {
+  all: unset;
+  width: 40%;
+  min-width: 300px;
+  margin-top: 55px;
+  height: 40%;
+  background-color: white;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: 3px solid #ff798c;
+  border-radius: 30px;
+}
+
+/* ----------- .login 부분 --------------- */
+header ul.login {
+  display: flex;
+  flex-direction: row;
+  min-width: 50px;
+  margin-top: 50px;
+}
+
+
+header ul.login .go_login {
+  display: block;
+  width: 50px;
+  height: 55px;
+  text-indent: -9999em;
+}
+
+header ul .login_info {
+  background-color: white;
+  width: 200px;
+  display: none;
+  box-shadow: 3px 3px 3px rgb(197, 197, 197);
+}
+
+header ul>.mypage:hover>.login_info {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  top: 100%;
+}
+
+header ul>.mypage>.login_info li:hover {
+  font-weight: bold;
+  background-color: #ff798c;
+  transition: 1s;
+}
+
+header>ul .login_info li:hover a {
+  color: white;
+}
+
+header>ul .login_info li a {
+  text-align: center;
+  padding: 20px;
+  color: black;
+  display: block;
+}
+
+/* ----------- .mypage 부분 --------------- */
+.mypage {
+  position: relative;
+  background: url(../../icon/user\ icon-1.png) center/80% 80% no-repeat;
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
+}
+
+.mypage:hover {
+  background: url(../../icon/user\ icon\ hover.png) center/80% 80% no-repeat;
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
+}
+
+/* ----------- .cart 부분 --------------- */
+.cart {
+  background: url(../../icon/cart.png) center/80% 80% no-repeat;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 55px;
+  height: 55px;
+}
+
+.cart:hover {
+  background: url(../../icon/cart\ hover.png) center/80% 80% no-repeat;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 55px;
+  height: 55px;
+}
+
+/* ----------- .like 부분 --------------- */
+.like {
+  background: url(../../icon/heart.png) center/80% 80% no-repeat;
+  width: 45px;
+  height: 45px;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.like:hover {
+  background: url(../../icon/heart_hover.png) center/80% 80% no-repeat;
+  width: 45px;
+  height: 45px;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+/* ----------- .category 부분 --------------- */
+
+.category_bar ul.category {
+  box-sizing: border-box;
+}
+
+.category_bar ul.category>li {
+  border-bottom: 5px solid white;
+}
+
+.category_bar>div>ul.category {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.category_bar ul>li {
+  position: relative;
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+
+}
+
+.category_bar ul>li li:hover {
+  font-weight: bold;
+  background-color: #ff798c;
+  transition: 1s;
+}
+
+.category_bar ul>li li {
+  font-size: 16px;
+  font-weight: initial;
+}
+
+.category_bar ul.category>li>a {
+  display: block;
+  color: black;
+}
+
+.category_bar ul.category>li:hover>a {
+  color: #ff798c;
+}
+
+.category_bar ul>li:hover {
+  border-bottom-color: #ff798c;
+}
+
+.category_bar>div>ul.category>li {
+  float: left;
+  line-height: 50px;
+  padding: 10px;
+}
+
+.category_bar::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.category_bar ul ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: gray;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 3px 3px 3px rgb(197, 197, 197);
+}
+
+.category_bar ul.category ul li {
+  width: 100%;
+}
+
+.category_bar ul>li:hover ul {
+  display: block;
+  z-index: 1;
+}
+
+.category_bar ul.category ul>li>a {
+  display: block;
+  color: black;
+}
+
+.category_bar ul.category ul>li:hover>a {
+  color: white;
+}
+
+/* ----------- .main 부분 --------------- */
+
+main .fixed-banner {
+  display: flex;
+  position: relative;
+}
+
+main>.fixed-banner a>.right_TOP {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 5px;
+  bottom: 100px;
+  Z-index: 1;
+  background-color: lightgray;
+  border-radius: 50px;
+}
+
+/* main>.fixed-banner a>.right_TOP {
+  bottom: 140px;
+}
+
+main>.fixed-banner a>.right_FAQ {
+  bottom: 60px;
+} */
+
+main .container {
+  display: grid;
+  margin: 6em;
+  font-size: 1.2em;
+}
+
+main .container div {
+  display: flex;
+  justify-content: center;
+}
+
+main .container1 {
+  align-items: center;
+  justify-content: center;
+}
+
+main .container1>.box1 {
+  letter-spacing: 5px;
+  font-variant: small-caps;
+}
+
+main .container1>.box3 {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  animation: myfirst 2s 1;
+  animation-direction: alternate;
+  right: -10px;
+}
+
+@keyframes myfirst {
+  0% {
+    right: 100px;
+    top: 0px;
+  }
+
+  100% {
+    right: -10px;
+    top: 0px;
+  }
+}
+
+main .container2>.box2 {
+  color: darkgrey;
+  font-size: .9em;
+}
+
+/*  <----- customer service 게시판 전체 영역 -----> */
+main .board_list div {
+  display: flex;
+  align-items: center;
+}
+
+main .board {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(51, 51, 51);
+  margin-bottom: 10%;
+}
+
+/* <----- 왼쪽 메뉴 -----> */
+
+main .left_list {
+  text-align: center;
+  margin-left: -20px;
+}
+
+main .left_list>h1 {
+  padding: 5px 100px 35px 1px;
+}
+
+main .customer_list li,
+main .customer_list li a {
+  /* width: 163px; */
+  /* height: 55px; */
+  display: block;
+  padding: 5px;
+}
+
+main .customer_list li a {
+  /* background: url(../image/left_list.png); */
+  /* text-indent: -9999em; */
+  /* display: inline-block; */
+  transition: .5s;
+  color: #ff798c;
+  border: 1px dotted #ff798c;
+}
+
+main .customer_list li:nth-child(2) a {
+  /* background-position: 0 -55px; */
+}
+
+main .customer_list li:nth-child(3) a {
+  /* background-position: 0 calc(-55px * 2); */
+  /* margin-bottom: -1px; */
+}
+
+main .customer_list li:nth-child(4) a {
+  /* margin-top: -1px; */
+  /* background-position: 0 calc(-55px * 3); */
+}
+
+/* <------ 왼쪽 메뉴 : 호버 ------> */
+main .customer_list li:hover a {
+  /* background: url(../image/left_list_hover.png); */
+  /* color: black; */
+  transition: .5s;
+  background-color: antiquewhite;
+  color: black;
+}
+
+main .customer_list li:hover:nth-child(2) a {
+  /* background-position: 0 -55px; */
+}
+
+main .customer_list li:hover:nth-child(3) a {
+  /* background-position: 0 calc(-55px * 2); */
+}
+
+main .customer_list li:hover:nth-child(4) a {
+  /* background-position: 0 calc(-55px * 3); */
+}
+
+
+/* <------ 메인 게시판 ------> */
+main .board_table {
+  width: 60vw;
+  border-top: 3px solid #bbbbbb;
+  cursor: pointer;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+main .board_table th {
+  border-bottom: 1px solid #bbbbbb;
+  line-height: 5vh;
+
+}
+
+main .board_table td {
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid rgb(244, 244, 244);
+}
+
+main .board_table .icon_1,
+main .board_table .icon_2,
+main .board_table .icon_3 {
+  color: white;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+main .board_table .icon_1 {
+  background-color: hwb(340 63% 17% / 0.815);
+}
+
+main .board_table .icon_2 {
+  background-color: hwb(209 51% 29%);
+}
+
+main .board_table .icon_3 {
+  background-color: hwb(9 65% 4% / 0.76);
+}
+
+/* --------------------  버튼  -------------------------  */
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.btn_left,
+.btn_right {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  text-indent: -9999em;
+  margin: 1em;
+}
+
+.btn_left {
+  background: url(../icon/left.png) no-repeat 0/100%;
+}
+
+.btn_right {
+  background: url(../icon/right.png) no-repeat 0/100%;
+}
+
+/* .btn_left:hover {
+    background: url(../icon/left_hover.png) no-repeat 0/100%;
+} */
+
+.btn_right:hover {
+  background: url(../icon/right_hover.png) no-repeat 0/100%;
+}
+
+/* -----------------footer부분-------------------- */
+
+footer {
+  margin-top: 5em;
+  width: 100%;
+}
+
+footer .hr_footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer>.under {
+  width: 1450px;
+  margin: 5px auto;
+  display: flex;
+}
+
+footer .under_menu1 {
+  font-size: 12px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  margin-left: -50px;
+}
+
+footer .under_menu1>li {
+  margin: 0 50px;
+  display: flex;
+}
+
+footer .under_menu1 a,
+footer .info,
+footer .info button {
+  color: hwb(0 49% 50%);
+}
+
+/* -----------------footer 좌측하단 부분--------------- */
+footer .info {
+  font-size: 12px;
+  width: 1450px;
+  margin: 40px auto 0 auto;
+  line-height: 150%;
+  padding-bottom: 40px;
+}
+
+footer .info>p {
+  text-align: end;
+}
+
+footer ul>li>button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* -----------------footer 우측하단 부분-------------- */
+footer .icon {
+  display: flex;
+  justify-content: end;
+}
+
+footer .icon a {
+  margin: 1em;
+  margin-top: -50px;
+}

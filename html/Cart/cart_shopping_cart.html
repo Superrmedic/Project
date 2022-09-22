@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="../../css/cart/cart_shopping_cart.css">
+    <script src="https://kit.fontawesome.com/11d243a6e5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="top_banner">
+        <a href="./sign_on.html">지금 가입하고 적립금 500원 받아가세요!
+        </a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1>
+                <a href="../../index.html" class="banner"><img src="../../image/main_banner.png" alt="로고"></a>
+            </h1>
+        </div>
+        <div class="search">
+            <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~">
+        </div>
+        <ul class="login">
+            <li class="mypage" title="유저 아이콘">
+                <ul class="login_info">
+                    <li><a href="../Login/My_page/login_mypage.html">MY PAGE</a></li>
+                    <li><a href="./welcome.html">로그인</a></li>
+                    <li><a href="./sign_on.html">회원가입</a></li>
+                </ul>
+            </li>
+            <li class="cart" title="장바구니"><a href="#" class="go_login">장바구니</a></li>
+            <li class="like" title="좋아요"><a href="../Login/My_page/login_shopping_like.html" class="go_login">좋아요</a></li>
+        </ul>
+    </header>
+    <nav class="category_bar">
+        <div>
+            <ul class="category">
+                <li class="cate_Best"><a href="#Best">BEST</a>
+                </li>
+                <li class="cate_New"><a href="#New">NEW</a></li>
+                <li class="cate_Toy"><a href="../Categori/categori_catg_page.html">피규어</a>
+                    <ul>
+                        <li><a href="../Categori/categori_catg_page.html">곰돌이 푸</a></li>
+                        <li><a href="../Categori/categori_catg_page.html">디즈니</a></li>
+                    </ul>
+                </li>
+                <li class="cate_Kids"><a href="../Categori/categori_catg_page.html">봉제인형</a>
+                    <ul>
+                        <li><a href="../Categori/categori_catg_page.html">소형</a></li>
+                        <li><a href="../Categori/categori_catg_page.html">중형</a></li>
+                        <li><a href="../Categori/categori_catg_page.html">대형</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="fixed-banner">
+            <div>
+                <a href="#"><img src="../../icon/top_.png" alt="TOP" class="right_TOP"></a>
+            </div>
+            <div>
+                <!-- <a href="../jungsunzoo/html/faq.html"><img src="./image/qna.png" alt="FAQ" class="right_FAQ"></a> -->
+            </div>
+            <div>
+                <!-- <a href="#" target="_blank"><img src="./image/kakao.png" alt="kakao" class="right_kakao"></a> -->
+            </div>
+        </div>
+        <h1>장바구니</h1>
+        <div class="cartselect_info">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+            <ul>
+                <li>전체선택 (1/1)</li>
+                <li>선택삭제</li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="cartcheckbox">
+            <input type="checkbox" value="cartcheckbox">
+            <img src="../../image/bear_1.jpg" class="cartimage1">
+            <span>극세사 쿼카 인형</span>
+            <div class="cartcheck_bt">
+                <button type="button">-</button>
+                <div class="cartchecknumber">1</div>
+                <button type="button">+</button>
+            </div>
+            <strong>15,000원</strong>
+            <div class="carticons">
+                <i class="fa-sharp fa-solid fa-heart-circle-plus"></i>
+                <i class="fa-sharp fa-solid fa-x"></i>
+            </div>
+        </div>
+        <hr>
+
+        <div class="cartdeliveryinfo">
+            <strong>배송비 2,500원</strong>
+            <p>15,000원 추가 주문시 무료 배송</p>
+        </div>
+    </main>
+
+    <section>
+        <hr>
+        <div class="cartpaybox">
+            <table class="cartpaytable">
+                <thead>
+                    <tr>
+                        <th scope="col" class="carttable1">총 상품금액</th>
+                        <th scope="col" class="carttable2">총 배송비</th>
+                        <th scope="col" class="carttable3">결제예정금액</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="carttable1">15,000원</td>
+                        <td class="carttable2">+ 2,500원</td>
+                        <td class="carttable3">= 17,500원</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+
+        <div class="cartbuttons">
+            <div class="cartbuttonscenter">
+                <button type="button" class="cartallpay_bt" style='cursor:pointer;'
+                    onclick="location.href='shopping_payment.html';">전체상품주문</button>
+                <button type="button" class="cartscpay_bt" style='cursor:pointer;'
+                    onclick="location.href='shopping_payment.html';">선택상품주문</button>
+            </div>
+            <button type="button" class="cartcontin_bt" onclick="location.href='shopping_details.html';"
+                style='cursor:pointer;'>쇼핑계속하기</button>
+        </div>
+    </section>
+
+    <footer>
+        <hr class="hr_footer">
+        <div class="under">
+            <ul class="under_menu1">
+                <li><a href="">PSYC소개</a>
+                </li>
+                <li><a href="">이용안내</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="../Community/community_notice.html">고객센터</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <hr class="hr_footer">
+            <div class="info">
+                <strong>PSYC (주)</strong>
+                경기도 성남시 분당구 돌마로 46 KR 5층 <strong>대표자</strong> 하영권
+                <ul>
+                    <li><strong>고객센터 : </strong>031 - 1234 - 5678 / <strong>( 점심시간 : PM 1:20 ~ pm 2:20 )</strong></li>
+                    <li><strong> [ 입금 계좌 : 110-191-012012 / 예금주 : PSYC ] </strong></li>
+                    <li><strong>FAX : </strong>031 - 9876 - 5432</li>
+                    <li><strong>E-MAIL : </strong><button type="button">abcde@psyc.co.kr</button></li>
+                </ul>
+                <p>copyright (c) <strong>www.psyc.co.kr</strong> all rights reserved.</p>
+                <div class="icon">
+                    <a href="#"><img src="../../icon/icon_insta.jpg" alt="instagram" title="인스타그램"></a>
+                    <a href="#"><img src="../../icon/icon_youtube.jpg" alt="youtube" title="유튜브"></a>
+                    <a href="#"><img src="../../icon/icon_kakao.jpg" alt="kakaotalk" title="카카오톡"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
