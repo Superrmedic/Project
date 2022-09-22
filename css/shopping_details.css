@@ -281,8 +281,10 @@ section {
 /* =============리뷰 테이블=============== */
 
 .board_list {
-    position: relative;
-    left: 12%;
+    /* position: relative;
+    left: 12%; */
+    width: calc(1920px * 0.6);
+    margin: 0 auto;
 }
 
 .board_info {
@@ -300,7 +302,9 @@ section {
 }
 
 .board_table {
-    width: calc(1920px * .6);
+    /* width: calc(1920px * .6); */
+    width: 100%;
+    /* margin: 0 auto; */
     border-top: 1px solid #bbbbbb;
     cursor: pointer;
     text-align: center;
