@@ -111,11 +111,11 @@
                         </label>
                         <span>-</span>
                         <label>
-                            <input type="text" required >
+                            <input type="text" minlength="4" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required >
                         </label>
                         <span>-</span>
                         <label>
-                            <input type="text" required>
+                            <input type="text" minlength="4" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
                         </label>
                     </div>
                 
@@ -139,7 +139,7 @@
                     <div class="info_birth">생년월일</div>
                     <div id="info_birth">
                         <label>
-                            <input type="text" id="info_year" required>년
+                            <input type="text" minlength="4" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="info_year" required>년
                         </label>
                     
                         <label>
@@ -159,7 +159,7 @@
                             </select>월
                         </label>
                         <label>
-                            <input type="text" id="info_day" required>일
+                            <input type="text" minlength="1" maxlength="2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="info_day" required>일
                         </label>
                     
                     </div>
