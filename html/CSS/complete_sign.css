@@ -44,14 +44,15 @@ header {
   flex-direction: row;
   padding: 10px;
   margin-top: 20px;
+  /* background-color: #5ce5cf; */
 }
 
 .top_banner {
+  height: 50px;
   display: flex;
   background-color: #ff798c;
   justify-content: center;
   align-items: center;
-  height: 50px;
 }
 
 .top_banner a {
@@ -69,10 +70,10 @@ header div.logo {
 }
 
 header div a>img {
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
 }
 
 /* ----------- .search 부분 --------------- */
@@ -147,14 +148,14 @@ header>ul .login_info li a {
 /* ----------- .mypage 부분 --------------- */
 .mypage {
   position: relative;
-  background: url(../../../icon/user\ icon-1.png) center/80% 80% no-repeat;
+  background: url(../icon/user\ icon-1.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 10px;
 }
 
 .mypage:hover {
-  background: url(../../../icon/user\ icon\ hover.png) center/80% 80% no-repeat;
+  background: url(../icon/user\ icon\ hover.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 10px;
@@ -162,7 +163,7 @@ header>ul .login_info li a {
 
 /* ----------- .cart 부분 --------------- */
 .cart {
-  background: url(../../../icon/cart.png) center/80% 80% no-repeat;
+  background: url(../icon/cart.png) center/80% 80% no-repeat;
   margin-top: 5px;
   margin-left: 10px;
   width: 55px;
@@ -170,7 +171,7 @@ header>ul .login_info li a {
 }
 
 .cart:hover {
-  background: url(../../../icon/cart\ hover.png) center/80% 80% no-repeat;
+  background: url(../icon/cart\ hover.png) center/80% 80% no-repeat;
   margin-top: 5px;
   margin-left: 10px;
   width: 55px;
@@ -179,7 +180,7 @@ header>ul .login_info li a {
 
 /* ----------- .like 부분 --------------- */
 .like {
-  background: url(../../../icon/heart.png) center/80% 80% no-repeat;
+  background: url(../icon/heart.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 12px;
@@ -187,7 +188,7 @@ header>ul .login_info li a {
 }
 
 .like:hover {
-  background: url(../../../icon/heart_hover.png) center/80% 80% no-repeat;
+  background: url(../icon/heart_hover.png) center/80% 80% no-repeat;
   width: 45px;
   height: 45px;
   margin-top: 12px;
@@ -205,10 +206,8 @@ header>ul .login_info li a {
 }
 
 .category_bar>div>ul.category {
-  /* background-color: #ffe4c4; */
   display: flex;
   justify-content: center;
-  border-radius: 5px;
 }
 
 .category_bar ul>li {
@@ -217,7 +216,6 @@ header>ul .login_info li a {
   text-align: center;
   font-weight: bold;
   font-size: 19px;
-
 }
 
 .category_bar ul>li li:hover {
@@ -286,139 +284,48 @@ header>ul .login_info li a {
   color: white;
 }
 
-/* ----------- .main 부분 --------------- */
-
-main h1 {
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 80px;
-  margin-top: 80px;
-}
-
-
-main .fixed-banner {
-  display: flex;
-  position: relative;
-}
-
-main>.fixed-banner a>.right_TOP {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  right: 5px;
-  bottom: 100px;
-  Z-index: 1;
-  background-color: lightgray;
-  border-radius: 50px;
-}
-
-main>.fixed-banner a>.right_TOP {
-  bottom: 140px;
-}
-
-main>.fixed-banner a>.right_FAQ {
-  bottom: 60px;
-}
-
-main>.grid {
+/* ---------------------main-------------------------- */
+main {
+  height: 60vh;
+  margin-top: 15px;
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(12, 1fr);
-  border: 1px solid #ff798c;
+  grid-template-columns: repeat(15, 0.5fr);
+  grid-template-rows: repeat(14, 0.5fr);
 }
 
-main>.grid>.profile {
-  grid-row: 2;
-  grid-column: 3 / 4;
-}
-
-main>.grid>.icon {
-  grid-row: 2;
-  grid-column: 4 / 7;
-  margin: auto;
-}
-
-main>.grid>.ranking {
-  grid-row: 2;
-  grid-column: 10;
-  margin: 20px auto 0;
-}
-
-main>.banner>.movingbox {
-  margin-top: 100px;
-  display: flex;
-}
-
-main>.banner>.movingbox>li {
-  border-radius: 5px 5px 0 0;
-  border: .5px solid #ff798c;
-  line-height: 20px;
-  padding: 10px;
-  width: 11%;
-  font-size: 19px;
-  text-align: center;
-  background-color: #ff798c;
-  /* opacity: .8; */
-}
-
-main>.banner>.movingbox>li:hover {
-  /* opacity: 1; */
-  background-color: #db6879;
-}
-
-main>.banner>.movingbox>li a {
-  display: block;
-  color: white;
-}
-
-.cartcheckbox1 {
-  border: 1px solid #ff798c;
-}
-
-.cartcheckbox1 .hr_cartchecbox {
-  color: #ff798c;
-}
-
-.cartcheckbox {
-  display: flex;
-  padding: 20px 15px;
-  line-height: 120px;
-}
-
-.cartimage1 {
-  width: 120px;
-  height: 120px;
-  margin: 0 30px;
-}
-
-.cartcheckbox span {
+main div {
   display: flex;
   justify-content: center;
-  width: 30%;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.cartcheckbox strong {
-  display: flex;
-  justify-content: center;
-  width: 30%;
-  font-size: 18px;
-}
-
-.cartcheckbox .review {
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  gap: 20px;
 }
 
-.cartcheckbox .review>a {
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-  margin-top: 5px;
-  text-align: center;
-  border: 1px solid;
-  color: black;
+.welcome {
+  color: #ff798c
+}
+
+.title {
+  grid-column: 6 / 11;
+  grid-row: 2 / 4;
+  font-size: 3rem;
+}
+
+.cont {
+  color: #ff798c;
+  font-size: 1.2rem;
+  grid-column: 5 / 12;
+  grid-row: 4 / 6;
+}
+
+.go_to_login {
+  grid-column: 7 / 10;
+  grid-row: 7 / 9;
+}
+
+.go_to_login>button {
+  width: 200px;
+  height: 50px;
+  background-color: #ff798c;
 }
 
 

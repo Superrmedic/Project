@@ -1,3 +1,4 @@
+/* ------------ 기본 세팅 --------------- */
 @font-face {
     font-family: 'S-CoreDream-3Light';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
@@ -6,7 +7,7 @@
 }
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     list-style: none;
     scroll-behavior: smooth;
@@ -55,168 +56,6 @@ main hr {
     border: 0px;
     height: 1px;
     background-color: #CACACA;
-}
-
-/* ============================== */
-/* 장바구니 상세 상품 */
-
-.cartcheckbox {
-    display: flex;
-    padding: 20px 15px;
-    line-height: 120px;
-    position: relative;
-}
-
-.cartcheckbox input {
-    margin: 10px;
-    width: 15px;
-}
-
-.cartimage1 {
-    width: 120px;
-    height: 120px;
-    margin: 0 30px;
-}
-
-.cartcheckbox span {
-    margin-left: 0;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.cartcheckbox strong {
-    position: absolute;
-    right: 170px;
-    font-size: 18px;
-}
-
-.cartcheck_bt {
-    display: flex;
-    height: 30px;
-    border: 1px solid rgb(207, 207, 207);
-    align-items: center;
-    box-sizing: border-box;
-    margin-top: calc((120px - 30px)/2);
-    position: absolute;
-    right: 300px;
-}
-
-.cartcheck_bt button {
-    font-size: 24px;
-    width: 50px;
-    border: 0px;
-    background-color: white;
-}
-
-.cartcheckbox i {
-    position: absolute;
-    margin-top: calc((120px - 24px)/2);
-    font-size: 24px;
-}
-
-.carticons i:nth-child(1) {
-    right: 100px;
-    color: rgb(34, 34, 34);
-}
-
-/* =============================== */
-
-.cartdeliveryinfo {
-    text-align: center;
-    padding: 20px;
-    font-size: 12px;
-    font-weight: lighter;
-    color: rgb(170, 170, 170);
-}
-
-/* =============================== */
-/* table 결제 예정 금액 시작 */
-
-section hr {
-    border: 0px;
-    width: 1200px;
-    height: 1px;
-    background-color: #a0a0a0;
-}
-
-.cartpaybox {
-    width: 1200px;
-}
-
-.cartpaytable td,
-.cartpaytable th {
-    padding: 20px;
-}
-
-.cartpaytable td {
-    border-right: solid 1px rgb(236, 236, 236);
-    border-top: solid 1px rgb(236, 236, 236);
-}
-
-.cartpaytable .carttable3 {
-    border-right: 0;
-}
-
-.carttable1,
-.carttable2 {
-    width: 200px;
-    text-align: center;
-}
-
-.carttable3 {
-    width: 800px;
-    text-align: center;
-}
-
-tbody .carttable3 {
-    font-size: 21px;
-    font-weight: bold;
-}
-
-/* =============================== */
-/* 결제 버튼 */
-
-.cartbuttons {
-    display: flex;
-    position: relative;
-}
-
-.cartallpay_bt,
-.cartcontin_bt {
-    width: 150px;
-    height: 35px;
-    font-family: S-CoreDream-3Light;
-    font-weight: bold;
-    font-size: 14px;
-    border-radius: 5px;
-}
-
-.cartallpay_bt {
-    border: 0;
-    background-color: #ff798c;
-    color: white;
-}
-
-.cartcontin_bt {
-    border: 1px solid rgb(214, 214, 214);
-    background-color: #f8f8f8;
-    color: #696969;
-    position: absolute;
-    right: 520px;
-}
-
-.cartbuttonscenter {
-    margin-left: calc((100% - 305px)/2);
-}
-
-/* button hover */
-
-.cartallpay_bt:hover {
-    background-color: #cf6674;
-}
-
-.cartcontin_bt:hover {
-    background-color: #d8d8d8;
 }
 
 /* ------------ 기본 세팅 --------------- */
@@ -589,4 +428,413 @@ footer .icon {
 footer .icon a {
     margin: 1em;
     margin-top: -50px;
+}
+
+
+/* ============================ */
+/* 결제 페이지 */
+/* 주문 상품 */
+.shop_orderpg {
+    margin: 0 auto;
+    width: calc(1920px * .6);
+    margin-bottom: 40px;
+}
+
+.shop_orderpg h2 {
+    font-size: 18px;
+    padding: 0 0 15px 0px;
+}
+
+main hr {
+    border: 0px;
+    background-color: black;
+}
+
+form span {
+    font-size: 14px;
+}
+
+.shop_oderinfo,
+.shop_deliinfo,
+.shop_orderlist,
+.shop_ordercoupon,
+.shop_orderpay,
+.shop_orderway {
+    margin-bottom: 100px;
+}
+
+.oderlistimg {
+    display: flex;
+    width: 110px;
+    height: 110px;
+    padding: 20px 20px 20px 5px;
+}
+
+.shop_ordername,
+.shop_orderphone,
+.shop_ordermail {
+    margin: 20px 0 20px 5px;
+}
+
+.orderlist1,
+.orderlist2 {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.ordername1,
+.ordername2 {
+    display: flex;
+    width: 800px;
+    color: black;
+}
+
+.orderlistimgbox {
+    display: flex;
+}
+
+.order_number {
+    width: 100px;
+    margin-left: 30px;
+}
+
+/* 주문자 정보 */
+.shop_oderinfo span {
+    display: inline-block;
+    width: 80px;
+}
+
+.email1 {
+    display: inline;
+}
+
+.shop_oderinfo input {
+    font-family: S-CoreDream-3Light;
+    width: 150px;
+    height: 30px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.shop_orderphone input {
+    width: 95px;
+}
+
+.shop_oderinfo select {
+    font-family: S-CoreDream-3Light;
+    width: 50px;
+    height: 40px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+}
+
+.email1 {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.shop_ordermail select {
+    width: 150px;
+}
+
+/* 배송 정보 */
+
+.delivery_info1 {
+    display: inline-block;
+    padding: 20px 30px 30px 0;
+}
+
+.delivery_infonav {
+    font-size: 14px;
+    padding: 5px 5px 5px 0;
+    color: grey;
+}
+
+.shop_deliinfo select {
+    font-family: S-CoreDream-3Light;
+    width: 445px;
+    height: 40px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.shop_defaultad {
+    display: flex;
+    width: 165px;
+    align-items: center;
+    margin: 0;
+}
+
+.shop_defaultad input {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.shop_defaultad span {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* 쿠폰 적립금 */
+
+.shop_ordercoupon,
+.shop_orderway {
+    margin: 0;
+    width: calc(1920px * .4);
+    margin-bottom: 120px;
+}
+
+
+.order_coupon {
+    padding: 20px 20px 20px 0;
+}
+
+.order_coupon button {
+    padding: 10px;
+    width: 600px;
+    color: rgb(167, 167, 167);
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+    font-family: S-CoreDream-3Light;
+    margin-left: 50px;
+}
+
+.order_point input {
+    padding: 10px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+    margin-left: 35px;
+    color: rgb(167, 167, 167);
+}
+
+.order_point button {
+    box-sizing: border-box;
+    padding: 7px 10px 10px 10px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+    background-color: white;
+    font-family: S-CoreDream-3Light;
+    width: 145px;
+}
+
+.order_point div {
+    font-size: 13px;
+    padding: 5px;
+    margin-left: 108px;
+}
+
+.order_point strong {
+    color: #ff798c;
+}
+
+.order_coupon button:hover,
+.order_point button:hover {
+    background-color: rgb(224, 224, 224);
+    color: rgb(46, 46, 46);
+}
+
+/* 쿠폰 & 결제 div */
+.orderalldiv {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.couponpaydiv hr,
+.shop_orderway hr {
+    width: 95%;
+    margin: 0;
+}
+
+/* 결제 수단 선택 */
+.shop_orderway {
+    height: 220px;
+}
+
+.order_select {
+    display: flex;
+    padding: 20px 20px 20px 0;
+    position: relative;
+}
+
+.paycontainer {
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.paycontainer_list {
+    position: absolute;
+    left: 100px;
+    padding: 20px;
+}
+
+.paycontainer_list span {
+    padding: 0 5px 0 5px;
+}
+
+.paycontainer_list input {
+    position: relative;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.smilepay {
+    margin-left: 26px;
+}
+
+.order_select button {
+    padding: 7px 10px 10px 10px;
+    width: 195px;
+    color: rgb(34, 34, 34);
+    background-color: rgb(248, 248, 248);
+    border-radius: 3px;
+    font-family: S-CoreDream-3Light;
+}
+
+.order_selecteasy button {
+    margin-left: 30px;
+}
+
+.paycontainerfirst,
+.paycontainersecond {
+    padding: 10px;
+}
+
+.order_select label {
+    margin-right: 15px;
+}
+
+.order_select button:hover {
+    background-color: rgb(224, 224, 224);
+    color: rgb(46, 46, 46);
+}
+
+/* 결제 금액 선택 */
+.delivery_container {
+    position: relative;
+    top: -50px;
+}
+
+.shop_orderpay {
+    margin: 0;
+    width: calc(1920px * .2);
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 2%;
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
+    position: sticky;
+    top: 50px;
+}
+
+.shop_orderpay hr {
+    border: 0px;
+    height: 1px;
+    background-color: #dfdfdf;
+}
+
+.order_allpay,
+.order_deliverypay,
+.order_couponpay,
+.order_pointpay,
+.order_totalpay {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop_orderpay div {
+    font-size: 14px;
+    padding: 3px 3px 3px 0;
+}
+
+.shop_orderpay span {
+    font-size: 18px;
+}
+
+.order_totalpay div {
+    margin-top: 10px;
+    font-size: 21px;
+}
+
+.order_totalpay div strong {
+    color: #ff798c;
+    font-size: 24px;
+}
+
+.order_pointbox {
+    display: flex;
+    justify-content: right;
+}
+
+.order_pointbox div {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.order_box {
+    width: 30px;
+    border-radius: 5px;
+    background-color: #ff798c;
+    text-align: center;
+    color: white;
+}
+
+/* 개인정보 수집 제공 */
+.orderprivacybox {
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 20px 0;
+}
+
+.orderbuttonpar {
+    display: flex;
+    justify-content: center;
+}
+
+.shop_orderprivacy button {
+    padding: 10px;
+    width: 250px;
+    color: white;
+    border-radius: 3px;
+    background-color: #ff798c;
+    font-size: 16px;
+    font-family: S-CoreDream-3Light;
+    border: 0;
+    font-weight: bold;
+}
+
+.orderprivacflex1 {
+    margin-bottom: 20px;
+}
+
+.orderprivacflex {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.orderprivacflex1 i {
+    color: #ff798c;
+    font-size: 24px;
+}
+
+.orderprivacflex i {
+    color: #ffdde2;
+}
+
+.shop_orderprivacy strong {
+    color: black;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.shop_orderprivacy a {
+    color: black;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 8px;
 }

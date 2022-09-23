@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shopping_details</title>
-    <link rel="stylesheet" href="../css/shopping_details.css">
+    <link rel="stylesheet" href="./CSS/product_shopping_details.css">
     <script src="https://kit.fontawesome.com/11d243a6e5.js" crossorigin="anonymous"></script>
 
 </head>
@@ -20,7 +20,7 @@
     <header>
         <div class="logo">
             <h1>
-                <a href="../index.html" class="banner"><img src="../image/main_banner.png" alt="로고"></a>
+                <a href="../../index.html" class="banner"><img src="../../image/main_banner.png" alt="로고"></a>
             </h1>
         </div>
         <div class="search">
@@ -29,13 +29,14 @@
         <ul class="login">
             <li class="mypage" title="유저 아이콘">
                 <ul class="login_info">
-                    <li><a href="../html/mypage.html">MY PAGE</a></li>
+                    <li><a href="../Login/My_page/login_mypage.html">MY PAGE</a></li>
                     <li><a href="./welcome.html">로그인</a></li>
                     <li><a href="./sign_on.html">회원가입</a></li>
                 </ul>
             </li>
-            <li class="cart" title="장바구니"><a href="../html/shopping_cart.html" class="go_login">장바구니</a></li>
-            <li class="like" title="좋아요"><a href="../html/shopping_like.html" class="go_login">좋아요</a></li>
+            <li class="cart" title="장바구니"><a href="../Cart/cart_shopping_cart.html" class="go_login">장바구니</a></li>
+            <li class="like" title="좋아요"><a href="../Login/My_page/login_shopping_like.html" class="go_login">좋아요</a>
+            </li>
         </ul>
     </header>
     <nav class="category_bar">
@@ -51,17 +52,17 @@
                   <li><a href="./html/catg_page.html">키링</a></li>
                 </ul>
               </li> -->
-                <li class="cate_Toy"><a href="">피규어</a>
+                <li class="cate_Toy"><a href="../Categori/categori_catg_page.html">피규어</a>
                     <ul>
-                        <li><a href="./catg_page.html">곰돌이 푸</a></li>
-                        <li><a href="./catg_page.html">디즈니</a></li>
+                        <li><a href="../Categori/categori_catg_page.html">곰돌이 푸</a></li>
+                        <li><a href="../Categori/categori_catg_page.html">디즈니</a></li>
                     </ul>
                 </li>
-                <li class="cate_Kids"><a href="">봉제인형</a>
+                <li class="cate_Kids"><a href="../Categori/categori_catg_page.html">봉제인형</a>
                     <ul>
-                        <li><a href="../html/catg_page.html">소형</a></li>
-                        <li><a href="../html/catg_page.html">중형</a></li>
-                        <li><a href="../html/catg_page.html">대형</a></li>
+                        <li><a href="../Categori/categori_catg_page.html">소형</a></li>
+                        <li><a href="../Categori/categori_catg_page.html">중형</a></li>
+                        <li><a href="../Categori/categori_catg_page.html">대형</a></li>
                     </ul>
                 </li>
             </ul>
@@ -71,7 +72,7 @@
     <main>
         <div class="fixed-banner">
             <div>
-                <a href="#"><img src="../icon/top_.png" alt="TOP" class="right_TOP"></a>
+                <a href="#"><img src="../../icon/top_.png" alt="TOP" class="right_TOP"></a>
             </div>
             <div>
                 <!-- <a href="../jungsunzoo/html/faq.html"><img src="./image/qna.png" alt="FAQ" class="right_FAQ"></a> -->
@@ -83,9 +84,9 @@
 
         <div class="shopproduct">
             <div class="shopimg_a">
-                <img src="../image/bear_1.jpg" class="mainbear" alt="케어베어 곰인형">
-                <img src="../image/smallbear.jpg" class="smallbear_1" alt="작은 곰 이미지">
-                <img src="../image/smallbear2.png" class="smallbear_2" alt="작은 곰 이미지">
+                <img src="../../image/bear_1.jpg" class="mainbear" alt="케어베어 곰인형">
+                <img src="../../image/smallbear.jpg" class="smallbear_1" alt="작은 곰 이미지">
+                <img src="../../image/smallbear2.png" class="smallbear_2" alt="작은 곰 이미지">
             </div>
 
             <div class="shopdetail_all">
@@ -130,12 +131,14 @@
                 </div>
 
                 <div class="shopbuttons">
-                    <button class="shoppay_bt" type="button" onclick="location.href='shopping_payment.html';"
+                    <button class="shoppay_bt" type="button" onclick="location.href='product_shopping_payment.html';"
                         style='cursor:pointer;'>바로
                         구매</button>
-                    <button class="shopcart_bt" type="button" onclick="location.href='shopping_cart.html';"
+                    <!-- 고치기 -->
+                    <button class="shopcart_bt" type="button" onclick="location.href='Cart.cart_shopping_cart.html';"
                         style='cursor:pointer;'>장바구니</button>
-                    <button class="shoplike_bt" type="button" onclick="location.href='shopping_like.html';"
+                    <!-- 고치기 -->
+                    <button class="shoplike_bt" type="button" onclick="location.href='Login.login_shopping_like.html';"
                         style='cursor:pointer;'>좋아요
                         &#9829</button>
                 </div>
@@ -149,14 +152,14 @@
                 <li><a href="#shopexplanid">상품 정보</a></li>
                 <li><a href="#delivery_infoid">배송/교환</a></li>
                 <li><a href="#board_listid">Review</a></li>
-                <li><a href="../html/faq.html">Q & A</a></li>
+                <li><a href="../Community/community_faq.html">Q & A</a></li>
             </ul>
         </div>
     </nav>
 
     <section>
         <div class="shopexplan_1" id="shopexplanid">
-            <img src="../image/mainshopping.jpg">
+            <img src="../../image/mainshopping.jpg">
         </div>
 
         <div class="delivery_info" id="delivery_infoid">
@@ -260,7 +263,7 @@
         <div class="related_detail">
             <div class="related1">
                 <a class="related_detail_1" href="#">
-                    <img src="../image/bear_1.jpg" alt="연관 상품 이미지 1">
+                    <img src="../../image/bear_1.jpg" alt="연관 상품 이미지 1">
                 </a>
                 <div class="relatedpay_1">
                     <a class="relatedname_1" href="#">연관 상품 1</a>
@@ -271,7 +274,7 @@
 
             <div class="related2">
                 <a class="related_detail_2" href="#">
-                    <img src="../image/smallbear.jpg" alt="연관 상품 이미지 2">
+                    <img src="../../image/smallbear.jpg" alt="연관 상품 이미지 2">
                 </a>
                 <div class="relatedpay_2">
                     <a class="relatedname_2" href="#">연관 상품 2</a>
@@ -282,7 +285,7 @@
 
             <div class="related3">
                 <a class="related_detail_3" href="#">
-                    <img src="../image/smallbear2.png" alt="연관 상품 이미지 3">
+                    <img src="../../image/smallbear2.png" alt="연관 상품 이미지 3">
                 </a>
                 <div class="relatedpay_3">
                     <a class="relatedname_3" href="#">연관 상품 3</a>
@@ -302,7 +305,7 @@
                 <li><a href="">이용안내</a></li>
                 <li><a href="">개인정보처리방침</a></li>
                 <li><a href="">이용약관</a></li>
-                <li><a href="../html/notice.html">고객센터</a></li>
+                <li><a href="../Community/community_notice.html">고객센터</a></li>
             </ul>
         </div>
 
@@ -319,9 +322,9 @@
                 </ul>
                 <p>copyright (c) <strong>www.psyc.co.kr</strong> all rights reserved.</p>
                 <div class="icon">
-                    <a href="#"><img src="../icon/icon_insta.jpg" alt="instagram" title="인스타그램"></a>
-                    <a href="#"><img src="../icon/icon_youtube.jpg" alt="youtube" title="유튜브"></a>
-                    <a href="#"><img src="../icon/icon_kakao.jpg" alt="kakaotalk" title="카카오톡"></a>
+                    <a href="#"><img src="../../icon/icon_insta.jpg" alt="instagram" title="인스타그램"></a>
+                    <a href="#"><img src="../../icon/icon_youtube.jpg" alt="youtube" title="유튜브"></a>
+                    <a href="#"><img src="../../icon/icon_kakao.jpg" alt="kakaotalk" title="카카오톡"></a>
                 </div>
             </div>
         </div>
