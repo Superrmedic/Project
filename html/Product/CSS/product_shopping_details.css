@@ -372,11 +372,11 @@ section {
 }
 
 .btn_left {
-    background: url(../../../img/left.png) no-repeat 0/100%;
+    background: url(/img/left.png) no-repeat 0/100%;
 }
 
 .btn_right {
-    background: url(../../../img/right.png) no-repeat 0/100%;
+    background: url(/img/right.png) no-repeat 0/100%;
 }
 
 /* .btn_left:hover {
@@ -384,7 +384,7 @@ section {
 } */
 
 .btn_right:hover {
-    background: url(../../../img/right_hover.png) no-repeat 0/100%;
+    background: url(/img/right_hover.png) no-repeat 0/100%;
 }
 
 /* ======================================== */
@@ -574,14 +574,14 @@ header>ul .login_info li a {
 /* ----------- .mypage 부분 --------------- */
 .mypage {
     position: relative;
-    background: url(../../../icon/user\ icon-1.png) center/80% 80% no-repeat;
+    background: url(/icon/user\ icon-1.png) center/80% 80% no-repeat;
     width: 45px;
     height: 45px;
     margin-top: 10px;
 }
 
 .mypage:hover {
-    background: url(../../../icon/user\ icon\ hover.png) center/80% 80% no-repeat;
+    background: url(/icon/user\ icon\ hover.png) center/80% 80% no-repeat;
     width: 45px;
     height: 45px;
     margin-top: 10px;
@@ -589,7 +589,7 @@ header>ul .login_info li a {
 
 /* ----------- .cart 부분 --------------- */
 .cart {
-    background: url(../../../icon/cart.png) center/80% 80% no-repeat;
+    background: url(/icon/cart.png) center/80% 80% no-repeat;
     margin-top: 5px;
     margin-left: 10px;
     width: 55px;
@@ -597,7 +597,7 @@ header>ul .login_info li a {
 }
 
 .cart:hover {
-    background: url(../../../icon/cart\ hover.png) center/80% 80% no-repeat;
+    background: url(/icon/cart\ hover.png) center/80% 80% no-repeat;
     margin-top: 5px;
     margin-left: 10px;
     width: 55px;
@@ -606,7 +606,7 @@ header>ul .login_info li a {
 
 /* ----------- .like 부분 --------------- */
 .like {
-    background: url(../../../icon/heart.png) center/80% 80% no-repeat;
+    background: url(/icon/heart.png) center/80% 80% no-repeat;
     width: 45px;
     height: 45px;
     margin-top: 12px;
@@ -614,7 +614,7 @@ header>ul .login_info li a {
 }
 
 .like:hover {
-    background: url(../../../icon/heart_hover.png) center/80% 80% no-repeat;
+    background: url(/icon/heart_hover.png) center/80% 80% no-repeat;
     width: 45px;
     height: 45px;
     margin-top: 12px;

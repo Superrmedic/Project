@@ -16,14 +16,6 @@ body {
   font-family: S-CoreDream-3Light;
 }
 
-header,
-nav,
-main {
-  width: 80%;
-  margin: auto;
-  min-width: 1500px;
-}
-
 hr {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
