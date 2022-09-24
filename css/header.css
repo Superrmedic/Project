@@ -1,0 +1,12 @@
+header .category {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header .category>li:nth-of-type(1) {
+    grid-column: 4 / 5;
+}
+
+header .headerSearch {
+    grid-column: 10 / -3;
+}
