@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: S-CoreDream-3Light;
+}
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) {
+  .mobile-hidden {
+    display: flex;
+  }
+
+  .responsive-contents {
+    font-size: 18px;
+  }
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+  .mobile-hidden {
+    display: flex;
+  }
+
+  .responsive-contents {
+    font-size: 18px;
+  }
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  .responsive-contents {
+    font-size: 12px;
+  }
+}
+
+.community_head {
+  width: 100%;
+  height: 15%;
+  background-color: yellow;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.community_contents {
+  display: flex;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_catagory>ul {
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.page_catagory li {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+
+}
