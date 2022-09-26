@@ -12,13 +12,6 @@ html, body {
     font-size: 10px;
 }
 
-footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-
 
 /* ----------- main ------------- */
 main {
@@ -72,3 +65,5 @@ main .newProductImage3,
 main .bestProductImage3 {
     grid-column: 8 / span 3;
 }
+
+

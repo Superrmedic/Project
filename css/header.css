@@ -1,12 +1,54 @@
+
 header .category {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+header .categoryWrap {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+header .category li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li a {
+    font-size: .7em;
 }
 
 header .category>li:nth-of-type(1) {
     grid-column: 4 / 5;
 }
 
-header .headerSearch {
+header .headerNavSearch {
     grid-column: 10 / -3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .headerNavLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .categoryTitle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+header .categoryList {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    top: 4em;
+    height: 120px;
 }
