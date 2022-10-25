@@ -10,6 +10,8 @@
 
 html, body {
     font-size: 10px;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 
@@ -18,8 +20,36 @@ main {
     background-color: #f6f6f6;
 }
 
-main .bannerImage img {
+main .imgContainer {
     width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+main .imgContainer img {
+    position: absolute;
+}
+
+main .slideContainer {
+    width: 100%;
+    height: 100%;
+}
+
+main li img {
+    width: 100vw;
+    height: 100%;
+}
+
+@media ( max-width: 1200px ) {
+    .imgContainer img {
+      width: auto;
+    }
+}
+
+/* --------------- 상품소개 --------------- */
+main .productContainer {
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 main .newProductImage,
@@ -28,11 +58,6 @@ main .bestProductImage {
     margin: 0 auto;
     grid-template-columns: repeat(11, 1fr);
     column-gap: 5px;
-}
-
-main .product {
-    margin: 0 auto;
-    max-width: 1200px;
 }
 
 main .productMent {
