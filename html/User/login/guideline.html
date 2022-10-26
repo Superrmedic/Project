@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./guideline.css">
+</head>
+
+<style>
+    @media (max-width: 650px) {
+        .main_content{
+            margin: 0;
+        }
+        
+        .main_content_main{
+            border: 0;
+
+        }
+
+        .content_login_box,
+        .content_join{
+            width: 100%;
+            padding: 0;
+        }
+}
+</style>
+
+<body>
+    <main>
+        <div class="main_content_container">
+            <div class="main_content">
+                <div class="main_content_header">
+                    <div class="main_header_logo"></div>
+                    
+                </div>
+                <div class="main_content_main">
+                    <div class="content_login_box">
+                        <form action="">
+                            <div class="content_ID_box">
+                                <label class="input_label" for="content_input_ID"></label>
+                                <input type="text" id="content_input_ID" class="content_input" name="login_ID" placeholder="아이디 입력" required>
+                            </div>
+
+                            <div class="content_PW_box">
+                                <label class="input_label" for="content_input_PW"></label>
+                                <input type="password" id="content_input_PW" class="content_input" name="login_PW" placeholder="비밀번호 입력" required>
+                            </div>
+
+                            <div class="content_maintain_box">
+                                <input type="checkbox" id="content_maintain_checkbox" class="check_maintain" name="login_main" value="true">
+                                <label class="maintain_check" for="content_maintain_checkbox" >
+                                    <span>로그인 상태 유지</span>
+                                </label>
+                            </div>
+
+                            <div class="content_btn">
+                                <button class="content_btn main_login" type="submit">로그인</button>
+                                <span class="line_or">
+                                    <span class="text_or">또는</span>
+                                </span>
+                                <button class="content_btn QR_login" type="button">QR코드로 로그인</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="content_join">
+                        <a class="link_join" href="join.html">회원가입</a>
+                        <ul class="find_list">
+                            <li>
+                                <a class="link_find_ID" href="find_ID.html">아이디 찾기</a>
+                            </li>
+                            <li>
+                                <a class="link_find_PW" href="find_PW.html">비밀번호 찾기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="main_content_footer">
+                    <ul class="content_footer_yakgwan">
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">개인정보 처리방침</a>
+                        </li>
+                        <li>
+                            <a href="">운영정책</a>
+                        </li>
+                        <li>
+                            <a href="">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="">공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
