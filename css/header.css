@@ -1,15 +1,20 @@
-
-header .category {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    cursor: pointer;
-    font-size: 2rem;
+header {
+    font-weight: bold;
 }
 
 header .categoryWrap {
     text-align: center;
     font-size: 1.5em;
 }
+
+header .category {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    cursor: pointer;
+    font-size: 2rem;
+    height: 150px;
+}
+
 
 header .category li {
     display: flex;
@@ -43,12 +48,23 @@ header .categoryTitle {
     display: flex;
     flex-direction: column;
     z-index: 1;
+    height: 150px;
 }
 
 header .categoryList {
     position: absolute;
     flex-direction: column;
     width: 100%;
-    top: 4em;
+    top: 100%;
     height: 120px;
+    display: none;
+}
+
+header .categoryList li {
+    height: 30px;
+}
+
+header .categoryList a {
+    font-size: 1em;
+    font-weight: normal;
 }
