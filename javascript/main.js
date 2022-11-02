@@ -6,12 +6,3 @@ const mainContainer = document.querySelector('.mainContainer'),
     img = mainContainer.querySelectorAll('img');
 
 
-    //현재 슬라이드 인덱스
-let idx = 0,
-    // 슬라이드 인덱스 종료값.
-    imgEndIdx = imgLi.length-1;
-
-
-    //무한 슬라이드
-setInterval(function () {
-}, 3000);
