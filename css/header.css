@@ -2,8 +2,10 @@ header {
     font-size: 2em;
     position: relative;
     width:100%;
-    height:150px;
+    height:100px;
     letter-spacing: 1px;
+    top: 4%;
+    background: none;
 }
 
 strong {
@@ -11,8 +13,9 @@ strong {
     cursor: pointer;
 }
 
+/* header 내 카테고리 제목 */
 .categoryContainer {
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -20,51 +23,95 @@ strong {
     height: 100%;
 }
 
-.subContainer {
-    background-color: yellowgreen;
+/* 위와 동일한 역할의 박스. 세부적 역할을 위해 나뉘어 놓음*/
+.subContainer1,
+.subContainer2 {
+    /* background-color: yellow; */
     display: flex;
     position: absolute;
     gap: 20px;
-    top: 20%;
+    z-index: 1;
 }
 
-.subContainer a {
+/* SHOP, BEST, EVENT, COMMUNITY 카테고리들 */
+.subContainer1 {
+    width: 100%;
+    justify-content: center;
+    gap: 10%;
+}
+
+/* 큰 카테고리들 a 태그 */
+.subContainer1 a,
+.subContainer2 a {
     color: rgb(83, 121, 122);
     font-size: .8em;
 }
 
+/* header에서 SHOP, BEST, EVENT, COMMUNITY 와 우측 검색항목 개별로 묶은 박스  */
 .category {
     text-align: center;
 }
 
-.subList {
-    background-color: skyblue;
-}
-
-
-.list2 {
+/* BEST */
+.list2 strong {
     color: orange;
 }
 
-.subContainer:nth-of-type(2) {
-    border: 1px solid black;
-    right: 1%;
+/* -------------------------마우스 호버했을 때 나오는 리스트들 ---------------------*/
+.categoryHover {
+    top: 10%;
+    visibility: hidden;
 }
 
+.categoryHover li {
+    margin: 5px;
+}
+
+.categoryHover li:hover {
+    text-decoration: underline;
+    opacity: .8;
+}
+
+.subContainer1:hover .categoryHover {
+    visibility: visible;
+}
+
+.subContainer1:hover {
+    background-color: white;
+    height: 250px;
+    transition: .3s ease-in-out;
+}
+
+.SubContainer1:not(:hover) {
+    transition: .3s ease-in-out;
+    opacity: .3;
+}
+
+
+
+/* ------------------ 우측 검색 항목-------------------------------------------- */
+
+
+/* 검색, 카트, 로그인, 회원가입, 마이페이지 박스 */
+.subContainer2 {
+    border: 1px solid black;
+    right: 0%;
+    top: 0;
+}
+
+/* 검색, 카트, 로그인, 회원가입, 마이페이지 리스트 */
 .list5 {
     background-color: pink;
     display: flex;
     height: 30px;
     gap: 5px;
-    /* align-items: center; */
 }
 
 .list5 a {
     color: rgb(83, 121, 122);
     font-size: .6em;
-
 }
 
 img {
-    visibility: hidden;
+    /* visibility: hidden; */
 }

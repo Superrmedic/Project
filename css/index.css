@@ -6,6 +6,7 @@
     list-style-type: none;
     color: black;
     text-decoration: none;
+    font-family: 'SpoqaHanSans','Helvetica','Arial','애플SD 고딕네오','Apple SD Gothic Neo','맑은 고딕','Malgun Gothic','돋움','Dotum',sans-serif;
 }
 
 html, body {
@@ -20,83 +21,84 @@ main {
     background-color: #f6f6f6;
 }
 
-main .imgContainer {
+.imgContainer {
     width: 100%;
     height: 80vh;
     position: relative;
 }
 
-main .imgContainer img {
+.imgContainer img {
     position: absolute;
 }
 
-main .slideContainer {
+.slideContainer {
+    display: flex;
     width: 100%;
     height: 100%;
 }
 
-main li img {
+li img {
     width: 100vw;
     height: 100%;
 }
 
 @media ( max-width: 1200px ) {
     .imgContainer img {
-      width: auto;
+    width: auto;
     }
 }
 
 /* --------------- 상품소개 --------------- */
-main .productContainer {
+.productContainer {
     margin: 0 auto;
     max-width: 1200px;
 }
 
-main .newProductImage,
-main .bestProductImage {
+.newProductImage,
+.bestProductImage {
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(11, 1fr);
     column-gap: 5px;
 }
 
-main .productMent {
+.productMent {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(11, 1fr);
 }
 
-main .productMent h1 {
+.productMent h1 {
     grid-column: 6 / -1;
     grid-row: 2 / 3; 
     font-weight: bold;
     font-size: 3em;
 }
 
-main article img {
+article img {
     width: 100%;
 }
 
-main .newProductImage1,
-main .bestProductImage1,
-main .bestProductImage5 {
+.newProductImage1,
+.bestProductImage1,
+.bestProductImage5 {
     grid-column: 1 / span 2;
 }
 
-main .newProductImage2,
-main .bestProductImage2,
-main .bestProductImage6 {
+.newProductImage2,
+.bestProductImage2,
+.bestProductImage6 {
     grid-column: 4 / span 2;
 }
 
-main .newProductImage3,
-main .bestProductImage3,
-main .bestProductImage7 {
+.newProductImage3,
+.bestProductImage3,
+.bestProductImage7 {
     grid-column: 7 / span 2;
 }
 
-main .newProductImage4,
-main .bestProductImage4,
-main .bestProductImage8 {
+.newProductImage4,
+.bestProductImage4,
+.bestProductImage8 {
     grid-column: 10 / span 2;
 }
 
