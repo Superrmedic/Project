@@ -79,8 +79,6 @@ article {
 }
 
 .wriet_space {
-  /* display: inline-block; */
-  width: 100%;
   margin-left: 100px;
 }
 
@@ -133,6 +131,7 @@ option {
 
 .button a {
   border: 1px solid black;
+  border-radius: 10px;
   text-decoration: none;
   padding: 7px;
 }
