@@ -13,7 +13,6 @@ footer {
   margin: auto;
 }
 
-
 @font-face {
   font-family: 'S-CoreDream-3Light';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
@@ -23,6 +22,12 @@ footer {
 
 body {
   font-family: S-CoreDream-3Light;
+}
+
+article {
+  margin: 50px 0px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .community_head {
@@ -55,10 +60,6 @@ body {
 }
 
 .page_catagory li a {
-  text-decoration: none;
-}
-
-.page_catagory li a {
   color: black;
   text-decoration: none;
   text-align: center;
@@ -72,81 +73,62 @@ body {
   background-color: yellow;
 }
 
-article {
-  margin: 50px 0px 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.write {
-  text-align: right;
-  margin-top: 20px;
-  margin-right: 185px;
-}
-
-.write a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  background-color: #477A7B;
-  border-radius: 10px;
-}
-
-.write a:hover {
-  color: black;
-  font-weight: bold;
-}
-
-tbody td a {
-  text-decoration: none;
-  color: black;
-}
-
-main .board_table {
-  width: 60vw;
-  border-top: 3px solid #bbbbbb;
-  cursor: pointer;
-  text-align: center;
-  border-collapse: collapse;
-}
-
-main .board_table th {
-  border-bottom: 1px solid #bbbbbb;
-  line-height: 5vh;
-}
-
-main .board_table td {
-  padding: 20px 0px 20px 0px;
-  border-bottom: 1px solid rgb(244, 244, 244);
-}
-
-main .board_table p {
-  background-color: #ff798c;
-  color: white;
-  width: 50px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  border-radius: 20px;
-  display: inline-block;
-}
-
-.page {
+.menucategory ul {
   display: flex;
   flex-direction: row;
-  margin: 40px;
+  gap: 40px;
   justify-content: center;
-  gap: 20px;
 }
 
-.page a {
-  text-decoration: none;
+.menucategory ul li a {
   color: black;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.menucategory ul li:hover {
+  font-weight: bold;
+  border-bottom: solid 1px black;
+  box-sizing: border-box;
+}
+
+/* ============================================= */
+
+.notice p {
+  color: #333;
+}
+
+.notice {
+  margin: 60px auto;
+  font-size: 14px;
+  width: 70em;
+}
+
+.service_container {
+  position: relative;
+  width: 50%;
+}
+
+.service_header {
+  font-size: 18px;
+  line-height: 50px;
+  background: #97a8869c;
+  border-bottom: 1px solid #542437;
+  color: #542437;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.service_body {
+  padding: 10px;
+  font-size: 15px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  transition: all .5s;
+}
+
+.hidden .service_body {
+  display: none;
 }

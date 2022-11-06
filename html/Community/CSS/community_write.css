@@ -78,75 +78,71 @@ article {
   flex-direction: column;
 }
 
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+.wriet_space {
+  /* display: inline-block; */
+  width: 100%;
+  margin-left: 100px;
 }
 
-.write {
-  text-align: right;
-  margin-top: 20px;
-  margin-right: 185px;
-}
 
-.write a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  background-color: #477A7B;
-  border-radius: 10px;
-}
-
-.write a:hover {
-  color: black;
-  font-weight: bold;
-}
-
-tbody td a {
-  text-decoration: none;
-  color: black;
-}
-
-main .board_table {
-  width: 60vw;
-  border-top: 3px solid #bbbbbb;
-  cursor: pointer;
-  text-align: center;
-  border-collapse: collapse;
-}
-
-main .board_table th {
-  border-bottom: 1px solid #bbbbbb;
-  line-height: 5vh;
-}
-
-main .board_table td {
-  padding: 20px 0px 20px 0px;
-  border-bottom: 1px solid rgb(244, 244, 244);
-}
-
-main .board_table p {
-  background-color: #ff798c;
-  color: white;
-  width: 50px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  border-radius: 20px;
+th {
   display: inline-block;
+  margin-right: 30px;
+  line-height: 40px;
 }
 
-.page {
-  display: flex;
-  flex-direction: row;
-  margin: 40px;
-  justify-content: center;
-  gap: 20px;
+textarea {
+  resize: none;
+  width: 100%;
+  margin-top: 5px;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: S-CoreDream-3Light;
 }
 
-.page a {
+select {
+  padding: 0 10px;
+  color: #477A7B;
+  border: 0;
+  width: 800px;
+  background-color: #dfe9e8;
+  min-height: 40px;
+  outline: none;
+}
+
+.password {
+  outline: none;
+  background-color: #dfe9e8;
+  padding: 6px;
+  border: none;
+
+}
+
+option {
+  padding: 10px;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 100%;
+  text-align: right;
+}
+
+.button a {
+  border: 1px solid black;
   text-decoration: none;
-  color: black;
+  padding: 7px;
+}
+
+.button .list {
+  background-color: white;
+  color: #477A7B;
+}
+
+.button .confirm {
+  background-color: #477A7B;
+  color: white;
 }
