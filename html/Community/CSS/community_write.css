@@ -78,10 +78,9 @@ article {
   flex-direction: column;
 }
 
-.wriet_space {
+.write_space {
   margin-left: 100px;
 }
-
 
 th {
   display: inline-block;
