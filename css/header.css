@@ -15,10 +15,10 @@ strong {
 
 /* header 내 카테고리 제목 */
 .categoryContainer {
-    /* background-color: yellow; */
     display: flex;
     justify-content: center;
-    position: relative;
+    position: sticky;
+    top: 0;
     width: 100%;
     height: 100%;
 }
@@ -61,6 +61,7 @@ strong {
 .categoryHover {
     top: 10%;
     visibility: hidden;
+    opacity: 0;
 }
 
 .categoryHover li {
@@ -69,11 +70,13 @@ strong {
 
 .categoryHover li:hover {
     text-decoration: underline;
-    opacity: .8;
+    transition: all 1s;
 }
 
 .subContainer1:hover .categoryHover {
     visibility: visible;
+    opacity: 1;
+    transition: all 1s;
 }
 
 .subContainer1:hover {
@@ -82,10 +85,9 @@ strong {
     transition: .3s ease-in-out;
 }
 
-.SubContainer1:not(:hover) {
+/* .SubContainer1:not(:hover) {
     transition: .3s ease-in-out;
-    opacity: .3;
-}
+} */
 
 
 
