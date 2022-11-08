@@ -79,69 +79,22 @@ article {
   flex-direction: column;
 }
 
-.write_space {
-  margin: auto;
-}
-
-th {
-  display: inline-block;
-  margin-right: 30px;
-  line-height: 40px;
-}
-
-textarea {
-  resize: none;
-  width: 100%;
-  margin-top: 5px;
-  outline: none;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: S-CoreDream-3Light;
-}
-
-select {
-  padding: 0 10px;
-  color: #477A7B;
-  border: 0;
-  width: 800px;
-  background-color: #dfe9e8;
-  min-height: 40px;
-  outline: none;
-}
-
-.password {
-  outline: none;
-  background-color: #dfe9e8;
-  padding: 6px;
-  border: none;
-
-}
-
-option {
-  padding: 10px;
-}
-
-.button {
-  margin-top: 10px;
-  padding: 10px 0;
-  width: 100%;
-  text-align: right;
-}
-
-.button a {
-  border: 1px solid black;
-  border-radius: 10px;
-  text-decoration: none;
-  padding: 7px;
-}
-
-.button .list {
-  background-color: white;
+.pageTitle {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
   color: #477A7B;
 }
 
-.button .confirm {
-  background-color: #477A7B;
-  color: white;
+.date_created {
+  text-align: center;
+  color: #477A7B;
+  padding-bottom: 40px;
+  margin: 30px 0px 30px;
+  border-bottom: 1px solid #477A7B;
+}
+
+.detail {
+  word-wrap: break-word;
+  margin-left: 200px;
 }

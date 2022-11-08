@@ -80,7 +80,12 @@ article {
 }
 
 .write_space {
-  margin-left: 100px;
+  margin: auto;
+}
+
+.review_title {
+  padding: 6px;
+  width: 500px;
 }
 
 th {
@@ -88,6 +93,7 @@ th {
   margin-right: 30px;
   line-height: 40px;
 }
+
 
 textarea {
   resize: none;

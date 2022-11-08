@@ -116,6 +116,11 @@ main .board_table td {
   border-bottom: 1px solid rgb(244, 244, 244);
 }
 
+main .board_table td a {
+  text-decoration: none;
+  color: black;
+}
+
 main .board_table p {
   background-color: #ff798c;
   color: white;
