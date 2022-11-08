@@ -26,7 +26,7 @@ body {
 }
 
 .community_head {
-  background-color: antiquewhite;
+  background-color: rgb(223, 233, 232);
   font-weight: bolder;
   font-size: 2em;
 }
@@ -69,7 +69,8 @@ body {
 }
 
 .page_catagory li a:hover {
-  background-color: yellow;
+  background-color: #477A7B;
+  color: white;
 }
 
 article {
@@ -97,6 +98,7 @@ aside {
   padding: 10px;
   background-color: #477A7B;
   border-radius: 10px;
+  font-weight: bold;
 }
 
 .write a:hover {
