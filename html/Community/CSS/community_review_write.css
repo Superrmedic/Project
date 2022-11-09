@@ -85,7 +85,8 @@ article {
 
 .review_title {
   padding: 6px;
-  width: 500px;
+  outline: none;
+  width: 800px;
 }
 
 th {
