@@ -1,4 +1,4 @@
-header {
+#header {
     background-color: yellow;
     font-size: 2em;
     position: fixed;
@@ -60,6 +60,7 @@ strong {
 
 .subList {
     line-height: 100px;
+    margin-bottom: -10px;
 }
 
 /* -------------------------마우스 호버했을 때 나오는 리스트들 ---------------------*/
@@ -75,7 +76,6 @@ strong {
 
 .categoryHover li:hover {
     text-decoration: underline;
-    transition: all 1s;
 }
 
 .subContainer1:hover .categoryHover {
@@ -85,7 +85,7 @@ strong {
 }
 
 .subContainer1:hover {
-    background-color: white;
+    background-color: rgb(255, 255, 255, .95);
     height: 350px;
     transition: .3s ease-in-out;
 }
