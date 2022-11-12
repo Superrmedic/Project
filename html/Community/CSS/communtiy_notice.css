@@ -20,6 +20,26 @@ footer {
   font-style: normal;
 }
 
+@media screen and (max-width: 1024px) {
+  .disappear {
+    display: none;
+  }
+
+  .page_catagory ul {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .disappear2 {
+    display: none;
+  }
+
+  .page_catagory li a {
+    font-size: 12px;
+  }
+}
+
 body {
   font-family: S-CoreDream-3Light;
 }
@@ -63,10 +83,6 @@ aside {
   display: flex;
   width: 10%;
   justify-content: center;
-}
-
-.page_catagory li a {
-  text-decoration: none;
 }
 
 .page_catagory li a {

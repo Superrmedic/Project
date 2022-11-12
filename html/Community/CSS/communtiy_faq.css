@@ -20,6 +20,22 @@ footer {
   font-style: normal;
 }
 
+@media screen and (max-width: 1024px) {
+  .board_list {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .disappear2 {
+    display: none;
+  }
+
+  .page_catagory li a {
+    font-size: 12px;
+  }
+}
+
 body {
   font-family: S-CoreDream-3Light;
 }
@@ -77,28 +93,30 @@ article {
 .menucategory ul {
   display: flex;
   flex-direction: row;
-  gap: 40px;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.menucategory ul li {
+  border-bottom: solid 1px white;
+  flex-basis: 100px;
+  text-align: center;
+
+}
+
+.menucategory ul li:hover {
+  font-weight: bold;
+  box-sizing: border-box;
+  border-bottom: solid 1px black;
 }
 
 .menucategory ul li a {
   color: black;
   padding: 10px;
-  box-sizing: border-box;
+  text-align: center;
   line-height: 50px;
   text-decoration: none;
 }
 
-.menucategory ul li:hover {
-  font-weight: bold;
-  border-bottom: solid 1px black;
-  box-sizing: border-box;
-}
-
-.menucategory ul li:hover .menucategory ul li a {
-  padding: 9px;
-
-}
 
 /* ============================================= */
 
