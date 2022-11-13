@@ -21,6 +21,26 @@ footer {
   font-style: normal;
 }
 
+@media screen and (max-width: 1024px) {
+  .page_catagory ul {
+    gap: 10px;
+  }
+
+  .disappear {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page_catagory li a {
+    font-size: 12px;
+  }
+
+  .disappear2 {
+    display: none;
+  }
+}
+
 body {
   font-family: S-CoreDream-3Light;
 }
@@ -65,7 +85,7 @@ body {
   width: 100px;
   line-height: 40px;
   border-radius: 30px;
-  background-color: aqua;
+  background-color: white;
 }
 
 .page_catagory li a:hover {
@@ -84,26 +104,6 @@ aside {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-
-.write {
-  text-align: right;
-  margin-top: 20px;
-  margin-right: 185px;
-}
-
-.write a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  background-color: #477A7B;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.write a:hover {
-  color: black;
-  font-weight: bold;
 }
 
 tbody td a {
@@ -143,6 +143,25 @@ main .board_table p {
   text-align: center;
   border-radius: 20px;
   display: inline-block;
+}
+
+.write {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.write a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  background-color: #477A7B;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.write a:hover {
+  color: white;
+  font-weight: bold;
 }
 
 .page {

@@ -21,6 +21,18 @@ footer {
   font-style: normal;
 }
 
+@media screen and (max-width: 1024px) {
+  .page_catagory ul {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page_catagory li a {
+    font-size: 12px;
+  }
+}
+
 body {
   font-family: S-CoreDream-3Light;
 }
@@ -65,7 +77,7 @@ body {
   width: 100px;
   line-height: 40px;
   border-radius: 30px;
-  background-color: aqua;
+  background-color: white;
 }
 
 .page_catagory li a:hover {
@@ -96,5 +108,5 @@ article {
 
 .detail {
   word-wrap: break-word;
-  margin-left: 200px;
+  margin: 0 auto;
 }

@@ -5,10 +5,8 @@
   scroll-behavior: smooth;
 }
 
-header,
 nav,
-main,
-footer {
+main{
   width: 80%;
   margin: auto;
 }
@@ -21,18 +19,22 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-  .board_list {
+  .page_catagory ul {
     gap: 10px;
+  }
+
+  .notic {
+    margin: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .disappear2 {
-    display: none;
-  }
-
   .page_catagory li a {
     font-size: 12px;
+  }
+
+  .menucategory ul li {
+    font-size: 14px;
   }
 }
 
@@ -41,7 +43,7 @@ body {
 }
 
 article {
-  margin: 50px 0px 30px;
+  margin: 100px 0px 30px;
   display: flex;
   flex-direction: column;
 }
@@ -82,7 +84,7 @@ article {
   width: 100px;
   line-height: 40px;
   border-radius: 30px;
-  background-color: aqua;
+  background-color: white;
 }
 
 .page_catagory li a:hover {
