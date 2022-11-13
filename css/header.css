@@ -15,6 +15,29 @@ strong {
     cursor: pointer;
 }
 
+/* ====================================================== */
+
+/* 탑버튼 */
+.toTop {
+    background: url(../image/toTop.png) 0/100%;
+    opacity: .7;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 3%;
+    top: 90%;
+}
+
+.toTop:hover {
+    opacity: 1;
+}
+.hidden {
+    display: none;
+}
+
+/* ====================================================== */
+
+
 /* header 내 카테고리 제목 */
 .categoryContainer {
     display: flex;
@@ -39,6 +62,12 @@ strong {
     width: 100%;
     justify-content: center;
     gap: 10%;
+    height: 50px;
+    /* line-height: 50px; */
+}
+
+.subContainer1 ul {
+    line-height: 80px;
 }
 
 /* 큰 카테고리들 a 태그 */
@@ -72,6 +101,7 @@ strong {
 
 .categoryHover li {
     margin: 5px;
+    line-height: 100%;
 }
 
 .categoryHover li:hover {
@@ -86,11 +116,9 @@ strong {
 
 .subContainer1:hover {
     background-color: rgb(255, 255, 255, .95);
-    height: 350px;
+    height: 260px;
     transition: .3s ease-in-out;
 }
-
-
 
 /* ------------------ 우측 검색 항목-------------------------------------------- */
 
@@ -106,7 +134,7 @@ strong {
     /* background-color: pink; */
     display: flex;
     gap: 10px;
-    line-height: 90px;
+    line-height: 75px;
 }
 
 .list5>li>a:hover {

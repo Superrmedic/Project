@@ -7,44 +7,231 @@
     color: black;
     text-decoration: none;
     font-family: 'fot-tsukuardgothic-std','Helvetica','Arial','HGGGothicssi','Apple SD Gothic Neo','맑은 고딕','Malgun Gothic','돋움','Dotum',sans-serif;
+    text-align: center;
 }
 
 html, body {
     font-size: 10px;
     height: 100vh;
-    overflow-x: hidden;
 }
 
 /* -------------------------- 메인 컨테이너---------------------------------- */
-#container {
+
+/* 헤더 영역 포함 / Footer 제외 컨테이너 */
+#wrap {
+    position: relative;
+    overflow: hidden;
     width: 100%;
+    padding: 180px 0 0;
     margin: 0 auto;
 }
 
-
-.pageTop {
-    background-color: pink;
+/* 컨텐츠박스 감싸는 컨테이너 */
+#container {
     width: 100%;
-    height: 120px;
+    margin: 0 auto;
+    padding: 0;
+    *zoom: 1;
+    overflow: hidden;
+    min-height: 700px;
+    background: #fff;
+}
+
+/* 헤더를 제외한 모든 내용을 포함한 박스 */
+.contents {
+    margin: auto;
+    width: 100%;
     position: relative;
 }
 
-/* SHOP */
-.pageTitle {
-    background-color: yellowgreen;
+/* 큰 제목 감싸는 박스 */
+.pageTitleWrap {
     position: relative;
-    text-align: center;
+    width: 100%;
+    padding: 0 0 0;
+    margin: 0 0;
+    background: #dfe9e8;
+}
+
+.white {
+    background: #fff;
+}
+
+
+/* 큰 제목 */
+.pageTitle {
+    /* background-color: yellowgreen; */
+    position: relative;
+    display: block;
+    /* text-align: center; */
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: -0.02em;
     color: #477A7B;
     margin: 0 0 30px;
+    padding: 0 10px;
     line-height: 1.2em;
 }
 
-.pageList {
-    background-color: tomato;
-    display: flex;
-    justify-content: center;
+/* 제목 아래 세부 카테고리 */
+.pageNav {
+    position: relative;
+    margin: 0 auto 30px;
+    padding: 10px 0;
 }
+
+/* 세부 품목들 */
+.pageList {
+    margin: 0 auto;
+    padding: 0 10px;
+    /* background-color: tomato; */
+    font-size: 0;
+}
+
+.pageList li {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.pageList li a {
+    position: relative;
+    display: block;
+    margin: 0 5px;
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    background: #f3f3f3;
+    color: #477A7B;
+    border-radius: 50px;
+}
+
+.pageNav ul li.active a {
+    background: #477A7B;
+    color: #fff;
+}
+
+.pageNav ul li:hover a {
+    background: #477A7B;
+    color: #fff;
+    transition: all .2s ease-out;
+}
+
+
+/* 상품 정렬 체크박스 */
+.sort {
+    font-size: 13px;
+    line-height: 40px;
+}
+
+.sortWrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sort select {
+    padding: 0 10px;
+    color: #477A7B;
+    border: none;
+    background-color: #dfe9e8;
+    width: 120px;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.sort option {
+    color: #477A7B;
+    font-weight: normal;
+    text-align: center;
+    border: none;
+}
+
+.sort select:focus {
+    outline: none;
+}
+
+/* ----------- main ------------- */
+/* main {
+    overflow: hidden;
+} */
+
+@media ( max-width: 1200px ) {
+    .imgContainer img {
+    width: auto;
+    }
+}
+
+/* --------------- 상품소개 --------------- */
+.productContainer {
+    margin: 0 auto;
+    /* max-width: 1200px; */
+}
+
+.productContainer img {
+    width: 100%;
+}
+
+/* section img:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+} */
+
+.product {
+    margin-top: 150px;
+}
+
+.productImgList {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+}
+
+.productImg1,
+.productImg5,
+.productImg {
+    grid-column: 1 / span 2;
+    position: relative;
+}
+
+.productImg2,
+.productImg6,
+.productImg10 {
+    grid-column: 3 / span 2;
+    position: relative;
+}
+
+.productImg3,
+.productImg7,
+.productImg11 {
+    grid-column: 5 / span 2;
+    position: relative;
+}
+
+.productImg4,
+.productImg8,
+.productImg12 {
+    grid-column: 7 / span 2;
+    position: relative;
+}
+
+
+.productImgList .img1 {
+    position: relative;
+}
+
+.productImgList .img1 img {
+    position: relative;
+    z-index: 1;
+}
+
+.productImgList .img2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

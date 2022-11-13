@@ -4,21 +4,46 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     list-style-type: none;
-    color: black;
+    /* color: rgb(83, 121, 122); */
     text-decoration: none;
     font-family: 'SpoqaHanSans','Helvetica','Arial','애플SD 고딕네오','Apple SD Gothic Neo','맑은 고딕','Malgun Gothic','돋움','Dotum',sans-serif;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
 }
 
 html, body {
     font-size: 10px;
     height: 100vh;
-    overflow-x: hidden;
 }
-
 
 /* ----------- main ------------- */
 main {
     background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+/* 이미지 슬라이드 버튼 */
+.button {
+    width: 30px;
+    /* height: 30px; */
+    border: none;
+    background: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    top: 40%;
+}
+
+.previousBtn {
+    left: 100px;
+    position: absolute;
+}
+
+.nextBtn {
+    right: 100px;
+    position: absolute;
 }
 
 .imgContainer {
@@ -37,8 +62,8 @@ main {
     height: 100%;
 }
 
+
 li img {
-    width: 100vw;
     height: 100%;
     left: 0;
 }
@@ -55,12 +80,14 @@ li img {
     max-width: 1200px;
 }
 
-.newProductImage,
-.bestProductImage {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(11, 1fr);
-    column-gap: 5px;
+.productContainer a {
+    font-size: 14px;
+    color: #4c4c4c;
+    font-weight: bold;
+}
+
+.productContainer img {
+    width: 100%;
 }
 
 .productMent {
@@ -73,45 +100,66 @@ li img {
     grid-row: 2 / 3; 
     font-weight: bold;
     font-size: 3em;
+    color: rgb(83, 121, 122);
 }
 
-article img {
-    width: 100%;
+/* section img:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+} */
+
+.productImgList {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(11, 1fr);
+    column-gap: 5px;
 }
 
-.newProductImage1,
-.bestProductImage1,
-.bestProductImage5 {
+.productImgList .name {
+    font-size: 14px;
+    color: #4c4c4c;
+    font-weight: bold;
+}
+
+.productImg1,
+.productImg5,
+.productImg9 {
     grid-column: 1 / span 2;
+    position: relative;
 }
 
-.newProductImage2,
-.bestProductImage2,
-.bestProductImage6 {
+.productImg2,
+.productImg6,
+.productImg10 {
     grid-column: 4 / span 2;
+    position: relative;
 }
 
-.newProductImage3,
-.bestProductImage3,
-.bestProductImage7 {
+.productImg3,
+.productImg7,
+.productImg11 {
     grid-column: 7 / span 2;
+    position: relative;
 }
 
-.newProductImage4,
-.bestProductImage4,
-.bestProductImage8 {
+.productImg4,
+.productImg8,
+.productImg12 {
     grid-column: 10 / span 2;
+    position: relative;
 }
 
-/* -------------------------------------------- */
+.productImgList .img1 {
+    position: relative;
+}
 
-.toTop {
+.productImgList .img1 img {
+    position: relative;
+    z-index: 1;
+}
+
+.productImgList .img2 img {
     position: absolute;
-    right: 3%;
-    bottom: 3%;
-}
-
-.toTop img {
-    width: 50px;
-    height: 50px;
+    top: 0;
+    left: 0;
 }
