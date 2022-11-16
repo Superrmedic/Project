@@ -35,8 +35,22 @@ footer {
     display: none;
   }
 
+
+  .page_catagory li{
+    padding: 10px;
+  }
+
   .page_catagory li a {
     font-size: 12px;
+  }
+
+  .detail {
+    /* 폰트 때문에 중간에 가있음 */
+    width: 135px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -128,7 +142,7 @@ main .board_table th {
 }
 
 main .board_table td {
-  padding: 20px 0px 20px 0px;
+  padding: 10px 0px 10px 0px;
   border-bottom: 1px solid rgb(244, 244, 244);
 }
 
@@ -138,7 +152,7 @@ main .board_table td a {
 }
 
 main .board_table p {
-  background-color: #ff798c;
+  background-color: #477A7B;
   color: white;
   width: 50px;
   height: 25px;
@@ -147,6 +161,8 @@ main .board_table p {
   border-radius: 20px;
   display: inline-block;
 }
+
+
 
 /* --------------------  버튼  -------------------------  */
 

@@ -6,7 +6,7 @@
 }
 
 nav,
-main{
+main {
   width: 80%;
   margin: auto;
 }
@@ -96,13 +96,15 @@ article {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto;
+
 }
 
 .menucategory ul li {
   border-bottom: solid 1px white;
   flex-basis: 100px;
   text-align: center;
-
 }
 
 .menucategory ul li:hover {

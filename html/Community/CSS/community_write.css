@@ -165,6 +165,10 @@ option {
 }
 
 .button .confirm {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 7px;
   background-color: #477A7B;
   color: white;
 }
