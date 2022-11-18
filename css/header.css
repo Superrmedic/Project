@@ -1,158 +1,155 @@
 #header {
-    background-color: yellow;
-    font-size: 2em;
-    position: fixed;
-    width:100%;
-    height:100px;
-    letter-spacing: 1px;
-    top: 0;
-    background: none;
-    z-index: 1;
+  background-color: yellow;
+  font-size: 2em;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  letter-spacing: 1px;
+  top: 0;
+  background: none;
+  z-index: 2;
 }
 
 strong {
-    color: rgb(83, 121, 122);
-    cursor: pointer;
+  color: rgb(83, 121, 122);
+  cursor: pointer;
 }
 
 /* ====================================================== */
 
 /* 탑버튼 */
 .toTop {
-    background: url(../image/toTop.png) 0/100%;
-    opacity: .7;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    right: 3%;
-    top: 90%;
+  background: url(../image/toTop.png) 0/100%;
+  opacity: 0.7;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 3%;
+  top: 90%;
 }
 
 .toTop:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* ====================================================== */
 
-
 /* header 내 카테고리 제목 */
 .categoryContainer {
-    display: flex;
-    justify-content: center;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* 위와 동일한 역할의 박스. 세부적 역할을 위해 나뉘어 놓음*/
 .subContainer1,
 .subContainer2 {
-    /* background-color: yellow; */
-    display: flex;
-    position: absolute;
-    gap: 20px;
-    z-index: 1;
+  /* background-color: yellow; */
+  display: flex;
+  position: absolute;
+  gap: 20px;
 }
 
 /* SHOP, BEST, EVENT, COMMUNITY 카테고리들 */
 .subContainer1 {
-    width: 100%;
-    justify-content: center;
-    gap: 10%;
-    height: 50px;
-    /* line-height: 50px; */
+  width: 100%;
+  justify-content: center;
+  gap: 10%;
+  height: 50px;
+  /* line-height: 50px; */
 }
 
 .subContainer1 ul {
-    line-height: 80px;
+  line-height: 80px;
 }
 
 /* 큰 카테고리들 a 태그 */
 .subContainer1 a,
 .subContainer2 a {
-    color: rgb(83, 121, 122);
-    font-size: .8em;
+  color: rgb(83, 121, 122);
+  font-size: 0.8em;
 }
 
 /* header에서 SHOP, BEST, EVENT, COMMUNITY 와 우측 검색항목 개별로 묶은 박스  */
 .category {
-    text-align: center;
+  text-align: center;
 }
 
 /* BEST */
 .list2 strong {
-    color: orange;
+  color: orange;
 }
 
 .subList {
-    line-height: 100px;
-    margin-bottom: -10px;
+  line-height: 100px;
+  margin-bottom: -10px;
 }
 
 /* -------------------------마우스 호버했을 때 나오는 리스트들 ---------------------*/
 .categoryHover {
-    top: 10%;
-    visibility: hidden;
-    opacity: 0;
+  top: 10%;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .categoryHover li {
-    margin: 5px;
-    line-height: 100%;
+  margin: 10px;
+  line-height: 100%;
 }
 
-.categoryHover li:hover {
-    text-decoration: underline;
+.categoryHover li:hover a {
+  color: orange;
 }
 
 .subContainer1:hover .categoryHover {
-    visibility: visible;
-    opacity: 1;
-    transition: all 1s;
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
 }
 
 .subContainer1:hover {
-    background-color: rgb(255, 255, 255, .95);
-    height: 260px;
-    transition: .3s ease-in-out;
+  background-color: rgb(255, 255, 255, 0.95);
+  height: 300px;
+  transition: 0.3s ease-in-out;
 }
 
 /* ------------------ 우측 검색 항목-------------------------------------------- */
 
-
 /* 검색, 카트, 로그인, 회원가입, 마이페이지 박스 */
 .subContainer2 {
-    right: 1%;
-    top: 0;
+  right: 1%;
+  top: 0;
 }
 
 /* 검색, 카트, 로그인, 회원가입, 마이페이지 리스트 */
 .list5 {
-    /* background-color: pink; */
-    display: flex;
-    gap: 10px;
-    line-height: 75px;
+  /* background-color: pink; */
+  display: flex;
+  gap: 10px;
+  line-height: 75px;
 }
 
-.list5>li>a:hover {
-    opacity: .5;
-    transition: all .3s;
+.list5 > li > a:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
 }
 
 .list5 a {
-    color: rgb(83, 121, 122);
-    font-size: .6em;
+  color: rgb(83, 121, 122);
+  font-size: 0.6em;
 }
 
 img {
-    /* visibility: hidden; */
+  /* visibility: hidden; */
 }
 
-@media ( max-width: 1265px ) {
-    .list5 {
-        flex-direction: column;
-    }
+@media (max-width: 1265px) {
+  .list5 {
+    flex-direction: column;
+  }
 }

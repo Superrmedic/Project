@@ -1,10 +1,20 @@
 footer {
-    margin: 0 auto;
-    padding: 3% 3% 1% 3%;
-    font-size: 1.1em;
-    background-color: #efedea;
+  margin: 0 auto;
+  padding: 3% 3% 1% 3%;
+  font-size: 1.1em;
+  background-color: #efedea;
 }
 
 pre {
-    color: rgb(91, 89, 89);
+  color: rgb(91, 89, 89);
+  font-family: "GimpoGothicRegular00";
+  margin-left: 25em;
+}
+
+@font-face {
+  font-family: "GimpoGothicRegular00";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

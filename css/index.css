@@ -1,106 +1,132 @@
 * {
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    list-style-type: none;
-    /* color: rgb(83, 121, 122); */
-    text-decoration: none;
-    font-family: 'SpoqaHanSans','Helvetica','Arial','애플SD 고딕네오','Apple SD Gothic Neo','맑은 고딕','Malgun Gothic','돋움','Dotum',sans-serif;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style-type: none;
+  /* color: rgb(83, 121, 122); */
+  text-decoration: none;
+  /* font-family: "Nanum Gothic", sans-serif; */
+  /* font-family: "IBMPlexSansKR-Regular"; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-html, body {
-    font-size: 10px;
-    height: 100vh;
+/* @font-face {
+  font-family: "GimpoGothicRegular00";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: "IBMPlexSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+html,
+body {
+  font-size: 10px;
+  height: 100vh;
 }
 
-/* ----------- main ------------- */
+/* ----------- 메인 컨테이너 ------------- */
 main {
-    background-color: #f6f6f6;
-    overflow: hidden;
+  background-color: #f6f6f6;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* 이미지 슬라이드 버튼 */
 .button {
-    width: 30px;
-    /* height: 30px; */
-    border: none;
-    background: none;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    top: 40%;
+  width: 30px;
+  /* height: 30px; */
+  border: none;
+  background: none;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  top: 40%;
 }
 
 .previousBtn {
-    left: 100px;
-    position: absolute;
+  left: 100px;
+  position: absolute;
 }
 
 .nextBtn {
-    right: 100px;
-    position: absolute;
+  right: 100px;
+  position: absolute;
 }
 
 .imgContainer {
-    width: 100%;
-    height: 80vh;
-    position: relative;
+  width: 100vw;
+  height: 80vh;
+  position: relative;
 }
 
 .imgContainer img {
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .slideContainer {
-    display: flex;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
-
 
 li img {
-    height: 100%;
-    left: 0;
+  height: 100%;
+  left: 0;
 }
 
-@media ( max-width: 1200px ) {
-    .imgContainer img {
+@media (max-width: 1200px) {
+  .imgContainer img {
     width: auto;
-    }
+  }
 }
 
-/* --------------- 상품소개 --------------- */
+/* --------------- 상품소개 있는 박스--------------- */
 .productContainer {
-    margin: 0 auto;
-    max-width: 1200px;
+  margin: 5% 10%;
+  max-width: 1200px;
 }
 
 .productContainer a {
-    font-size: 14px;
-    color: #4c4c4c;
-    font-weight: bold;
+  font-size: 14px;
+  color: #4c4c4c;
+  font-weight: bold;
 }
 
+/* 메인 상품 이미지 */
 .productContainer img {
-    width: 100%;
+  width: 100%;
+  height: 80%;
+  filter: brightness(97%);
 }
 
 .productMent {
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(11, 1fr);
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(11, 1fr);
+  height: 15em;
 }
 
 .productMent h1 {
-    grid-column: 6 / -1;
-    grid-row: 2 / 3; 
-    font-weight: bold;
-    font-size: 3em;
-    color: rgb(83, 121, 122);
+  grid-column: 6 / -1;
+  grid-row: 3 / 3;
+  font-weight: bold;
+  font-size: 3em;
+  color: rgb(83, 121, 122);
 }
 
 /* section img:hover {
@@ -109,57 +135,69 @@ li img {
 } */
 
 .productImgList {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(11, 1fr);
-    column-gap: 5px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(11, 1fr);
+  column-gap: 5px;
+  row-gap: 50px;
 }
 
+/* 상품명 칸 */
 .productImgList .name {
-    font-size: 14px;
-    color: #4c4c4c;
-    font-weight: bold;
+  font-size: 14px;
+  color: #4c4c4c;
+  font-weight: bold;
+  height: 9em;
+  margin-top: 1em;
 }
 
+.productImgList p {
+  margin-top: 9px;
+}
+
+/* 이미지 1번째줄 */
 .productImg1,
 .productImg5,
 .productImg9 {
-    grid-column: 1 / span 2;
-    position: relative;
+  grid-column: 1 / span 2;
+  position: relative;
 }
 
+/* 이미지 2번째줄 */
 .productImg2,
 .productImg6,
 .productImg10 {
-    grid-column: 4 / span 2;
-    position: relative;
+  grid-column: 4 / span 2;
+  position: relative;
 }
 
+/* 이미지 3번째줄 */
 .productImg3,
 .productImg7,
 .productImg11 {
-    grid-column: 7 / span 2;
-    position: relative;
+  grid-column: 7 / span 2;
+  position: relative;
 }
 
+/* 이미지 4번째줄 */
 .productImg4,
 .productImg8,
 .productImg12 {
-    grid-column: 10 / span 2;
-    position: relative;
+  grid-column: 10 / span 2;
+  position: relative;
 }
 
 .productImgList .img1 {
-    position: relative;
+  position: relative;
 }
 
 .productImgList .img1 img {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .productImgList .img2 img {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
