@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product List_Working</title>
-    <link rel="stylesheet" href="../../css/header.css">
+    <title>Product List_Clean</title>
+    <link rel="stylesheet" href="../COMMON/Header/css/header.css">
+    <link rel="stylesheet" href="../COMMON/Footer/css/footer.css">
     <link rel="stylesheet" href="../ProductList/CSS/productList.css">
     <script defer src="../ProductList/JS/productList.js"></script>
-    <script defer src="../../javascript/index.js"></script>
+    <script defer src="../JAVASCRIPT/index.js"></script>
+
+    <!--공통포함 적용-->
+    <script defer src="../include.js"></script>
 </head>
 <!-- <body oncontextmenu="return false" onselectstart="return false"> -->
 <body>
 
 <!-- ---------------- 헤더 ------------------ -->
-<header id="header">
+<header id="header" data-include="../COMMON/Header/header.html">
     <!-- ---------------- 버튼 ------------------ -->
 <a class="toTop hidden" href="#"> </a>
 
@@ -40,13 +44,13 @@
                             <a href="../ProductList/productList_Living.html">LIVING</a>
                         </li>
                         <li>
-                            <a href="#">WORKING</a>
+                            <a href="../ProductList/productList_Working.html">WORKING</a>
                         </li>
                         <li>
                             <a href="../ProductList/productList_Food.html">FOOD</a>
                         </li>
                         <li>
-                            <a href="../ProductList/productList_Clean.html">CLEAN</a>
+                            <a href="#">CLEAN</a>
                         </li>
                         <li>
                             <a href="../ProductList/productList_ForCat.html">FOR CAT</a>
@@ -181,4 +185,5 @@
 </main>
 
 </body>
+<footer data-include="../COMMON/Footer/footer.html"></footer>
 </html>
