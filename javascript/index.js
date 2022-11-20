@@ -10,7 +10,7 @@ let slides = document.querySelector(".slides"),
   slide = document.querySelectorAll(".slides li"),
   currentIdx = 0, //시작인덱스
   slideCount = slide.length, //끝인지 마지막인지 구분할 용도
-  slideWidth = 300,
+  //   slideWidth = 300,
   prevBtn = document.querySelector(".prevBtn"), // 이전 버튼
   nextBtn = document.querySelector(".nextBtn"); // 다음 버튼
 
@@ -50,7 +50,7 @@ for (let i = 0; i < prdImg1.length; i++) {
 
 // ----------------------------------- 자동 슬라이드
 
-slides.style.width = slideWidth * slideCount + "px";
+// slides.style.width = slideWidth * slideCount + "px";
 
 function moveSlide(num) {
   slides.style.left = -num * 100 + "%";
