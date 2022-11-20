@@ -35,11 +35,6 @@ footer {
     display: none;
   }
 
-
-  .page_catagory li{
-    padding: 10px;
-  }
-
   .page_catagory li a {
     font-size: 12px;
   }
@@ -99,6 +94,8 @@ aside {
   justify-content: center;
 }
 
+
+
 .page_catagory li a {
   color: black;
   text-decoration: none;
@@ -107,6 +104,11 @@ aside {
   line-height: 40px;
   border-radius: 30px;
   background-color: white;
+}
+
+.page_catagory li .notice{
+  background-color: #477A7B;
+  color: white;
 }
 
 .page_catagory li a:hover {

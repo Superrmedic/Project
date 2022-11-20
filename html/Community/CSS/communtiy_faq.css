@@ -35,6 +35,7 @@ main {
 
   .menucategory ul li {
     font-size: 14px;
+    width: 80%;
   }
 }
 
@@ -87,6 +88,11 @@ article {
   background-color: white;
 }
 
+.page_catagory li .faq {
+  background-color: #477A7B;
+  color: white;
+}
+
 .page_catagory li a:hover {
   background-color: #477A7B;
   color: white;
@@ -105,6 +111,12 @@ article {
   border-bottom: solid 1px white;
   flex-basis: 100px;
   text-align: center;
+}
+
+.menucategory ul:nth-of-type(1) li:nth-of-type(1) {
+  font-weight: bold;
+  box-sizing: border-box;
+  border-bottom: solid 1px black;
 }
 
 .menucategory ul li:hover {

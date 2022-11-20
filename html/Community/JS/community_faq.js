@@ -19,3 +19,10 @@ notice.addEventListener('click', function (e) {
   }
 });
 
+const menucategory = document.querySelector('.menucategory'),
+  accordion = menucategory.querySelector('.accordion li');
+
+accordion.addEventListener('click', function () {
+  this.classList.remove('selected');
+  this.classList.add('selected');
+})

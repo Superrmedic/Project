@@ -61,6 +61,19 @@ footer {
   .goodsinfo li {
     display: none;
   }
+
+  .reviewlist li {
+    width: 250px;
+  }
+
+  .img_container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  form:hover {
+    width: 100px;
+  }
 }
 
 body {
@@ -108,6 +121,11 @@ body {
   line-height: 40px;
   border-radius: 30px;
   background-color: white;
+}
+
+.page_catagory li .review {
+  background-color: #477A7B;
+  color: white;
 }
 
 .page_catagory li a:hover {
@@ -202,6 +220,63 @@ article {
   height: auto;
 }
 
+form {
+  position: relative;
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 3px solid white;
+  padding: 5px;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.fa-sharp {
+  box-sizing: border-box;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #477A7B;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+}
+
+form:hover,
+form:valid {
+  width: 400px;
+  cursor: pointer;
+  border: 3px solid #477A7B;
+}
+
+form:hover input,
+form:valid input {
+  display: block;
+}
+
+form:hover .fa-sharp,
+form:valid .fa-sharp {
+  background: #477A7B;
+  color: white;
+}
 
 .reviewtoolsleft {
   display: flex;

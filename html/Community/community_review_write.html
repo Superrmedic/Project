@@ -18,61 +18,63 @@
           <li><a href="./community_notice.html">NOTICE</a></li>
           <li><a href="./communtiy_FAQ.html">FAQ</a></li>
           <li><a href="./community_Q&A.html">Q&amp;A</a></li>
-          <li><a href="./community_review.html">REVIEW</a></li>
+          <li><a href="./community_review.html" class="review">REVIEW</a></li>
         </ul>
       </div>
     </div>
   </article>
 
   <main>
-    <table class="write_space">
-      <tr>
-        <th>제목
-        <td>
-          <input class="review_title" type="text" maxlength="50" required>
-        </td>
-        </th>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div>
-            <textarea name="content" id="" cols="30" rows="10" placeholder="내용을 입력해주세요" required></textarea>
-          </div>
-        </td>
-      </tr>
-
-      <tbody>
+    <form action="./community_review.html">
+      <table class="write_space">
         <tr>
-          <th> 첨부파일1 </th>
-          <td><input type="file"></td>
-        </tr>
-        <tr>
-          <th> 첨부파일2 </th>
-          <td><input type="file"></td>
-        </tr>
-        <tr>
-          <th> 첨부파일3 </th>
-          <td><input type="file"></td>
-        </tr>
-        <tr>
-          <th> 비밀번호 </th>
-          <td><input class="password" type="password" required></td>
-        </tr>
-        <tr>
-          <th> 비밀글 설정 </th>
+          <th>제목
           <td>
-            <input type="radio" name="secreat_type" id="open">
-            <label for="open">공개글</label>
-            <input type="radio" name="secreat_type" id="secreat" checked>
-            <label for="secreat">비밀글</label>
+            <input class="review_title" type="text" maxlength="50" required>
+          </td>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div>
+              <textarea name="content" id="" cols="30" rows="10" placeholder="내용을 입력해주세요" required></textarea>
+            </div>
           </td>
         </tr>
-      </tbody>
-    </table>
-    <div class="button">
-      <a href="./community_review.html" class="list">목록으로</a>
-      <a href="./community_review.html" class="confirm">등록</a>
-    </div>
+
+        <tbody>
+          <tr>
+            <th> 첨부파일1 </th>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <th> 첨부파일2 </th>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <th> 첨부파일3 </th>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <th> 비밀번호 </th>
+            <td><input class="password" type="password" maxlength="6" required></td>
+          </tr>
+          <tr>
+            <th> 비밀글 설정 </th>
+            <td>
+              <input type="radio" name="secreat_type" id="open">
+              <label for="open">공개글</label>
+              <input type="radio" name="secreat_type" id="secreat" checked>
+              <label for="secreat">비밀글</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="button">
+        <a href="./community_review.html" class="list">목록으로</a>
+        <button class="confirm">등록</button>
+      </div>
+    </form>
 
   </main>
 

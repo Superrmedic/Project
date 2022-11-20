@@ -74,6 +74,11 @@ body {
   justify-content: center;
 }
 
+.page_catagory li .Q_A {
+  background-color: #477A7B;
+  color: white;
+}
+
 .page_catagory li a {
   text-decoration: none;
 }
@@ -125,7 +130,7 @@ main .board_table th {
 }
 
 main .board_table td {
-  padding: 20px 0px 20px 0px;
+  padding: 10px 0px 10px 0px;
   border-bottom: 1px solid rgb(244, 244, 244);
 }
 
@@ -135,7 +140,7 @@ main .board_table td a {
 }
 
 main .board_table p {
-  background-color: #ff798c;
+  background-color: #477A7B;
   color: white;
   width: 50px;
   height: 25px;
@@ -146,8 +151,11 @@ main .board_table p {
 }
 
 .write {
-  display: flex;
-  flex-direction: row-reverse;
+  /* display: flex;
+  flex-direction: row-reverse; */
+  text-align: right;
+  width: 90%;
+  margin-top: 30px;
 }
 
 .write a {
