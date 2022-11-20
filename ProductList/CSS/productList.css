@@ -211,6 +211,13 @@ body {
   column-gap: 20px;
 }
 
+/* 상품명 가격 */
+.productImgList p,
+.productImgList span {
+  text-align: left;
+  white-space: noWrap;
+}
+
 /* 이미지 1번째줄 */
 .productImg1,
 .productImg5 {
@@ -319,6 +326,12 @@ body {
 
   .pageNav {
     white-space: nowrap;
+  }
+
+  .productImgList p,
+  .productImgList span {
+    text-align: left;
+    white-space: noWrap;
   }
 }
 

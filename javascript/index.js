@@ -1,15 +1,18 @@
 "use strict";
 
-const header = document.getElementById("header"); // 헤더
-const body = document.querySelector("body"); // 바디
+const header = document.getElementById("header"), // 헤더
+  body = document.querySelector("body"); // 바디
 const prdContainer = body.querySelector(".productContainer"); //싱픔이미지리스트
-const prdImg1 = prdContainer.querySelectorAll(".prdImg1"); // 마우스 호버를 위한 이미지1
-const prdImg2 = prdContainer.querySelectorAll(".prdImg2"); // 마우스 호버를 위한 이미지2
+const prdImg1 = prdContainer.querySelectorAll(".prdImg1"), // 마우스 호버를 위한 이미지1
+  prdImg2 = prdContainer.querySelectorAll(".prdImg2"); // 마우스 호버를 위한 이미지2
 
-const [prevBtn, nextBtn] = body.querySelectorAll(".button");
-
-// const categoryContainer = body.querySelector('.categoryContainer');
-// const categoryHover = categoryContainer.querySelectorAll('.categoryHover'); // 카테고리 리스트들
+let slides = document.querySelector(".slides"),
+  slide = document.querySelectorAll(".slides li"),
+  currentIdx = 0, //시작인덱스
+  slideCount = slide.length, //끝인지 마지막인지 구분할 용도
+  slideWidth = 300,
+  prevBtn = document.querySelector(".prevBtn"), // 이전 버튼
+  nextBtn = document.querySelector(".nextBtn"); // 다음 버튼
 
 const toTop = body.querySelector(".toTop"); // 탑버튼
 
@@ -33,8 +36,6 @@ const moveTop = (e) => {
 
 toTop.addEventListener("click", moveTop);
 
-let imgTmp;
-
 // // 이미지 위에 마우스 올렸을 때 다른 이미지로 변환
 for (let i = 0; i < prdImg1.length; i++) {
   prdImg1[i].addEventListener("mouseover", function (e) {
@@ -43,10 +44,35 @@ for (let i = 0; i < prdImg1.length; i++) {
   });
 
   prdImg2[i].addEventListener("mouseout", function (e) {
-    let tg = e.target;
     prdImg1[i].style.zIndex = "1";
   });
 }
+
+// ----------------------------------- 자동 슬라이드
+
+slides.style.width = slideWidth * slideCount + "px";
+
+function moveSlide(num) {
+  slides.style.left = -num * 100 + "%";
+  currentIdx = num;
+}
+nextBtn.addEventListener("click", function () {
+  if (currentIdx < slideCount - 3) {
+    moveSlide(currentIdx + 1);
+    console.log(currentIdx);
+  } else {
+    moveSlide(0);
+  }
+});
+
+prevBtn.addEventListener("click", function () {
+  if (currentIdx > 0) {
+    moveSlide(currentIdx - 1);
+    console.log(currentIdx);
+  } else {
+    moveSlide(0);
+  }
+});
 
 // ============================== 자동 슬라이드
 
