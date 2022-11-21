@@ -10,7 +10,7 @@ let slides = document.querySelector(".slides"),
   slide = document.querySelectorAll(".slides li"),
   currentIdx = 0, //시작인덱스
   slideCount = slide.length, //끝인지 마지막인지 구분할 용도
-  //   slideWidth = 300,
+  // slideWidth = 100 + '%',
   prevBtn = document.querySelector(".prevBtn"), // 이전 버튼
   nextBtn = document.querySelector(".nextBtn"); // 다음 버튼
 
@@ -57,7 +57,7 @@ function moveSlide(num) {
   currentIdx = num;
 }
 nextBtn.addEventListener("click", function () {
-  if (currentIdx < slideCount - 3) {
+  if (currentIdx < slideCount - 1) {
     moveSlide(currentIdx + 1);
     console.log(currentIdx);
   } else {

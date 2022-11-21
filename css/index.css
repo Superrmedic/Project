@@ -78,8 +78,8 @@ svg {
 /* ---------------------------- 슬라이드 ------ */
 
 li img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   /* height: 100%; */
   /* right: 0; */
 }
@@ -93,7 +93,13 @@ li img {
   height: 300px; */
   /* height: 100vh; */
   overflow: hidden;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+
+.slideWrapper img {
+  width: 100%;
+  height: 100vh;
+  /* position: absolute; */
 }
 
 /* ul */
@@ -101,7 +107,7 @@ li img {
   position: absolute;
   left: 0;
   top: 0;
-  /* width: 100vw; */
+  width: 100
   transition: left 0.5s ease-out;
   /* width: 100%; */
   /* height: 100%; */
@@ -111,11 +117,6 @@ li img {
   float: left;
 }
 
-.slideWrapper img {
-  /* width: 100vw; */
-  height: 100vh;
-  /* position: absolute; */
-}
 
 /* li */
 .slides li {
@@ -134,6 +135,7 @@ li img {
   body {
     overflow-x: hidden;
   }
+
   .slides li img {
     /* width: 100vw; */
     left: 0%;
@@ -301,6 +303,7 @@ li img {
     grid-column: 2 / span 1;
     position: relative;
   }
+
   .productImgList .img1 {
     position: relative;
   }

@@ -136,17 +136,17 @@ strong {
   transition: all 1s;
 }
 
-.subContainer1:not(ul):hover .categoryHover {
+/* .subContainer1:not(ul):hover .categoryHover {
   visibility: hidden;
   opacity: 0;
   transition: all 1s;
-}
+} */
 
-/* .subContainer1:hover {
+.subContainer:hover {
   background-color: rgb(255, 255, 255, 0.95);
   height: 300px;
   transition: 0.3s ease-in-out;
-} */
+}
 
 /* ------------------ 우측 검색 항목-------------------------------------------- */
 
