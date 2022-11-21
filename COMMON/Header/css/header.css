@@ -27,7 +27,7 @@
   margin-top: 0.5em;
 }
 
-strong {
+li strong {
   color: rgb(83, 121, 122);
   cursor: pointer;
 }
@@ -65,15 +65,6 @@ strong {
   height: 4em;
 }
 
-/* 위와 동일한 역할의 박스. 세부적 역할을 위해 나뉘어 놓음*/
-/* .subContainer1,
-.subContainer2 {
-  background-color: yellow;
-  display: flex;
-  position: absolute;
-  gap: 20px;
-} */
-
 /* SHOP, BEST, EVENT, COMMUNITY 카테고리들 */
 .subContainer {
   width: 100%;
@@ -96,18 +87,13 @@ strong {
 }
 
 /* header에서 SHOP, BEST, EVENT, COMMUNITY 와 우측 검색항목 개별로 묶은 박스  */
-.category {
+.categoryContainer .category {
   text-align: center;
 }
 
 /* BEST */
-.list2 strong {
+.categoryContainer .list2 strong {
   color: orange;
-}
-
-.subList {
-  /* line-height: 100px; */
-  /* margin-bottom: -10px; */
 }
 
 /* -------------------------마우스 호버했을 때 나오는 리스트들 ---------------------*/
@@ -126,16 +112,16 @@ strong {
   color: orange;
 }
 
-/* .categoryContainer:hover {
+.categoryContainer:hover {
   background-color: white;
   transition: all 0.5s;
-} */
+}
 
-/* .category:hover .categoryHover {
+.category:hover .categoryHover {
   visibility: visible;
   opacity: 1;
   transition: all 1s;
-} */
+}
 
 /* .subContainer1:not(ul):hover .categoryHover {
   visibility: hidden;
@@ -152,13 +138,13 @@ strong {
 /* ------------------ 우측 검색 항목-------------------------------------------- */
 
 /* 검색, 카트, 로그인, 회원가입, 마이페이지 박스 */
-.subContainer {
+.categoryContainer .subContainer {
   /* right: 1%; */
   top: 0;
 }
 
-/* 검색, 카트, 로그인, 회원가입, 마이페이지 리스트 */
-.list5 {
+/* 검색, 카트, 로그인, 회원가입, 마이페이지 항목 */
+.categoryContainer .list5 {
   /* background-color: pink; */
   height: 100%;
   display: flex;
@@ -167,7 +153,7 @@ strong {
   white-space: noWrap;
 }
 
-.cart {
+.list5 .cart {
   background: url(../image/cart-shopping.svg) no-repeat center;
   width: 20px;
   height: 20px;
@@ -179,7 +165,7 @@ strong {
   filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
 }
 
-.search {
+.list5 .search {
   background: url(../image/search.svg) no-repeat center;
   width: 18px;
   height: 18px;
@@ -199,8 +185,4 @@ strong {
 .list5 a {
   color: #53797a;
   font-size: 0.6em;
-}
-
-img {
-  /* visibility: hidden; */
 }

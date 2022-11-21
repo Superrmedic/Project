@@ -14,14 +14,6 @@
   user-select: none;
 }
 
-
-@font-face {
-  font-family: "IBMPlexSansKR-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 html,
 body {
   width: 100vw;
@@ -33,8 +25,16 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "IBMPlexSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* ----------- 메인 컨테이너 ------------- */
-main {
+.mainContainer {
   background-color: #f6f6f6;
   overflow: hidden;
   display: flex;
@@ -43,7 +43,7 @@ main {
 }
 
 /* 이미지 슬라이드 버튼 */
-.button {
+.mainContainer .button {
   width: 20px;
   /* height: 30px; */
   border: none;
@@ -54,25 +54,25 @@ main {
   top: 50%;
 }
 
-.button:hover {
+.mainContainer .button:hover {
   scale: 120%;
 }
 
-svg {
+.mainContainer .button svg {
   fill: rgb(83, 121, 122);
 }
 
-.prevBtn {
+.mainContainer .prevBtn {
   left: 100px;
   position: absolute;
 }
 
-.nextBtn {
+.mainContainer .nextBtn {
   right: 100px;
   position: absolute;
 }
 
-/* ---------------------------- 슬라이드 ------ */
+/* ---------------------------- 슬라이드 이미지 ------ */
 
 /* div container */
 .slideWrapper {
@@ -94,13 +94,9 @@ svg {
   top: 0;
   transition: left 0.5s ease-out;
   display: flex;
-
 }
 
-.slides li:not(:last-child) {
-  /* float: left; */
-}
-
+/* 넓은 화면시 배너 이미지 */
 @media (min-width: 901px) {
   .slideWrapper img {
     left: 0%;
@@ -114,7 +110,7 @@ svg {
   }
 }
 
-/* --------------- 상품 리스트--------------- */
+/* --------------- 상품 리스트 박스--------------- */
 .productContainer {
   margin: 5% 10%;
   max-width: 1200px;
@@ -133,13 +129,14 @@ svg {
   filter: brightness(97%);
 }
 
-.productMent {
+/* 상품리스트 소제목 */
+.productContainer .productMent {
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(11, 1fr);
   height: 15em;
 }
 
-.productMent h1 {
+.productContainer .productMent h1 {
   grid-column: 6 / -1;
   grid-row: 3 / 3;
   font-weight: bold;
@@ -147,11 +144,8 @@ svg {
   color: rgb(83, 121, 122);
 }
 
-/* section img:hover {
-    transform: scale(1.2);
-    transition: all .3s;
-} */
 
+/*------- 상품 리스트 -------*/
 .productImgList {
   display: grid;
   margin: 0 auto;
