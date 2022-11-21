@@ -4,23 +4,20 @@ footer {
   font-size: 1.1em;
   background-color: rgb(83, 121, 122, 0.7);
   color: white;
-  /* border: 1px solid rgb(91, 89, 89); */
-  /* background-clip: content-box; */
 }
 
-pre {
+footer pre {
   font-family: "GimpoGothicRegular00";
   margin-left: 10em;
 }
 
-p {
+footer p {
   text-align: center;
 }
 
 @font-face {
   font-family: "GimpoGothicRegular00";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
