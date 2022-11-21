@@ -6,19 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/community_review_write.css">
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../COMMON/Header/css/header.css">
+  <link rel="stylesheet" href="../../COMMON/Footer/css/footer.css">
+  <script defer src="../../include.js"></script>
   <title>글 작성</title>
 </head>
 
 <body>
-  <article>
-    <div class="community_head">
-      <div class="community_contents">COMMUNITY</div>
-      <div class="page_catagory">
+  <article class="c_article">
+    <div class="c_community_head">
+      <div class="c_community_contents">COMMUNITY</div>
+      <div class="c_page_catagory">
         <ul>
           <li><a href="./community_notice.html">NOTICE</a></li>
           <li><a href="./communtiy_FAQ.html">FAQ</a></li>
           <li><a href="./community_Q&A.html">Q&amp;A</a></li>
-          <li><a href="./community_review.html" class="review">REVIEW</a></li>
+          <li><a href="./community_review.html" class="c_review">REVIEW</a></li>
         </ul>
       </div>
     </div>
@@ -26,11 +30,11 @@
 
   <main>
     <form action="./community_review.html">
-      <table class="write_space">
+      <table class="c_write_space">
         <tr>
           <th>제목
           <td>
-            <input class="review_title" type="text" maxlength="50" required>
+            <input class="c_review_title" type="text" maxlength="50" required>
           </td>
           </th>
         </tr>
@@ -57,7 +61,7 @@
           </tr>
           <tr>
             <th> 비밀번호 </th>
-            <td><input class="password" type="password" maxlength="6" required></td>
+            <td><input class="c_password" type="password" maxlength="6" required></td>
           </tr>
           <tr>
             <th> 비밀글 설정 </th>
@@ -70,14 +74,17 @@
           </tr>
         </tbody>
       </table>
-      <div class="button">
-        <a href="./community_review.html" class="list">목록으로</a>
-        <button class="confirm">등록</button>
+      <div class="c_button">
+        <a href="./community_review.html" class="c_list">목록으로</a>
+        <button class="c_confirm">등록</button>
       </div>
     </form>
 
   </main>
 
 </body>
+<footer>
+  <footer data-include="../../COMMON/Footer/footer.html"></footer>
+
 
 </html>

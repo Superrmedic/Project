@@ -5,10 +5,8 @@
   scroll-behavior: smooth;
 }
 
-header,
 nav,
-main,
-footer {
+main {
   width: 80%;
   margin: auto;
 }
@@ -21,59 +19,46 @@ footer {
   font-style: normal;
 }
 
-@media screen and (max-width: 1024px) {
-  .page_catagory ul {
-    gap: 10px;
-  }
-
-  .disappear {
-    display: none;
-  }
-}
-
 body {
   font-family: 'IBMPlexSansKR-Regular';
 }
 
-.community_head {
+.c_community_head {
   background-color: rgb(223, 233, 232);
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 3rem;
 }
 
-.community_contents {
+.c_community_contents {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.page_catagory>ul {
+.c_page_catagory>ul {
   padding-bottom: 30px;
 }
 
-.page_catagory>ul {
+.c_page_catagory>ul {
   margin-top: 40px;
   display: flex;
   font-size: 1rem;
   justify-content: center;
 }
 
-.page_catagory li {
+.c_page_catagory li {
   display: flex;
   width: 10%;
   justify-content: center;
 }
 
-.page_catagory li .Q_A {
+.c_page_catagory li .c_Q_A {
   background-color: #477A7B;
   color: white;
 }
 
-.page_catagory li a {
-  text-decoration: none;
-}
-
-.page_catagory li a {
+.c_page_catagory li a {
+  font-size: initial;
   color: black;
   text-decoration: none;
   text-align: center;
@@ -83,12 +68,12 @@ body {
   background-color: white;
 }
 
-.page_catagory li a:hover {
+.c_page_catagory li a:hover {
   background-color: #477A7B;
   color: white;
 }
 
-article {
+.c_article {
   margin: 50px 0px 30px;
   display: flex;
   flex-direction: column;
@@ -102,34 +87,37 @@ aside {
 }
 
 tbody td a {
+  font-size: initial;
   text-decoration: none;
   color: black;
 }
 
-main .board_table {
+main .c_board_table {
   width: 60vw;
   border-top: 3px solid #bbbbbb;
-  cursor: pointer;
   text-align: center;
   border-collapse: collapse;
 }
 
-main .board_table th {
+main .c_board_table th {
+  font-size: initial;
   border-bottom: 1px solid #bbbbbb;
   line-height: 5vh;
 }
 
-main .board_table td {
+main .c_board_table td {
+  font-size: initial;
   padding: 10px 0px 10px 0px;
   border-bottom: 1px solid rgb(244, 244, 244);
 }
 
-main .board_table td a {
+main .c_board_table td a {
+  font-size: initial;
   text-decoration: none;
   color: black;
 }
 
-main .board_table p {
+main .c_board_table p {
   background-color: #477A7B;
   color: white;
   width: 50px;
@@ -140,29 +128,29 @@ main .board_table p {
   display: inline-block;
 }
 
-.write {
-  /* display: flex;
-  flex-direction: row-reverse; */
+.c_write {
   text-align: right;
   width: 90%;
   margin-top: 30px;
 }
 
-.write a {
+.c_write a {
+  font-size: initial;
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 10px;
   background-color: #477A7B;
   border-radius: 10px;
   font-weight: bold;
 }
 
-.write a:hover {
+.c_write a:hover {
   color: white;
   font-weight: bold;
 }
 
-.page {
+.c_page {
+  font-size: initial;
   display: flex;
   flex-direction: row;
   margin: 40px;
@@ -170,17 +158,28 @@ main .board_table p {
   gap: 20px;
 }
 
-.page a {
+.c_page a {
+  font-size: initial;
   text-decoration: none;
   color: black;
 }
 
 @media screen and (max-width: 768px) {
-  .page_catagory li a {
+  .c_page_catagory li a {
     font-size: 12px;
   }
 
-  .disappear2 {
+  .c_disappear2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .c_page_catagory ul {
+    gap: 10px;
+  }
+
+  .c_disappear {
     display: none;
   }
 }

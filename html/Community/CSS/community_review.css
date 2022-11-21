@@ -5,10 +5,8 @@
   scroll-behavior: smooth;
 }
 
-header,
 nav,
-main,
-footer {
+main {
   width: 80%;
   margin: auto;
 }
@@ -24,40 +22,37 @@ body {
   font-family: 'IBMPlexSansKR-Regular';
 }
 
-.community_head {
+.c_community_head {
   background-color: rgb(223, 233, 232);
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 3rem;
 }
 
-.community_contents {
+.c_community_contents {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.page_catagory>ul {
+.c_page_catagory>ul {
   padding-bottom: 30px;
 }
 
-.page_catagory>ul {
+.c_page_catagory>ul {
   margin-top: 40px;
   display: flex;
   font-size: 1rem;
   justify-content: center;
 }
 
-.page_catagory li {
+.c_page_catagory li {
   display: flex;
   width: 10%;
   justify-content: center;
 }
 
-.page_catagory li a {
-  text-decoration: none;
-}
-
-.page_catagory li a {
+.c_page_catagory li a {
+  font-size: initial;
   color: black;
   text-decoration: none;
   text-align: center;
@@ -67,30 +62,30 @@ body {
   background-color: white;
 }
 
-.page_catagory li .review {
+.c_page_catagory li .review {
   background-color: #477A7B;
   color: white;
 }
 
-.page_catagory li a:hover {
+.c_page_catagory li a:hover {
   background-color: #477A7B;
   color: white;
 }
 
-article {
+.c_article {
   margin: 50px 0px 30px;
   display: flex;
   flex-direction: column;
 }
 
 /* 상품 후기 부분 */
-.goodshead {
-  font-size: 2em;
+.c_goodshead {
+  font-size: 3rem;
   text-align: center;
   margin: 10px 0 10px;
 }
 
-.goodsinfo {
+.c_goodsinfo {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -98,68 +93,69 @@ article {
   margin-bottom: 30px;
 }
 
-.goodsinfo li {
+.c_goodsinfo li {
   margin: 5px 0 5px;
 }
 
-.goodsinfo .img_container {
+.c_goodsinfo .c_img_container {
   display: flex;
   justify-content: center;
 }
 
-.goodsinfo .img_container>img {
+.c_goodsinfo .c_img_container>img {
   width: 100%;
   height: 100%;
 }
 
-.goodsinfo li {
+.c_goodsinfo li {
   border: 1px solid rgb(223, 228, 234);
   border-radius: 4px;
 }
 
-.goodsinfo li a {
+.c_goodsinfo li a {
+  font-size: initial;
   display: flex;
   padding: 10px;
   text-decoration: none;
   color: black;
 }
 
-.goodsinfo li .username {
+.c_goodsinfo li .c_username {
   padding: 0 10px 0;
   color: gray;
 }
 
-.review_target {
+.c_review_target {
   display: flex;
 }
 
-.review_target .user_rank {
+.c_review_target .c_user_rank {
   font-size: 12px;
   padding: 0px 10px 10px;
 }
 
-.review_targetimg {
+.c_review_targetimg {
   width: 50px;
   height: 50px;
 }
 
 /*==================== 리뷰 부분 =============*/
-.reviewhead {
-  font-size: 1.3em;
+.c_reviewhead {
+  font-size: 2rem;
 }
 
-.reviewhr {
+.c_reviewhr {
   margin: 12px 0px 30px;
   border-color: black;
   border-width: 1px;
 }
 
-.reviewtools {
+.c_reviewtools {
   display: flex;
   margin-bottom: 20px;
 }
 
-.reviewtools i {
+.c_reviewtools i {
   width: auto;
   height: auto;
 }
@@ -186,7 +182,7 @@ input {
   outline: 0;
   border: 0;
   display: none;
-  font-size: 1em;
+  font-size: 2rem;
   border-radius: 20px;
   padding: 0 20px;
 }
@@ -200,7 +196,7 @@ input {
   border-radius: 50%;
   color: #477A7B;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 2rem;
   transition: all 1s;
 }
 
@@ -222,7 +218,7 @@ form:valid .fa-sharp {
   color: white;
 }
 
-.reviewtoolsleft {
+.c_reviewtoolsleft {
   display: flex;
   margin-left: auto;
   gap: 20px;
@@ -230,31 +226,33 @@ form:valid .fa-sharp {
   color: gray;
 }
 
-.reviewtoolsleft a {
+.c_reviewtoolsleft a {
+  font-size: initial;
   text-decoration: none;
   color: gray;
 }
 
-.write a {
+.c_write a {
+  font-size: initial;
   text-decoration: none;
   color: gray;
 }
 
-.write a:hover {
+.c_write a:hover {
   color: black;
 
 }
 
-.reviewtoolsleft a:hover {
+.c_reviewtoolsleft a:hover {
   color: black;
 }
 
-.reviewlist {
+.c_reviewlist {
   display: flex;
   margin-top: 100px;
 }
 
-.reviewlist ul {
+.c_reviewlist ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -263,50 +261,52 @@ form:valid .fa-sharp {
   justify-content: center;
 }
 
-.reviewlist li {
+.c_reviewlist li {
   border: 1px solid rgb(223, 228, 234);
   border-radius: 4px;
 }
 
 
-.reviewlist li .img_container {
+.c_reviewlist li .c_img_container {
   display: flex;
   justify-content: center;
 }
 
-.img_container img {
+.c_img_container img {
   width: 300px;
   height: 300px;
   border-radius: 4px;
 }
 
-.reviewlist li a {
+.c_reviewlist li a {
+  font-size: initial;
   display: flex;
   padding: 10px;
   text-decoration: none;
   color: black;
 }
 
-.reviewlist li .username {
+.c_reviewlist li .c_username {
   padding: 0 10px 0;
   color: gray;
 }
 
-.review_target {
+.c_review_target {
   display: flex;
 }
 
-.review_target .user_rank {
+.c_review_target .c_user_rank {
   font-size: 12px;
   padding: 0px 10px 10px;
 }
 
-.review_targetimg {
+.c_review_targetimg {
   width: 50px;
   height: 50px;
 }
 
-.page {
+.c_page {
+  font-size: initial;
   display: flex;
   flex-direction: row;
   margin: 40px;
@@ -314,26 +314,27 @@ form:valid .fa-sharp {
   gap: 20px;
 }
 
-.page a {
+.c_page a {
+  font-size: initial;
   text-decoration: none;
   color: black;
 }
 
 
 @media screen and (max-width: 1640px) {
-  .goodsinfo li:nth-child(5) {
+  .c_goodsinfo li:nth-child(5) {
     display: none;
   }
 }
 
 @media screen and (max-width: 1225px) {
-  .goodsinfo li:nth-child(4) {
+  .c_goodsinfo li:nth-child(4) {
     display: none;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .page_catagory ul {
+  .c_page_catagory ul {
     gap: 10px;
   }
 
@@ -343,13 +344,13 @@ form:valid .fa-sharp {
 }
 
 @media screen and (max-width: 920px) {
-  .goodsinfo li:nth-child(3) {
+  .c_goodsinfo li:nth-child(3) {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .page_catagory li a {
+  .c_page_catagory li a {
     font-size: 12px;
   }
 
@@ -357,21 +358,22 @@ form:valid .fa-sharp {
     display: none;
   }
 
-  .goodshead,
-  .goodsinfo li {
+  .c_goodshead,
+  .c_goodsinfo li {
     display: none;
   }
 
-  .reviewlist li {
+  .c_reviewlist li {
     width: 250px;
   }
 
-  .img_container img {
+  .c_img_container img {
     width: 250px;
     height: 250px;
   }
 
-  form:hover {
-    width: 300px;
+  form:hover,
+  form:valid {
+    width: 250px;
   }
 }

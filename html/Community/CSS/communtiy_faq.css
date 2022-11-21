@@ -23,7 +23,7 @@ body {
 }
 
 .c_article {
-  margin: 100px 0px 30px;
+  margin: 50px 0px 30px;
   display: flex;
   flex-direction: column;
 }
@@ -31,7 +31,7 @@ body {
 .c_community_head {
   background-color: rgb(223, 233, 232);
   font-weight: bolder;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .c_community_contents {
@@ -65,7 +65,7 @@ body {
   line-height: 40px;
   border-radius: 30px;
   background-color: white;
-  font-size: 16px;
+  font-size: initial;
 }
 
 .c_page_catagory li .faq {

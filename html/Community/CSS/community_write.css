@@ -23,45 +23,43 @@ body {
   font-family: 'IBMPlexSansKR-Regular';
 }
 
-.community_head {
+.c_community_head {
   background-color: rgb(223, 233, 232);
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 3rem;
 }
 
-.community_contents {
+.c_community_contents {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.page_catagory>ul {
+.c_page_catagory>ul {
   padding-bottom: 30px;
 }
 
-.page_catagory>ul {
+.c_page_catagory>ul {
   margin-top: 40px;
   display: flex;
   font-size: 1rem;
   justify-content: center;
 }
 
-.page_catagory li {
+.c_page_catagory li {
   display: flex;
   width: 10%;
   justify-content: center;
 }
 
-.page_catagory li a {
-  text-decoration: none;
-}
 
-.page_catagory li .Q_A {
+.c_page_catagory li .Q_A {
   background-color: #477A7B;
   color: white;
 }
 
-.page_catagory li a {
+.c_page_catagory li a {
+  font-size: initial;
   color: black;
   text-decoration: none;
   text-align: center;
@@ -71,23 +69,24 @@ body {
   background-color: white;
 }
 
-.page_catagory li a:hover {
+.c_page_catagory li a:hover {
   background-color: #477A7B;
   color: white;
 }
 
-article {
+.c_article {
   margin: 50px 0px 30px;
   display: flex;
   flex-direction: column;
 }
 
-.write_space {
+.c_write_space {
   margin: auto;
   min-width: 1024px;
 }
 
 th {
+  font-size: initial;
   display: inline-block;
   margin-right: 30px;
   line-height: 40px;
@@ -101,10 +100,11 @@ textarea {
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
-  font-family: S-CoreDream-3Light;
+  font-family: 'IBMPlexSansKR-Regular';
 }
 
 select {
+  font-size: initial;
   padding: 0 10px;
   color: #477A7B;
   border: 0;
@@ -114,7 +114,7 @@ select {
   outline: none;
 }
 
-.password {
+.c_password {
   outline: none;
   background-color: #dfe9e8;
   padding: 6px;
@@ -126,23 +126,28 @@ option {
   padding: 10px;
 }
 
-.button {
+label{
+  font-size: initial;
+}
+
+.c_button {
   margin-top: 10px;
+  margin-bottom: 15px;
   padding: 10px 0;
-  width: 80%;
+  width: 85%;
   text-align: right;
   min-width: 1000px;
 }
 
-
-.button a {
+.c_button a {
+  font-size: initial;
   border: 1px solid black;
   border-radius: 10px;
   text-decoration: none;
   padding: 7px;
 }
 
-.button button {
+.c_button button {
   border: 1px solid black;
   border-radius: 10px;
   text-decoration: none;
@@ -151,12 +156,12 @@ option {
   color: white;
 }
 
-.button .list {
+.c_button .list {
   background-color: white;
   color: #477A7B;
 }
 
-.button .confirm {
+.c_button .confirm {
   width: 77.45px;
   height: 39px;
   font-size: 16px;
@@ -169,14 +174,14 @@ option {
 }
 
 @media screen and (max-width: 1024px) {
-  .page_catagory ul {
+  .c_page_catagory ul {
     gap: 10px;
   }
 
 }
 
 @media screen and (max-width: 768px) {
-  .page_catagory li a {
+  .c_page_catagory li a {
     font-size: 12px;
   }
 }
