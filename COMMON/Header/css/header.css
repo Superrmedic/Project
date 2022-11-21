@@ -49,6 +49,7 @@ strong {
 .toTop:hover {
   opacity: 1;
 }
+
 .hidden {
   display: none;
 }
@@ -125,16 +126,16 @@ strong {
   color: orange;
 }
 
-.categoryContainer:hover {
+/* .categoryContainer:hover {
   background-color: white;
   transition: all 0.5s;
-}
+} */
 
-.category:hover .categoryHover {
+/* .category:hover .categoryHover {
   visibility: visible;
   opacity: 1;
   transition: all 1s;
-}
+} */
 
 /* .subContainer1:not(ul):hover .categoryHover {
   visibility: hidden;
@@ -142,11 +143,11 @@ strong {
   transition: all 1s;
 } */
 
-.subContainer:hover {
+/* .subContainer:hover {
   background-color: rgb(255, 255, 255, 0.95);
   height: 300px;
   transition: 0.3s ease-in-out;
-}
+} */
 
 /* ------------------ 우측 검색 항목-------------------------------------------- */
 
@@ -175,8 +176,7 @@ strong {
   white-space: nowrap;
   overflow: hidden;
   margin-top: 2.5em;
-  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg)
-    brightness(95%) contrast(85%);
+  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
 }
 
 .search {
@@ -188,11 +188,10 @@ strong {
   white-space: nowrap;
   overflow: hidden;
   margin-top: 2.5em;
-  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg)
-    brightness(95%) contrast(85%);
+  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
 }
 
-.list5 > li > a:hover {
+.list5>li>a:hover {
   opacity: 0.5;
   transition: all 0.3s;
 }

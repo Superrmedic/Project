@@ -7,33 +7,30 @@
   /* color: rgb(83, 121, 122); */
   text-decoration: none;
   /* font-family: "Nanum Gothic", sans-serif; */
-  /* font-family: "IBMPlexSansKR-Regular"; */
+  font-family: "IBMPlexSansKR-Regular";
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* @font-face {
-  font-family: "GimpoGothicRegular00";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-} */
 
-/* @font-face {
+@font-face {
   font-family: "IBMPlexSansKR-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-} */
+}
 
 html,
 body {
+  width: 100vw;
   font-size: 10px;
   height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* ----------- 메인 컨테이너 ------------- */
@@ -77,29 +74,17 @@ svg {
 
 /* ---------------------------- 슬라이드 ------ */
 
-li img {
-  /* width: 100%;
-  height: 100%; */
-  /* height: 100%; */
-  /* right: 0; */
-}
-
 /* div container */
 .slideWrapper {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  /* width: 960px;
-  height: 300px; */
-  /* height: 100vh; */
   overflow: hidden;
-  /* margin: 0 auto; */
 }
 
 .slideWrapper img {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  /* position: absolute; */
 }
 
 /* ul */
@@ -107,26 +92,18 @@ li img {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100
   transition: left 0.5s ease-out;
-  /* width: 100%; */
-  /* height: 100%; */
+  display: flex;
+
 }
 
 .slides li:not(:last-child) {
-  float: left;
-}
-
-
-/* li */
-.slides li {
-  /* display: flex; */
-  /* margin-right: 30px; */
+  /* float: left; */
 }
 
 @media (min-width: 901px) {
   .slideWrapper img {
-    /* width: 100%; */
+    left: 0%;
   }
 }
 
@@ -134,11 +111,6 @@ li img {
 @media (max-width: 900px) {
   body {
     overflow-x: hidden;
-  }
-
-  .slides li img {
-    /* width: 100vw; */
-    left: 0%;
   }
 }
 
