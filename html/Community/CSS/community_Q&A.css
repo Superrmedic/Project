@@ -15,8 +15,8 @@ footer {
 
 
 @font-face {
-  font-family: 'S-CoreDream-3Light';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,18 +31,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .page_catagory li a {
-    font-size: 12px;
-  }
-
-  .disappear2 {
-    display: none;
-  }
-}
-
 body {
-  font-family: S-CoreDream-3Light;
+  font-family: 'IBMPlexSansKR-Regular';
 }
 
 .community_head {
@@ -183,4 +173,14 @@ main .board_table p {
 .page a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .page_catagory li a {
+    font-size: 12px;
+  }
+
+  .disappear2 {
+    display: none;
+  }
 }

@@ -5,52 +5,21 @@
   scroll-behavior: smooth;
 }
 
-header,
 nav,
-main,
-footer {
+main {
   width: 80%;
   margin: auto;
 }
 
 @font-face {
-  font-family: 'S-CoreDream-3Light';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-@media screen and (max-width: 1024px) {
-  .disappear {
-    display: none;
-  }
-
-  .page_catagory ul {
-    gap: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .disappear2 {
-    display: none;
-  }
-
-  .page_catagory li a {
-    font-size: 12px;
-  }
-
-  .detail {
-    /* 폰트 때문에 중간에 가있음 */
-    width: 135px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
 body {
-  font-family: S-CoreDream-3Light;
+  font-family: 'IBMPlexSansKR-Regular';
 }
 
 article {
@@ -106,7 +75,7 @@ aside {
   background-color: white;
 }
 
-.page_catagory li .notice{
+.page_catagory li .notice {
   background-color: #477A7B;
   color: white;
 }
@@ -179,4 +148,36 @@ main .board_table p {
 .page a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .disappear {
+    display: none;
+  }
+
+  .page_catagory ul {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .disappear2 {
+    display: none;
+  }
+
+  .page_catagory li a {
+    font-size: 12px;
+  }
+
+  .detail {
+    width: 135px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  tbody td {
+    padding: 0;
+  }
 }
