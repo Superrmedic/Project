@@ -118,11 +118,11 @@ li strong {
   transition: all 1s;
 }
 
-/* .subContainer1:not(ul):hover .categoryHover {
+.subContainer1:not(ul):hover .categoryHover {
   visibility: hidden;
   opacity: 0;
   transition: all 1s;
-} */
+}
 
 /* .subContainer:hover {
   background-color: rgb(255, 255, 255, 0.95);
