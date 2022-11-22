@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "IBMPlexSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 #headerTop {
   font-size: 2em;
   position: fixed;
@@ -7,6 +15,7 @@
   top: 0;
   background: none;
   z-index: 2;
+  font-family: "IBMPlexSansKR-Regular";
 }
 
 /* 로고 */
@@ -146,9 +155,10 @@ li strong {
   gap: 10px;
   line-height: 75px;
   white-space: noWrap;
+  margin-right: 1em;
 }
 
-.list5 .cart {
+.list5 .cartBtn {
   background: url(../image/cart-shopping.svg) no-repeat center;
   width: 20px;
   height: 20px;
@@ -157,7 +167,8 @@ li strong {
   white-space: nowrap;
   overflow: hidden;
   margin-top: 2.5em;
-  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
+  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg)
+    brightness(95%) contrast(85%);
 }
 
 .list5 .search {
@@ -169,10 +180,11 @@ li strong {
   white-space: nowrap;
   overflow: hidden;
   margin-top: 2.5em;
-  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
+  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg)
+    brightness(95%) contrast(85%);
 }
 
-.list5>li>a:hover {
+.list5 > li > a:hover {
   opacity: 0.5;
   transition: all 0.3s;
 }
@@ -182,50 +194,95 @@ li strong {
   font-size: 0.6em;
 }
 
+/* ====================================================== */
+/* 클릭시 내려오는 search바 박스 */
+
+.searchBarWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  background: #fff;
+  border: 0;
+  z-index: 9999;
+  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+  /* @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  } */
+  /* -------js 적용 ----- */
+  height: 196px;
+  overflow: hidden;
+  opacity: 0;
+}
 
 /* ---- search 바 ----*/
-
 .mainSearch {
   position: relative;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.mainSearch input[type=text],
-.mainSearch input[type=submit] {
-  padding: 20px;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
-}
-
-.mainSearch input[type=text] {
+/* 상품명검색 글씨 입력하는 부분 */
+.mainSearch input[type="text"] {
   width: 350px;
   font-size: 1em;
   margin-right: -6px;
   padding-left: 40px;
-  border-radius: 40px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #477a7b;
+  background-color: transparent;
+  outline: none;
+  color: #477a7b;
 }
 
-.mainSearch input[type=submit] {
+.mainSearch input[type="submit"] {
+  padding: 20px;
+  border: none;
+  box-sizing: border-box;
   cursor: pointer;
   background: url(../image/search.svg) no-repeat center;
   width: 20px;
   height: 20px;
-  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
+  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg)
+    brightness(95%) contrast(85%);
   text-indent: -9999px;
   margin: 1em;
 }
 
-.mainSearch input[type=submit]:hover {
-  opacity: .7;
-  transition: all .3s;
+.mainSearch input[type="submit"]:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
 }
 
-.mainSearch input[type=text]::placeholder {
+.mainSearch input[type="text"]::placeholder {
   color: rgb(83, 121, 122);
-  opacity: .9;
+  opacity: 0.9;
+}
+
+.searchCloseBtn {
+  background: url(../image/close.svg) no-repeat center;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.searchCloseBtn:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
 }
