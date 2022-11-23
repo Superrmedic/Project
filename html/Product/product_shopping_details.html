@@ -5,157 +5,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopping_details</title>
-    <link rel="stylesheet" href="./CSS/product_shopping_details.css">
-    <script src="https://kit.fontawesome.com/11d243a6e5.js" crossorigin="anonymous"></script>\
-
-</head>
+    <title>detail</title>
+    <link rel="stylesheet" href="./css/product_shopping_details.css">
+    <link rel="stylesheet" href="./css/detailsMedia.css">
+    <link rel="shortcut icon" href="#">
+    <script defer src="./js/product_shopping_details.js"></script>
 
 <body>
-    <div class="top_banner">
-        <a href="../User/login/join/login_checking_sign.html">지금 가입하고 적립금 500원 받아가세요!
-        </a>
-    </div>
-
-    <header>
-        <div class="logo">
-            <h1>
-                <a href="/index.html" class="banner"><img src="/image/main_banner.png" alt="로고"></a>
-            </h1>
-        </div>
-        <div class="search">
-            <input type="text" class="search_bar" placeholder="찾는 장난감을 입력해주세요~">
-        </div>
-        <ul class="login">
-            <li class="mypage" title="유저 아이콘">
-                <ul class="login_info">
-                    <li><a href="../User/My_page/mypage_mypage.html">MY PAGE</a></li>
-                    <li><a href="./welcome.html">로그인</a></li>
-                    <li><a href="./sign_on.html">회원가입</a></li>
-                </ul>
-            </li>
-            <li class="cart" title="장바구니"><a href="../Cart/cart_shopping_cart.html" class="go_login">장바구니</a></li>
-            <li class="like" title="좋아요"><a href="../User/My_page/mypage_shopping_like.html" class="go_login">좋아요</a>
-            </li>
-        </ul>
-    </header>
-    <nav class="category_bar">
-        <div>
-            <ul class="category">
-                <li class="cate_Best"><a href="#Best">BEST</a>
-                </li>
-                <li class="cate_New"><a href="#New">NEW</a></li>
-                <li class="cate_Toy"><a href="../Categori/categori_catg_page.html">피규어</a>
-                    <ul>
-                        <li><a href="../Categori/categori_catg_page.html">곰돌이 푸</a></li>
-                        <li><a href="../Categori/categori_catg_page.html">디즈니</a></li>
-                    </ul>
-                </li>
-                <li class="cate_Kids"><a href="../Categori/categori_catg_page.html">봉제인형</a>
-                    <ul>
-                        <li><a href="../Categori/categori_catg_page.html">소형</a></li>
-                        <li><a href="../Categori/categori_catg_page.html">중형</a></li>
-                        <li><a href="../Categori/categori_catg_page.html">대형</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <main>
-        <div class="fixed-banner">
-            <div>
-                <a href="#"><img src="/icon/top_.png" alt="TOP" class="right_TOP"></a>
-            </div>
-            <div>
-                <!-- <a href="../jungsunzoo/html/faq.html"><img src="./image/qna.png" alt="FAQ" class="right_FAQ"></a> -->
-            </div>
-            <div>
-                <!-- <a href="#" target="_blank"><img src="./image/kakao.png" alt="kakao" class="right_kakao"></a> -->
-            </div>
-        </div>
+        <div class="big_container" id="main">
+            <div class="img_container">
+                <div class="mainImage_container">
+                    <div class="mainImgbox">
+                        <img src="./img/photo_1.jpg" alt="상품1 메인이미지" class="main_image main1">
+                        <img src="./img/photo_1.jpg" alt="상품1 메인이미지" class="main_image main2 img_hidden">
+                    </div>
+                </div>
 
-        <div class="shopproduct">
-            <div class="shopimg_a">
-                <img src="/image/bear_1.jpg" class="mainbear" alt="케어베어 곰인형">
-                <img src="/image/smallbear.jpg" class="smallbear_1" alt="작은 곰 이미지">
-                <img src="/image/smallbear2.png" class="smallbear_2" alt="작은 곰 이미지">
+                <div class="subImage_container">
+                    <img src="./img/photo_1.jpg" alt="상품1 서브이미지_1" class="sub_image">
+                    <img src="./img/photo_2.jpg" alt="상품1 서브이미지_2" class="sub_image">
+                    <img src="./img/photo_3.jpg" alt="상품1 서브이미지_3" class="sub_image">
+                    <img src="./img/photo_4.jpg" alt="상품1 서브이미지_4" class="sub_image">
+                    <img src="./img/photo_5.jpg" alt="상품1 서브이미지_5" class="sub_image">
+                </div>
             </div>
 
-            <div class="shopdetail_all">
-                <div class="shopmainname">
-                    <h2 class="shopname_a">극세사 쿼카 인형</h2>
+            <div class="shopInfo_container">
+                <div class="product_summary">
+                    <span class="bestBtn">BEST</span>
+                    <img src="./img/share.png" alt="공유하기" class="sharebBtn">
+                    <img src="./img/heart.png" alt="좋아요" class="heartbBtn">
+                    <h2>아르르 꿀잠 이불</h2>
+                    <span class="salePrice">29,900원</span>
+                    <span class="brforePrice">39,900원</span>
+                </div>
+
+                <div class="shareProduct">
+                    <img src="./img/link.png" alt="공유하기" class="urlCopy">
+                    <img src="./img/kakao.png" alt="카카오">
+                    <img src="./img/insta.png" alt="인스타">
+                </div>
+
+                <div class="product_delivery">
                     <span>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+                        <strong class="deliverypadding">배송비</strong>
+                        <span>3,000원 (50,000원 이상 구매 시 무료배송)</span>
+                    </span>
+                    <span>
+                        <strong>배송 정보</strong>
+                        <span>결제완료 후 평균 3일 이내 출고(공휴일 제외)</span>
+                    </span>
+                    <span>
+                        <strong class="deliverypadding">적립금</strong>
+                        <span>상품 금액의 3% 적립 예정</span>
                     </span>
                 </div>
                 <hr>
 
-                <div class="shopdetail_a">
-                    <dl>
-                        <dt>판매가</dt>
-                        <dd><strong>15,000원</strong></dd>
-                    </dl>
-                    <dl>
-                        <dt>적립금</dt>
-                        <dd>최대 3% 적립 예정</dd>
-                    </dl>
-                    <dl>
-                        <dt>배송비</dt>
-                        <dd><strong>2,500원</strong> (30,000원 이상 무료배송)</dd>
-                    </dl>
-                </div>
-
-                <div class="shopselect">구성
-                    <select name="shopselect_menu" required>
-                        <option value disabled>[필수] 옵션을 선택해 주세요</option>
-                        <option value="shopscfirst">핑크 (수량: 104개)</option>
-                        <option value="shopscsecond">블랙 (수량: 28개)</option>
+                <div class="product_option">
+                    <select class="optionSelect">
+                        <option value="" selected>[필수] 옵션을 선택해 주세요</option>
+                        <option value="0">캐시미어 블루 M</option>
+                        <option value="1">캐시미어 블루 L (+10,000원)</option>
+                        <option value="2">라벤더 포그 M</option>
+                        <option value="3">라벤더 포그 L (+10,000원)</option>
                     </select>
                 </div>
 
-                <div class="totalpay">
-                    <span>총 주문 금액</span>
-                    <span class="charge">15,000원</span>
+                <div class="product_check">
+                    <div class="product_checklist check1 hidden">
+                        <div class="product_checkName">
+                            <strong>아르르 꿀잠 이불</strong>
+                            <span>캐시미어 블루 M</span>
+                        </div>
+                        <div class="product_checkNum">
+                            <a href="#" class="downCheckbtn">
+                                <img src="./img/minus.png" alt="다운버튼">
+                            </a>
+                            <input type="text" value="1" readonly>
+                            <a href="#" class="UpCheckbtn">
+                                <img src="./img/plus.png" alt="업버튼">
+                            </a>
+                        </div>
+                        <div class="product_checkPrice">
+                            <span>29,900원</span>
+                            <img src="./img/close.png" class="deleteoptionBtn" alt="삭제">
+                        </div>
+                    </div>
+
+                    <div class="product_checklist check2 hidden">
+                        <div class="product_checkName">
+                            <strong>아르르 꿀잠 이불</strong>
+                            <span>캐시미어 블루 L</span>
+                        </div>
+                        <div class="product_checkNum">
+                            <a href="#" class="downCheckbtn">
+                                <img src="./img/minus.png" alt="다운버튼">
+                            </a>
+                            <input type="text" value="1" readonly>
+                            <a href="#" class="UpCheckbtn">
+                                <img src="./img/plus.png" alt="업버튼">
+                            </a>
+                        </div>
+                        <div class="product_checkPrice">
+                            <span>39,900원</span>
+                            <img src="./img/close.png" class="deleteoptionBtn" alt="삭제">
+                        </div>
+                    </div>
+
+                    <div class="product_checklist check3 hidden">
+                        <div class="product_checkName">
+                            <strong>아르르 꿀잠 이불</strong>
+                            <span>라벤더 포그 M</span>
+                        </div>
+                        <div class="product_checkNum">
+                            <a href="#" class="downCheckbtn">
+                                <img src="./img/minus.png" alt="다운버튼">
+                            </a>
+                            <input type="text" value="1" readonly>
+                            <a href="#" class="UpCheckbtn">
+                                <img src="./img/plus.png" alt="업버튼">
+                            </a>
+                        </div>
+                        <div class="product_checkPrice">
+                            <span>29,900원</span>
+                            <img src="./img/close.png" class="deleteoptionBtn" alt="삭제">
+                        </div>
+                    </div>
+
+                    <div class="product_checklist check4 hidden">
+                        <div class="product_checkName">
+                            <strong>아르르 꿀잠 이불</strong>
+                            <span>라벤더 포그 L</span>
+                        </div>
+                        <div class="product_checkNum">
+                            <a href="#" class="downCheckbtn">
+                                <img src="./img/minus.png" alt="다운버튼">
+                            </a>
+                            <input type="text" value="1" readonly>
+                            <a href="#" class="UpCheckbtn">
+                                <img src="./img/plus.png" alt="업버튼">
+                            </a>
+                        </div>
+                        <div class="product_checkPrice">
+                            <span>39,900원</span>
+                            <img src="./img/close.png" class="deleteoptionBtn" alt="삭제">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="product_totalPay">
+                    <span>주문 금액</span>
+                    <strong class="totalPay">0원</strong>
                 </div>
 
-                <div class="shopbuttons">
-                    <button class="shoppay_bt" type="button" onclick="location.href='product_shopping_payment.html';"
-                        style='cursor:pointer;'>바로
-                        구매</button>
-                    <button class="shopcart_bt" type="button" onclick="location.href='../Cart/cart_shopping_cart.html';"
-                        style='cursor:pointer;'>장바구니</button>
-                    <button class="shoplike_bt" type="button"
-                        onclick="location.href='../Login/My_page/mypage_shopping_like.html';"
-                        style='cursor:pointer;'>좋아요
-                        &#9829</button>
+                <div class="btn_pay">
+                    <a href="#" class="btn_cart">ADD TO CART</a>
+                    <a href="#" class="btn_buy">BUY NOW</a>
                 </div>
             </div>
         </div>
     </main>
 
     <nav>
-        <div class="productinfo">
-            <ul class="productinfo_detail">
-                <li><a href="#shopexplanid">상품 정보</a></li>
-                <li><a href="#delivery_infoid">배송/교환</a></li>
-                <li><a href="#board_listid">Review</a></li>
-                <li><a href="../Community/community_faq.html">Q & A</a></li>
-            </ul>
-        </div>
-    </nav>
+        <div class="productCategory_box">
+            <div class="product_category">
+                <ul class="productCategory_list">
+                    <li><a href="#detailInfo" class="productCategory_1 focusbtn">상세 정보</a></li>
+                    <li><a href="#deliveryInfo" class="productCategory_2">배송/교환</a></li>
+                    <li><a href="#reviewInfo" class="productCategory_3">REVIEW</a></li>
+                    <li><a href="#qnaInfo" class="productCategory_4">Q&A</a></li>
+                </ul>
+            </div>
 
-    <section>
-        <div class="shopexplan_1" id="shopexplanid">
-            <img src="/image/mainshopping.jpg">
+            <div class="product_detailInfo" id="detailInfo">
+                <img src="./img/detail_1.jpg" alt="상세정보1">
+                <img src="./img/detail_2.jpg" alt="상세정보1">
+                <img src="./img/detail_3.jpg" alt="상세정보1">
+                <img src="./img/detail_4.png" alt="상세정보1">
+            </div>
         </div>
 
-        <div class="delivery_info" id="delivery_infoid">
-            <h3>배송/교환/환불</h3>
+        <div class="delivery_info" id="deliveryInfo">
+            <div class="deliverynameBox">
+                <h3>배송/교환</h3>
+            </div>
             <div class="delivery_detail">
                 <table class="deliverytable">
                     <tr>
@@ -164,7 +200,7 @@
                     </tr>
                     <tr>
                         <th>배송비</th>
-                        <td>30,000원 이상 무료배송</td>
+                        <td>50,000원 이상 무료배송</td>
                     </tr>
                     <tr>
                         <th>도서산간 추가 배송비</th>
@@ -203,124 +239,47 @@
                     <li>출고 이후 환불요청 시 상품 회수 후 처리됩니다.</li>
                     <li>완제품으로 수입된 상품의 경우 A/S가 불가합니다.</li>
                     <li>상품페이지에 교환/환불/AS에 대한 브랜드 개별기준이 있는 경우에는 해당 내용이 우선 적용 됩니다.</li>
-                    <li>구매자가 미성년자인 경우에는 상품 구입시 법정대리인이 동의하지 아니하면 미성년자 본인 또는 법정대리인이 구매취소 할 수 있습니다.</li>
                 </ul>
             </div>
         </div>
-    </section>
 
-
-    <aside>
-        <div class="board_list" id="board_listid">
-            <div class="board_info">
-                <h2>Review</h2>
-                <span>구매하신 상품에 대한 리뷰를 남겨주세요.</span>
-            </div>
-
-            <table class="board_table">
-                <thead>
-                    <tr>
-                        <th scope="row" rowspan="3">분류</th>
-                        <th>제목</th>
-                        <th>작성자</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>
-                            <p>공지</p>
-                        </td>
-                        <td><b>사진 리뷰 작성시 적립금 추가 혜택을 드립니다!</b></td>
-                        <td>관리자</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p>공지</p>
-                        </td>
-                        <td><b>배송완료 후 리뷰 작성이 가능합니다.</b></td>
-                        <td>관리자</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- <div class="btns">
-                <button type="button" class="btn_left">left</button>
-                <button type="button" class="btn_right">right</button>
-            </div> -->
-        </div>
-
-
-        <h3>related product</h3>
-        <div class="related_detail">
-            <div class="related1">
-                <a class="related_detail_1" href="#">
-                    <img src="/image/bear_1.jpg" alt="연관 상품 이미지 1">
-                </a>
-                <div class="relatedpay_1">
-                    <a class="relatedname_1" href="#">연관 상품 1</a>
-                    <strong>36,800원</strong>
-                    리뷰 1998개
-                </div>
-            </div>
-
-            <div class="related2">
-                <a class="related_detail_2" href="#">
-                    <img src="/image/smallbear.jpg" alt="연관 상품 이미지 2">
-                </a>
-                <div class="relatedpay_2">
-                    <a class="relatedname_2" href="#">연관 상품 2</a>
-                    <strong>32,500원</strong>
-                    리뷰 1998개
-                </div>
-            </div>
-
-            <div class="related3">
-                <a class="related_detail_3" href="#">
-                    <img src="/image/smallbear2.png" alt="연관 상품 이미지 3">
-                </a>
-                <div class="relatedpay_3">
-                    <a class="relatedname_3" href="#">연관 상품 3</a>
-                    <strong>28,000원</strong>
-                    리뷰 1998개
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <footer>
-        <hr class="hr_footer">
-        <div class="under">
-            <ul class="under_menu1">
-                <li><a href="">PSYC소개</a>
-                </li>
-                <li><a href="">이용안내</a></li>
-                <li><a href="">개인정보처리방침</a></li>
-                <li><a href="../Community/community_service.html">이용약관</a></li>
-                <li><a href="../Community/community_notice.html">고객센터</a></li>
+        <div class="productCategory_review" id="reviewInfo">
+            <h3>REVIEW</h3>
+            <hr>
+            <ul class="review_category">
+                <li class="reviewtitle focustitle">추천순</li>
+                <li class="reviewtitle">최신순</li>
+                <li class="reviewtitle">별점순</li>
             </ul>
-        </div>
-
-        <div>
-            <hr class="hr_footer">
-            <div class="info">
-                <strong>PSYC (주)</strong>
-                경기도 성남시 분당구 돌마로 46 KR 5층 <strong>대표자</strong> 하영권
-                <ul>
-                    <li><strong>고객센터 : </strong>031 - 1234 - 5678 / <strong>( 점심시간 : PM 1:20 ~ pm 2:20 )</strong></li>
-                    <li><strong> [ 입금 계좌 : 110-191-012012 / 예금주 : PSYC ] </strong></li>
-                    <li><strong>FAX : </strong>031 - 9876 - 5432</li>
-                    <li><strong>E-MAIL : </strong><button type="button">abcde@psyc.co.kr</button></li>
-                </ul>
-                <p>copyright (c) <strong>www.psyc.co.kr</strong> all rights reserved.</p>
-                <div class="icon">
-                    <a href="#"><img src="/icon/icon_insta.jpg" alt="instagram" title="인스타그램"></a>
-                    <a href="#"><img src="/icon/icon_youtube.jpg" alt="youtube" title="유튜브"></a>
-                    <a href="#"><img src="/icon/icon_kakao.jpg" alt="kakaotalk" title="카카오톡"></a>
-                </div>
+            <div class="review_starbox">
+                <span>리뷰가 없습니다.</span>
+                <strong>리뷰를 작성해 보세요!</strong>
+                <button class="writebtn">상품 리뷰 작성하기</button>
             </div>
         </div>
-    </footer>
+
+        <div class="productCategory_qna" id="qnaInfo">
+            <div class="qna_span">
+                <h3>Q&A</h3>
+                <div>
+                    <span class="writebtn">Write</span>
+                    <span>All</span>
+                </div>
+            </div>
+            <hr>
+
+            <div class="qna_box">
+                <span>게시물이 없습니다</span>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="category">
+        <li><a href="#detailInfo">상세 정보</a></li>
+        <li><a href="#deliveryInfo">배송 / 교환</a></li>
+        <li><a href="#reviewInfo">REVIEW</a></li>
+        <li><a href="#qnaInfo">Q & A</a></li>
+    </ul>
 </body>
 
 </html>

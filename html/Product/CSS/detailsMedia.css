@@ -1,0 +1,56 @@
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .big_container {
+        flex-direction: column;
+    }
+
+    .img_container,
+    .shopInfo_container {
+        width: 100%;
+    }
+
+    .shopInfo_container {
+        margin-left: 0;
+    }
+
+    .productCategory_review,
+    .delivery_info,
+    .productCategory_box,
+    .productCategory_qna {
+        width: 90%;
+    }
+
+    .category {
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .shareProduct {
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productCategory_box {
+        width: 95%;
+    }
+
+    .sub_image {
+        width: 15%;
+    }
+
+    .productCategory_review,
+    .delivery_info,
+    .productCategory_box,
+    .productCategory_qna {
+        width: 95%;
+    }
+
+    .category {
+        display: none;
+    }
+}
