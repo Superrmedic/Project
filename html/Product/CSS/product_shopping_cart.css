@@ -122,7 +122,6 @@ main .shop_cartboxnone {
     text-align: center;
     width: 25px;
     border: 1px solid #727272;
-
 }
 
 .shop_cartright {
@@ -138,11 +137,20 @@ main .shop_cartboxnone {
 
 .shop_cartright a {
     background-color: #fff;
-    border: solid;
-    border-width: 1px;
-    color: #6d6d6d;
     text-decoration: none;
     width: 25px
+}
+
+.downCheckbtn {
+    border: solid;
+    border-width: 1px 0 1px 1px;
+    color: #727272;
+}
+
+.UpCheckbtn {
+    border: solid;
+    border-width: 1px 1px 1px 0;
+    color: #727272;
 }
 
 .shop_Btnlist {
