@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/join.css">
+    <title>join</title>
+</head>
+
+<body>
+
+    <div id="contents">
+
+        <div class="title">
+            <h2>join us</h2>
+        </div>
+
+        <form class="joinForm">
+            <div class="joinTitle">
+                <h3>일반 회원가입</h3>
+            </div>
+            <fieldset>
+                <ul class="ulContainer joinContainer">
+                    <li class="id">
+                        <label>아이디 *</label>
+                        <input type="text" name="id">
+                    </li>
+                    <li class="password">
+                        <label>비밀번호 *</label>
+                        <input type="password" name="password">
+                        <p>* 영문대소문자/숫자/특수문자 중 2가지 이상 조합</p>
+                    </li>
+                    <li class="passwordConfirm">
+                        <label>비밀번호 확인 *</label>
+                        <input type="password" name="passwordConfirm">
+                    </li>
+                    <li class="authMember">
+                        <label>본인 인증 *</label>
+                        <button>휴대폰 본인 인증</button>
+                        <p>* 본인 명의의 휴대폰으로 본인인증을 진행합니다.</p>
+                    </li>
+                    <li class="name">
+                        <label>이름 *</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li class="phone">
+                        <label>휴대전화 *</label>
+                        <div class="phoneBox">
+                            <input type="number" name="phone1">
+                            <span>-</span>
+                            <input type="number" name="phone2">
+                            <span>-</span>
+                            <input type="number" name="phone3">
+                        </div>
+                    </li>
+                    <li class="email">
+                        <label>이메일 *</label>
+                        <input type="text" name="email">
+                    </li>
+                </ul>
+
+                <ul class="ulContainer moreInformation">
+                    <li class="petName">
+                        <label>반려동물 이름</label>
+                        <input type="text" name="petName">
+                    </li>
+                    <li class="petSex">
+                        <label>반려동물 성별</label>
+                        <ul class="checkBox">
+                            <li>
+                                <input type="radio" name="petSex" id="w" />
+                                <label for="w" id="w"></label>
+                                <label for="w">여</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="petSex" id="m" />
+                                <label for="m" id="m"></label>
+                                <label for="m">남</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="petBirth">
+                        <label>반려동물 생일</label>
+                        <ul class="birthBox">
+                            <li class="petYear">
+                                <input type="number" name="petYear" />
+                                <span>년</span>
+                            </li>
+                            <li class="petMonth">
+                                <input type="number" name="petMonth" />
+                                <span>월</span>
+                            </li>
+                            <li class="petDay">
+                                <input type="number" name="petDay" />
+                                <span>월</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="petImg">
+                        <label>반려동물 사진</label>
+                        <input type="file" name="petImg">
+                    </li>
+                    <li class="petInfo">
+                        <label>반려동물 정보</label>
+                        <div class="petInfoCover">
+                            <ul class="checkBox petInfoBox">
+                                <li class="dog">
+                                    <input type="radio" name="petInfo" id="dog" />
+                                    <label for="dog" id="dog"></label>
+                                    <label for="dog">강아지</label>
+                                </li>
+                                <li class="cat">
+                                    <input type="radio" name="petInfo" id="cat" />
+                                    <label for="cat" id="cat"></label>
+                                    <label for="cat">고양이</label>
+                                </li>
+                            </ul>
+                            <select name="dogSelect">
+                                <option id="species_sub" value="" selected="">우리 아이는?</option>
+                                <option value="하이브리드견">하이브리드견</option>
+                                <option value="말티즈">말티즈</option>
+                                <option value="시츄">시츄</option>
+                                <option value="요크셔테리어">요크셔테리어</option>
+                                <option value="푸들">푸들</option>
+                                <option value="비숑">비숑</option>
+                                <option value="꼬똥드툴레아">꼬똥드툴레아</option>
+                                <option value="웰시코기">웰시코기</option>
+                                <option value="불독">불독</option>
+                                <option value="포메라니안">포메라니안</option>
+                                <option value="테리어">테리어</option>
+                                <option value="치와와">치와와</option>
+                                <option value="그 외">그 외</option>
+                            </select>
+
+                            <select name="catSelect">
+                                <option id="species_sub" value="" selected="">우리 아이는?</option>
+                                <option value="하이브리드묘">하이브리드묘</option>
+                                <option value="코리안숏헤어">코리안숏헤어</option>
+                                <option value="아메리카숏헤어">아메리카숏헤어</option>
+                                <option value="스코티시폴드">스코티시폴드</option>
+                                <option value="페르시아">페르시아</option>
+                                <option value="샴">샴</option>
+                                <option value="터키시앙고라">터키시앙고라</option>
+                                <option value="러시안블루">러시안블루</option>
+                                <option value="아비시니안">아비시니안</option>
+                                <option value="엑조틱">엑조틱</option>
+                                <option value="시베리안">시베리안</option>
+                                <option value="그 외">그 외</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="recommender">
+                        <label>추천인 아이디</label>
+                        <input type="text" name="recommender">
+                    </li>
+                </ul>
+
+                <div class="agree">
+                    <div class="agreeAll checkBox">
+                        <input type="checkbox" name="agreeAll" id="agreeAll" />
+                        <label for="agreeAll" id="agreeAll"></label>
+                        <label for="agreeAll">약관 전체 동의</label>
+                    </div>
+                    <ul class="checkBox">
+                        <li>
+                            <div>
+                                <input type="checkbox" name="agreeServiceCheck" id="agreeServiceCheck" />
+                                <label for="agreeServiceCheck" id="agreeServiceCheck"></label>
+                                <label for="agreeServiceCheck">[필수] 이용약관 동의</label>
+                            </div>
+                            <button>약관보기</button>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="checkbox" name="agreePrivacyCheck" id="agreePrivacyCheck" />
+                                <label for="agreePrivacyCheck" id="agreePrivacyCheck"></label>
+                                <label for="agreePrivacyCheck">[필수] 개인정보 수집 및 이용 동의</label>
+                            </div>
+                            <button>약관보기</button>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="checkbox" name="marketingCheck" id="marketingCheck" />
+                                <label for="marketingCheck" id="marketingCheck"></label>
+                                <label for="marketingCheck">[선택] 쇼핑정보 수신 동의</label>
+                            </div>
+                            <button>약관보기</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="joinSubmit">
+                    <button>회원 가입하기</button>
+                </div>
+            </fieldset>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

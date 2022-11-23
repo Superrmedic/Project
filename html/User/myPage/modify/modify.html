@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../commonCss/common.css">
+    <link rel="stylesheet" href="./css/modify.css">
+    <title>modify</title>
+</head>
+<body>
+        
+    <div class="myPageContainer">
+        <div class="pageTopContainer">
+            <div class="pageTitle">
+                <h2>MY PAGE</h2>
+            </div>
+            <ul class="pageNav">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">주문내역</a></li>
+                <li><a href="#">쿠폰</a></li>
+                <li><a href="#">적립금</a></li>
+                <li><a href="#">회원정보</a></li>
+            </ul>
+        </div>
+
+        <div class="myPageModifyContainer">
+            <h2>회원정보</h2>
+
+            <form class="modifyForm">
+                <fieldset>
+                    <ul class="ulContainer joinContainer">
+                        <li class="authMember">
+                            <label>회원 인증 *</label>
+                            <div class="cover">
+                                <span>고객님은 현재 미인증 상태입니다. 본인 인증을 진행해주세요.</span>
+                                <button>휴대폰 본인 인증</button>
+                                <p>
+                                    <span>본인 명의의 휴대폰으로 본인인증을 진행합니다.</span><br/>
+                                    정보통신망법에 따라 고객의 주민등록번호를 수집하지 않습니다.<br/>
+                                    안전한 전자상거래를 위하여 아래 수단으로 본인인증을 완료하여 주시기 바랍니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="id">
+                            <label>아이디 *</label>
+                            <input type="text" name="id">
+                        </li>
+                        <li class="password">
+                            <label>비밀번호 *</label>
+                            <input type="password" name="password">
+                            <p class="tip">(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)</p>
+                        </li>
+                        <li class="passwordConfirm">
+                            <label>비밀번호 확인 *</label>
+                            <input type="password" name="passwordConfirm">
+                        </li>
+                        <li class="name">
+                            <label>이름 *</label>
+                            <input type="text" name="name">
+                        </li>
+                        <li class="address">
+                            주소창 추후에 추가예정
+                        </li>
+                        <li class="phone">
+                            <label>휴대전화 *</label>
+                            <div class="phoneBox cover">
+                                <input type="number" name="phone1">
+                                <span>-</span>
+                                <input type="number" name="phone2">
+                                <span>-</span>
+                                <input type="number" name="phone3">
+                            </div>
+                        </li>
+                        <li class="sms">
+                            <label>SMS 수신여부 *</label>
+                            <ul class="checkBox cover">
+                                <li>
+                                    <input type="radio" name="sms" id="y"/>
+                                    <label for="y" id="y"></label>
+                                    <label for="y">수신함</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sms" id="n"/>
+                                    <label for="n" id="n"></label>
+                                    <label for="n">수신안함</label>
+                                </li>
+                            </ul>
+                            <p class="tip">쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.</p>
+                        </li>
+                        <li class="email">
+                            <label>이메일 *</label>
+                            <input type="text" name="email">
+                        </li>
+                        <li class="emailCheck">
+                            <label>email 수신여부 *</label>
+                            <ul class="checkBox cover">
+                                <li>
+                                    <input type="radio" name="email" id="emailY"/>
+                                    <label for="emailY" id="emailY"></label>
+                                    <label for="emailY">수신함</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="email" id="emailN"/>
+                                    <label for="emailN" id="emailN"></label>
+                                    <label for="emailN">수신안함</label>
+                                </li>
+                            </ul>
+                            <p class="tip">쇼핑몰에서 제공하는 유익한 이벤트 소식을 이메일로 받으실 수 있습니다.</p>
+                        </li>
+                        <li class="sex">
+                            <label>성별</label>
+                            <ul class="checkBox cover">
+                                <li>
+                                    <input type="radio" name="petSex" id="w"/>
+                                    <label for="w" id="w"></label>
+                                    <label for="w">여</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="petSex" id="m"/>
+                                    <label for="m" id="m"></label>
+                                    <label for="m">남</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="birth">
+                            <label>생일</label>
+                            <ul class="birthBox cover">
+                                <li class="year">
+                                    <input type="number" name="petYear"/>
+                                    <span>년</span>
+                                </li>
+                                <li class="month">
+                                    <input type="number" name="petMonth"/>
+                                    <span>월</span>
+                                </li>
+                                <li class="day">
+                                    <input type="number" name="petDay"/>
+                                    <span>일</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <ul class="ulContainer moreInformation">
+                        <li class="petName">
+                            <label>반려동물 이름</label>
+                            <input type="text" name="petName">
+                        </li>
+                        <li class="petSex">
+                            <label>반려동물 성별</label>
+                            <ul class="checkBox cover">
+                                <li>
+                                    <input type="radio" name="petSex" id="w"/>
+                                    <label for="w" id="w"></label>
+                                    <label for="w">여</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="petSex" id="m"/>
+                                    <label for="m" id="m"></label>
+                                    <label for="m">남</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="petBirth">
+                            <label>반려동물 생일</label>
+                            <ul class="birthBox cover">
+                                <li class="petYear">
+                                    <input type="number" name="petYear"/>
+                                    <span>년</span>
+                                </li>
+                                <li class="petMonth">
+                                    <input type="number" name="petMonth"/>
+                                    <span>월</span>
+                                </li>
+                                <li class="petDay">
+                                    <input type="number" name="petDay"/>
+                                    <span>일</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="petImg">
+                            <label>반려동물 사진</label>
+                            <input type="file" name="petImg">
+                        </li>
+                        <li class="petInfo">
+                            <label>반려동물 정보</label>
+                            <div class="petInfoCover">
+                                <ul class="checkBox petInfoBox cover">
+                                    <li class="dog">
+                                        <input type="radio" name="petInfo" id="dog"/>
+                                        <label for="dog" id="dog"></label>
+                                        <label for="dog">강아지</label>
+                                    </li>
+                                    <li class="cat">
+                                        <input type="radio" name="petInfo" id="cat"/>
+                                        <label for="cat" id="cat"></label>
+                                        <label for="cat">고양이</label>
+                                    </li>
+                                </ul>
+                                <select name="dogSelect">
+                                    <option id="species_sub" value="" selected="">우리 아이는?</option>
+                                    <option value="하이브리드견">하이브리드견</option>
+                                    <option value="말티즈">말티즈</option>
+                                    <option value="시츄">시츄</option>
+                                    <option value="요크셔테리어">요크셔테리어</option>
+                                    <option value="푸들">푸들</option>
+                                    <option value="비숑">비숑</option>
+                                    <option value="꼬똥드툴레아">꼬똥드툴레아</option>
+                                    <option value="웰시코기">웰시코기</option>
+                                    <option value="불독">불독</option>
+                                    <option value="포메라니안">포메라니안</option>
+                                    <option value="테리어">테리어</option>
+                                    <option value="치와와">치와와</option>
+                                    <option value="그 외">그 외</option>
+                                </select>
+    
+                                <select name="catSelect">
+                                    <option id="species_sub" value="" selected="">우리 아이는?</option>
+                                    <option value="하이브리드묘">하이브리드묘</option>
+                                    <option value="코리안숏헤어">코리안숏헤어</option>
+                                    <option value="아메리카숏헤어">아메리카숏헤어</option>
+                                    <option value="스코티시폴드">스코티시폴드</option>
+                                    <option value="페르시아">페르시아</option>
+                                    <option value="샴">샴</option>
+                                    <option value="터키시앙고라">터키시앙고라</option>
+                                    <option value="러시안블루">러시안블루</option>
+                                    <option value="아비시니안">아비시니안</option>
+                                    <option value="엑조틱">엑조틱</option>
+                                    <option value="시베리안">시베리안</option>
+                                    <option value="그 외">그 외</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="">
+                            <label>그 외</label>
+                            <input type="text" name="petInfo"/>
+                        </li>
+                        <li class="recommender">
+                            <label>추천인 아이디</label>
+                            <input type="text" name="recommender">
+                        </li>
+                    </ul>
+    
+                    <div class="modifySubmit">
+                        <button>회원정보수정</button>
+                        <button>회원탈퇴</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

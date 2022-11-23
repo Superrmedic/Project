@@ -1,0 +1,114 @@
+/* 공통 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+/* ----------------------------------------------- */
+
+
+
+
+
+/* 비회원 주문조회 전체 박스 마진 */
+#contents {
+    margin: 50px 0;
+}
+
+/* ----------------------------------------------- */
+
+
+
+/* 상단 타이틀  */
+.title {
+    text-align: center;
+    color: #477A7B;
+    margin-bottom: 50px;
+}
+
+.title p {
+    color: black;
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+/* ----------------------------------------------- */
+
+
+
+
+
+/* 비회원주문 폼 */
+.loginForm {
+    width: 335px;
+    margin: 0 auto;
+}
+
+.loginForm fieldset {
+    border: 0;
+}
+
+.loginForm .loginContainer li {
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.loginForm .loginContainer li input {
+    width: 245px;
+    border: 0;
+    border-bottom: 1px solid #d8d8d8;
+    padding-left: 10px;
+    outline: 0;
+    font-size: 13px;
+    color: #477A7B;
+    box-sizing: border-box;
+}
+
+.loginForm .loginContainer li input::placeholder {
+    color: #b4b4b4
+}
+
+.loginForm .loginContainer li label {
+    font-size: 12px;
+    color: #222;
+}
+
+/* 주문 비밀번호 */
+.loginForm .loginContainer li.orderPassword {
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.loginForm .loginContainer li.orderPassword p {
+    display: block;
+    font-size: 10px;
+    color: #b4b4b4;
+    position: absolute;
+    top: 70%;
+    right: 45px;
+    letter-spacing: -1px;
+}
+
+.loginForm .loginContainer li:last-child button {
+    width: 100%;
+    padding: 16px 0;
+    color: white;
+    background-color: #477A7B;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+/* ----------------------------------------------- */
