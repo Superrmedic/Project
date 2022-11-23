@@ -123,7 +123,7 @@ main input {
 .shop_oderinfo input {
     font-family: 'IBMPlexSansKR-Regular';
     width: 15%;
-    height: 30px;
+    height: 28px;
     border: 1px solid rgb(182, 182, 182);
     border-radius: 3px;
     padding: 5px;
@@ -268,7 +268,7 @@ main input {
     color: #353535;
 }
 
-.order_select button:nth-child(1) {
+.order_select .bordButton {
     background-color: #477a7b;
     border: 1px solid #477a7b;
     color: white;
@@ -555,4 +555,45 @@ main input {
     color: #fff;
     border-radius: 2px;
     box-shadow: none;
+}
+
+/* 경고창 */
+
+.shop_ordermail .alertEmail {
+    width: 20%;
+    font-size: 0.8em;
+    color: red;
+    margin-left: 8%;
+    display: none;
+}
+
+.shop_ordername .alertName {
+    width: 20%;
+    font-size: 0.8em;
+    color: red;
+    margin-left: 8%;
+    display: none;
+}
+
+.shop_orderphone .alertPhone {
+    width: 20%;
+    font-size: 0.8em;
+    color: red;
+    margin-left: 8%;
+    display: none;
+}
+
+.selfTextbox {
+    display: none;
+}
+
+.selfDeliverybox {
+    font-family: 'IBMPlexSansKR-Regular';
+    width: 97.3%;
+    height: 40px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 3px;
+    padding-left: 9px;
+    margin-top: 8px;
+    display: none;
 }

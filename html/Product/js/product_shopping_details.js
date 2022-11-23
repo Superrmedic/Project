@@ -127,7 +127,6 @@ for (let i = 0; i < deleteBtn.length; i++) {
                 input[i].value = optionSelect[i].amount;
             }
         }
-        console.log(optionSelect);
 
         if (event.target.parentNode.className === "downCheckbtn" ||
             event.target.className === "downCheckbtn") {
@@ -155,8 +154,7 @@ shop_container.addEventListener('click', function (event) {
 
     if (eventObj === butNow || eventObj === addCart) {
         if (price !== 0) {
-            eventObj.href = "./product_shopping_cart.html";
-            eventObj === addCart ? "./product_shopping_cart.html" : "./product_shopping_payment.html";
+            eventObj.href = eventObj === addCart ? "./product_shopping_cart.html" : "./product_shopping_payment.html";
         } else {
             alert('구매하실 상품을 선택해 주세요!');
         }

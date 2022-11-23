@@ -46,15 +46,18 @@
             </ul>
         </article>
 
-        <form action="#">
+        <form>
             <article class="shop_oderinfo">
                 <h2>주문자 정보</h2>
                 <hr>
                 <div class="shop_ordername">
                     <label>
                         <span>이름</span>
-                        <input name="name" maxlength="10" value="유미현" required>
+                        <input name="name" class="nameInput" maxlength="10" value="유미현" required>
                     </label>
+                    <div>
+                        <span class="alertName">한글 혹은 영문만 입력 가능합니다!</span>
+                    </div>
                 </div>
 
                 <div class="shop_orderphone">
@@ -69,20 +72,24 @@
                             <option value="4">018</option>
                             <option value="5">019</option>
                         </select>
-                        <input type="tell" placeholder="입력해주세요" size="6" maxlength="9" value="8282-5353" required
-                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        <input type="tell" class="phoneInput" value="8282-5353" placeholder="입력해주세요" size="6"
+                            maxlength="9" required>
                     </label>
+                    <div>
+                        <span class="alertPhone">한글 혹은 영문만 입력 가능합니다!</span>
+                    </div>
                 </div>
 
                 <div class="shop_ordermail">
                     <label>
                         <span>이메일</span>
-                        <input type="text" value="greencomputer" placeholder="이메일" maxlength="20" title="이메일 앞부분"
-                            required>
+                        <input type="text" value="greencomputer" class="emailInput" placeholder="이메일" maxlength="17"
+                            title="이메일 앞부분" required>
                         <div class="emailWhelk">@</div>
-                        <select>
-                            <option value>선택해 주세요</option>
-                            <option value="0" selected>naver.com</option>
+                        <input type="text" class="selfTextbox" id="5">
+                        <select class="emailSelect">
+                            <option value selected>선택해 주세요</option>
+                            <option value="0">naver.com</option>
                             <option value="1">hanmail.net</option>
                             <option value="2">daum.net</option>
                             <option value="3">gmail.com</option>
@@ -90,6 +97,9 @@
                             <option value="5">직접 입력</option>
                         </select>
                     </label>
+                    <div>
+                        <span class="alertEmail">영문 혹은 숫자만 입력 가능합니다!</span>
+                    </div>
                 </div>
             </article>
             <a href="./product_shopping_details.html"></a>
@@ -99,7 +109,9 @@
                     <article class="shop_deliinfoBox">
                         <div class="shop_deliTitle">
                             <h2>배송 정보</h2>
-                            <span>변경</span>
+                            <a href="../User/myPage/address/list/list.html">
+                                <span>변경</span>
+                            </a>
                         </div>
                         <hr>
 
@@ -121,9 +133,10 @@
                                 <option value="2">배송 전에 미리 연락주세요</option>
                                 <option value="3">부재시 경비실에 맡겨주세요</option>
                                 <option value="4">부재시 전화주시거나 문자 남겨주세요</option>
-                                <option value="5">직접 입력</option>
+                                <option value="5" option="text">직접 입력</option>
                             </select>
                         </label>
+                        <input type="text" class="selfDeliverybox" id="5" placeholder="배송 요청사항을 입력해 주세요!">
                     </article>
 
                     <article class="couponpaydiv">
@@ -133,9 +146,9 @@
                             <div class="order_select">
                                 <span>결제수단 선택</span>
                                 <div class="paycontainer">
-                                    <button style='cursor:pointer;'>신용카드</button>
-                                    <button style='cursor:pointer;'>간편 결제</button>
-                                    <button style='cursor:pointer;'>휴대폰</button>
+                                    <button style='cursor:pointer' class="cardTab bordButton">신용카드</button>
+                                    <button style='cursor:pointer' class="easyTab">간편 결제</button>
+                                    <button style='cursor:pointer' class="phoneTab">휴대폰</button>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +194,7 @@
                                     <option value="11">카카오뱅크카드</option>
                                 </select>
 
-                                <select class="monthSelect">
+                                <select class="monthSelect" disabled>
                                     <option value="0">일시불</option>
                                     <option value="1">2개월 (무이자)</option>
                                     <option value="2">3개월 (무이자)</option>
