@@ -16,7 +16,10 @@ const infoContainer = document.querySelector('.shop_oderinfo'),
     cardTab = payContainer.querySelector('.cardTab'),
     paycontainer_easy = payContainer.querySelector('.paycontainer_easy'),
     paycontainer_card = payContainer.querySelector('.paycontainer_card'),
-    cardSelect = payContainer.getElementsByTagName('select');
+    cardSelect = payContainer.getElementsByTagName('select'),
+    checkBox = document.querySelector('.orderprivacybox'),
+    checkList = checkBox.getElementsByTagName('input'),
+    pointBtn = document.querySelector('.pointBtn');
 
 function checkAlert(check, input, alert) {
     if (!check.test(input.value)) {
@@ -93,4 +96,20 @@ cardSelect[0].addEventListener('click', (e) => {
         cardSelect[1].style.color = "#bdbdbd";
         cardSelect[1].disabled = true;
     }
-});
+});     // 신용카드 select 설정 탭
+
+pointBtn.addEventListener('click', () => alert('사용 가능한 포인트가 없습니다!'));
+
+checkBox.addEventListener('click', (e) => {
+    for (let i = 1; i <= checkList.length - 1; i++) {
+        if (e.target.tagName === 'INPUT') {
+            if (e.target === checkList[0] && checkList[0].checked) {
+                checkList[i].checked = true;
+            } else if (e.target === checkList[0]) {
+                checkList[i].checked = false;
+            } else {
+                checkList[0].checked = false;
+            }
+        }
+    }
+});     // 개인정보 약관 동의
