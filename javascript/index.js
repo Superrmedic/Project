@@ -5,7 +5,7 @@ const headerTop = document.getElementById("headerTop"), // 헤더
 const prdContainer = body.querySelector(".productContainer"); //싱픔이미지리스트
 const prdImg1 = prdContainer.querySelectorAll(".prdImg1"), // 마우스 호버를 위한 이미지1
   prdImg2 = prdContainer.querySelectorAll(".prdImg2"); // 마우스 호버를 위한 이미지2
-let slideWrapper = document.querySelector('.slideWrapper'),
+let slideWrapper = document.querySelector(".slideWrapper"),
   slides = document.querySelector(".slides"),
   slidesLi = document.querySelectorAll(".slides li"),
   slideCount = slidesLi.length / 2, //끝인지 마지막인지 구분할 용도
@@ -16,7 +16,11 @@ let slideWrapper = document.querySelector('.slideWrapper'),
 
 const toTop = body.querySelector(".toTop"); // 탑버튼
 
-// // const categoryContainer = document.querySelector(".categoryContainer");
+const categoryContainer = document.querySelector(".categoryContainer");
+const subTitle = document.querySelectorAll(".subTitle");
+const categoryHover = document.querySelectorAll(".categoryHover");
+
+const category = document.querySelectorAll(".category");
 const searchBarWrap = document.querySelector(".searchBarWrap"); // 숨긴 검색바
 const searchBtn = headerTop.querySelector(".searchBtn"); // 검색버튼
 const searchCloseBtn = headerTop.querySelector(".searchCloseBtn"); //창닫기
@@ -56,17 +60,42 @@ for (let i = 0; i < prdImg1.length; i++) {
 }
 
 // ----------------------------------- 검색창
-headerTop.addEventListener('click', function (e) {
+headerTop.addEventListener("click", function (e) {
   if (e.target == searchBtn) {
-    searchBarWrap.style.opacity = '1';
-    searchBarWrap.classList.remove('hidden');
+    searchBarWrap.style.opacity = "1";
+    searchBarWrap.classList.remove("hidden");
     console.log(e.target);
   } else if (e.target == searchCloseBtn) {
-    searchBarWrap.classList.add('hidden');
-    searchBarWrap.style.opacity = '0';
+    searchBarWrap.classList.add("hidden");
+    searchBarWrap.style.opacity = "0";
   }
 });
 
+// ====================================  드롭다운 메뉴
+function showMenu(v) {
+  categoryHover[v].style.visibility = "visible";
+  categoryHover[v].style.opacity = "0.5";
+  subTitle[v].style.opacity = "0.5";
+}
+for (let i = 0; i < subTitle.length; i++) {
+  subTitle[i].addEventListener("mouseenter", function (e) {
+    for (let x = 0; x < subTitle.length; x++) {
+      showMenu(x);
+    }
+
+    if (e.target == subTitle[i]) {
+      categoryHover[i].style.opacity = "1";
+      subTitle[i].style.opacity = "1";
+    }
+  });
+  category[i].addEventListener("mouseleave", function (e) {
+    for (let x = 0; x < categoryHover.length; x++) {
+      (categoryHover[x].style.visibility = "hidden"),
+        (categoryHover[x].style.opacity = "0"),
+        (categoryHover[x].style.transition = ".5s");
+    }
+  });
+}
 // ----------------------------------- 자동 슬라이드
 
 function moveSlide(num) {
@@ -81,7 +110,6 @@ function leftMove() {
     moveSlide(0);
   }
 }
-
 
 nextBtn.addEventListener("click", leftMove);
 
