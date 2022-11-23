@@ -120,7 +120,9 @@ main .shop_cartboxnone {
 .shop_cartright input {
     border-width: 1px 0;
     text-align: center;
-    width: 25px
+    width: 25px;
+    border: 1px solid #727272;
+
 }
 
 .shop_cartright {

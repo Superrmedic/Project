@@ -288,6 +288,8 @@ main select {
 .product_checkNum input {
     width: 25px;
     text-align: center;
+    border: 1px solid #727272;
+
 }
 
 .product_checkNum a {
