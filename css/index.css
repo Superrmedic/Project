@@ -101,13 +101,24 @@ body {
   .slideWrapper img {
     left: 0%;
   }
+
+  .mobileImg {
+    display: none;
+  }
 }
 
 /* 창 축소시 배너 이미지 */
 @media (max-width: 900px) {
   body {
     overflow-x: hidden;
+    /* width: 100vw; */
   }
+
+  .pcImg {
+    display: none;
+  }
+
+
 }
 
 /* --------------- 상품 리스트 박스--------------- */
@@ -225,6 +236,8 @@ body {
 /* -----------창 축소시 메인 상품 이미지 조절----------------------------- */
 /* === 상품 상단 글자 === */
 @media (max-width: 900px) {
+  .mainContainer {}
+
   .productMent {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(11, 1fr);
