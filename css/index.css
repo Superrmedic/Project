@@ -151,7 +151,7 @@ body {
   grid-column: 6 / -1;
   grid-row: 3 / 3;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 3rem;
   color: rgb(83, 121, 122);
 }
 
@@ -242,7 +242,7 @@ body {
   height: 5em;
   line-height: 5em;
   color: rgb(83, 121, 122);
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .footerTop a {
@@ -265,7 +265,7 @@ body {
     grid-column: 4 / -1;
     grid-row: 2 / 3;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3rem;
     color: rgb(83, 121, 122);
     white-space: noWrap;
   }

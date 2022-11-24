@@ -8,7 +8,7 @@
 /* 헤더 전체 */
 #headerTop {
   display: flex;
-  font-size: 2em;
+  font-size: 2.3rem;
   position: fixed;
   width: 100%;
   height: 100px;
@@ -27,7 +27,7 @@
   z-index: 2;
   white-space: noWrap;
   box-sizing: border-box;
-  font-size: 2em;
+  font-size: 2rem;
   margin-left: 1em;
   justify-content: center;
 }
@@ -96,11 +96,11 @@ li strong {
 /* SHOP, BEST, EVENT, COMMUNITY 카테고리들 */
 .subContainer {
   width: 100%;
-  height: 305px;
+  height: 100px;
   /* height: 100px; */
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute; */
   /* background-color: greenyellow; */
 }
 
@@ -111,7 +111,7 @@ li strong {
 /* 큰 카테고리 a 태그 */
 .subContainer a {
   color: rgb(83, 121, 122);
-  font-size: 0.8em;
+  font-size: 1rem;
 }
 
 .categoryContainer .subList {
@@ -140,6 +140,7 @@ li strong {
 /* -------------------------마우스 호버했을 때 나오는 리스트들 ---------------------*/
 .categoryHover {
   visibility: hidden;
+  /* display: none; */
   opacity: 0;
   display: flex;
   justify-content: center;
@@ -162,7 +163,10 @@ li strong {
 
 .categoryHover li {
   line-height: 100%;
+}
 
+.categoryHover a {
+  font-size: 1.5rem;
 }
 
 .categoryHover li:hover a {
@@ -227,7 +231,7 @@ li strong {
 
 .list5 a {
   color: #53797a;
-  font-size: 0.6em;
+  font-size: 0.6rem;
 }
 
 /* ====================================================== */
@@ -275,7 +279,7 @@ li strong {
 /* 상품명검색 글씨 입력하는 부분 */
 .mainSearch input[type="text"] {
   width: 350px;
-  font-size: 1em;
+  font-size: 1rem;
   margin-right: -6px;
   padding-left: 40px;
   box-sizing: border-box;
