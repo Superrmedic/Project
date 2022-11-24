@@ -10,9 +10,11 @@ const joinContainer = document.querySelector('.joinContainer'),
 
 function checkAlert(check, input) {
     if (!check.test(input.value)) {
-        input.style.border = "1px solid rgb(182, 182, 182)";
+        input.style.borderBottom = "1px solid rgb(182, 182, 182)";
+        // 맞을 때
     } else {
-        input.style.border = "1px solid red";
+        input.style.borderBottom = "1px solid red";
+        // 아닐 때
     }
 }       // 유효성 검사 style 함수
 
@@ -37,8 +39,7 @@ for (let i = 0; i < inputJoin.length; i++) {
             if (!!pwdCheck.test(eventObj.value)) {
                 if (eventObj.value.length >= 10) {
                     password = eventObj.value;
-                    eventObj.style.border = "1px solid rgb(182, 182, 182)";
-                    console.log(password);
+                    eventObj.style.borderBottom = "1px solid rgb(182, 182, 182)";
                 }
             } else {
                 eventObj.style.border = "1px solid red";
@@ -47,9 +48,9 @@ for (let i = 0; i < inputJoin.length; i++) {
             console.log(eventObj.value);
             console.log(password);
             if (password == eventObj.value) {
-                eventObj.style.border = "1px solid rgb(182, 182, 182)";
+                eventObj.style.borderBottom = "1px solid rgb(182, 182, 182)";
             } else {
-                eventObj.style.border = "1px solid red";
+                eventObj.style.borderBottom = "1px solid red";
             }
         }
     });
