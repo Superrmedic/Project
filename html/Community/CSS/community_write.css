@@ -119,7 +119,11 @@ select {
   background-color: #dfe9e8;
   padding: 6px;
   border: none;
+}
 
+p span {
+  /* display: none; */
+  color: red;
 }
 
 option {
