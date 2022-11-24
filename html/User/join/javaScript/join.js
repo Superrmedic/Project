@@ -45,8 +45,6 @@ for (let i = 0; i < inputJoin.length; i++) {
                 eventObj.style.border = "1px solid red";
             }
         } else if (eventObj.name === 'passwordConfirm') {
-            console.log(eventObj.value);
-            console.log(password);
             if (password == eventObj.value) {
                 eventObj.style.borderBottom = "1px solid rgb(182, 182, 182)";
             } else {
