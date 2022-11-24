@@ -2,12 +2,10 @@
 
 const headerTop = document.getElementById("headerTop"), // 헤더
   body = document.querySelector("body"); // 바디
-const prdContainer = body.querySelector(".productContainer"); //싱픔이미지리스트
-const prdImg1 = prdContainer.querySelectorAll(".prdImg1"), // 마우스 호버를 위한 이미지1
-  prdImg2 = prdContainer.querySelectorAll(".prdImg2"); // 마우스 호버를 위한 이미지2
 
 const toTop = body.querySelector(".toTop"); // 탑버튼
 
+// 드롭메뉴
 const categoryContainer = document.querySelector(".categoryContainer");
 const subTitle = document.querySelectorAll(".subTitle");
 const categoryHover = document.querySelectorAll(".categoryHover");
@@ -17,7 +15,7 @@ const searchBarWrap = document.querySelector(".searchBarWrap"); // 숨긴 검색
 const searchBtn = headerTop.querySelector(".searchBtn_a"); // 검색버튼
 const searchCloseBtn = headerTop.querySelector(".searchCloseBtn"); //창닫기
 
-const hbgBtn = headerTop.querySelector('.headerLogo .hamburgerBtn');
+const hbgBtn = headerTop.querySelector(".headerLogo .hamburgerBtn");
 
 // ==============================================================================
 window.addEventListener("scroll", btnView);
@@ -39,18 +37,6 @@ const moveTop = (e) => {
 };
 
 toTop.addEventListener("click", moveTop);
-
-// ----------------------------------- 이미지 위에 마우스 올렸을 때 다른 이미지로 변환
-for (let i = 0; i < prdImg1.length; i++) {
-  prdImg1[i].addEventListener("mouseover", function (e) {
-    let tg = e.target;
-    tg.style.zIndex = "0";
-  });
-
-  prdImg2[i].addEventListener("mouseout", function (e) {
-    prdImg1[i].style.zIndex = "1";
-  });
-}
 
 // ----------------------------------- 검색창
 headerTop.addEventListener("click", function (e) {
@@ -105,26 +91,23 @@ for (let i = 0; i < subTitle.length; i++) {
   });
 }
 
-
 // ------------------------------ 햄버거버튼
 let idx = 0;
-hbgBtn.addEventListener('click', function () {
+hbgBtn.addEventListener("click", function () {
   idx++;
   for (let i = 0; i < category.length; i++) {
-
     console.log(hbgBtn);
     console.log(category[0]);
     if (idx % 2 == 1) {
-      category[i].style.visibility = 'visible';
+      category[i].style.visibility = "visible";
     } else {
-      category[i].style.visibility = 'hidden';
+      category[i].style.visibility = "hidden";
     }
 
-    category[i].addEventListener('mouseenter', function (e) {
-      if (matchMedia("screen and (max-width: 900px)").matches) { }
-      category[i].style.background = 'none';
+    category[i].addEventListener("mouseenter", function (e) {
+      if (matchMedia("screen and (max-width: 900px)").matches) {
+      }
+      category[i].style.background = "none";
     });
-
-
   }
 });
