@@ -27,7 +27,7 @@ body {
 }
 
 .c_community_head {
-  background-color: rgb(223, 233, 232);
+  color: #477A7B;
   font-weight: bolder;
   font-size: 3rem;
 }
@@ -62,13 +62,13 @@ body {
 
 .c_page_catagory li a {
   font-size: initial;
-  color: black;
+  color: #477A7B;
   text-decoration: none;
   text-align: center;
   width: 100px;
   line-height: 40px;
   border-radius: 30px;
-  background-color: white;
+  background-color: #f3f3f3;
 }
 
 .c_page_catagory li a:hover {

@@ -96,13 +96,13 @@ body {
 .c_menucategory ul:nth-of-type(1) li:nth-of-type(1) {
   font-weight: bold;
   box-sizing: border-box;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #477A7B;
 }
 
 .c_menucategory ul li:hover {
   font-weight: bold;
   box-sizing: border-box;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #477A7B;
 }
 
 .c_menucategory ul li a {
@@ -159,6 +159,7 @@ body {
 }
 
 .c_service_list p {
+  padding-left: 10px;
   text-align: inherit;
 }
 

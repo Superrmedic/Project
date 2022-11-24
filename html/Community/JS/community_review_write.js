@@ -1,3 +1,5 @@
+'use strict'
+
 const title = document.querySelector('.c_review_title'),
   pwBox = document.querySelector('.inputPassword > input'),
   warning = document.getElementsByTagName('span'),
@@ -10,7 +12,8 @@ pwBox.addEventListener("input", function () {
   checkPW = this.value;
 });
 
-confirm.addEventListener('click', function (e) {
+confirm.addEventListener('click', function () {
+
   if (!title.value) {
     alert('제목을 입력해 주세요.')
   } else if (!textarea.value) {

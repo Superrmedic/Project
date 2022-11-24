@@ -42,9 +42,9 @@ aside {
 }
 
 .c_community_head {
-  background-color: rgb(223, 233, 232);
   font-weight: bolder;
   font-size: 3rem;
+  color: #477A7B;
 }
 
 .c_community_contents {
@@ -72,13 +72,13 @@ aside {
 
 .c_page_catagory li a {
   font-size: initial;
-  color: black;
+  color: #477A7B;
   text-decoration: none;
   text-align: center;
   width: 100px;
   line-height: 40px;
   border-radius: 30px;
-  background-color: white;
+  background-color: #f3f3f3;
 }
 
 .c_page_catagory li .c_notice {
@@ -107,26 +107,26 @@ aside {
 
 /* <------ 메인 게시판 ------> */
 main .c_board_table {
-  width: 60vw;
+  width: 55vw;
   border-top: 3px solid #bbbbbb;
   text-align: center;
   border-collapse: collapse;
 }
 
 main .c_board_table th {
-  font-size: initial;
+  font-size: 14px;
   border-bottom: 1px solid #bbbbbb;
   line-height: 5vh;
 }
 
 main .c_board_table td {
-  font-size: initial;
+  font-size: 14px;
   padding: 12.5px 0px 12.5px 0px;
   border-bottom: 1px solid rgb(244, 244, 244);
 }
 
 main .c_board_table td a {
-  font-size: initial;
+  font-size: 14px;
   text-decoration: none;
   color: black;
 }
@@ -180,7 +180,7 @@ main .c_board_table p {
   }
 
   .detail {
-    width: 135px;
+    width: 120px;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;

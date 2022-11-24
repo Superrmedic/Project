@@ -23,9 +23,9 @@ body {
 }
 
 .c_community_head {
-  background-color: rgb(223, 233, 232);
+  color: #477A7B;
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .c_community_contents {
@@ -53,13 +53,13 @@ body {
 
 .c_page_catagory li a {
   font-size: initial;
-  color: black;
+  color: #477A7B;
   text-decoration: none;
   text-align: center;
   width: 100px;
   line-height: 40px;
   border-radius: 30px;
-  background-color: white;
+  background-color: #f3f3f3;
 }
 
 .c_page_catagory li .review {
@@ -80,7 +80,7 @@ body {
 
 /* 상품 후기 부분 */
 .c_goodshead {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 10px 0 10px;
 }
@@ -141,7 +141,7 @@ body {
 
 /*==================== 리뷰 부분 =============*/
 .c_reviewhead {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .c_reviewhr {
@@ -182,7 +182,7 @@ input {
   outline: 0;
   border: 0;
   display: none;
-  font-size: 2rem;
+  font-size: 1rem;
   border-radius: 20px;
   padding: 0 20px;
 }
@@ -196,7 +196,7 @@ input {
   border-radius: 50%;
   color: #477A7B;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   transition: all 1s;
 }
 
