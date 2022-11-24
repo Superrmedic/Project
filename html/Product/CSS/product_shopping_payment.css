@@ -15,15 +15,12 @@
     font-family: 'IBMPlexSansKR-Regular';
 }
 
-body {
-    width: 1024px;
-    margin: auto;
-    box-sizing: border-box;
-}
-
 /* ===================== 메인 중복 ======================== */
 
 main {
+    width: 1024px;
+    margin: auto;
+    box-sizing: border-box;
     margin: 0 auto;
     color: #353535;
 }
