@@ -35,7 +35,8 @@
         <tr>
           <th>제목
           <td>
-            <input class="c_review_title" type="text" maxlength="50" required>
+            <input class="c_review_title" type="text" maxlength="50" oninvalid="this.setCustomValidity(' ')" required
+              autocomplete="off">
           </td>
           </th>
         </tr>
@@ -62,7 +63,8 @@
           </tr>
           <tr>
             <th> 비밀번호 </th>
-            <td class="inputPassword"><input class="c_password" type="password" maxlength="6"></td>
+            <td class="inputPassword"><input class="c_password" type="password" maxlength="6"
+                oninvalid="this.setCustomValidity(' ')" required autocomplete="off"></td>
           </tr>
           <tr>
             <th> 비밀글 설정 </th>

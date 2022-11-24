@@ -32,7 +32,7 @@ accordion[0].addEventListener('click', function (e) {
     accordion[i].style.fontWeight = 'normal';
   }
 
-  accordionBox[0].style.borderBottom = 'solid 1px black';
+  accordionBox[0].style.borderBottom = 'solid 1px #477A7B';
   this.style.fontWeight = 'bold';
 
   for (let i = 0; i < contents.length; i++) {
@@ -47,7 +47,7 @@ accordion[1].addEventListener('click', function (e) {
     accordion[i].style.fontWeight = 'normal';
   }
 
-  accordionBox[1].style.borderBottom = 'solid 1px black';
+  accordionBox[1].style.borderBottom = 'solid 1px #477A7B';
   this.style.fontWeight = 'bold';
 
   for (let i = 0; i < contents.length; i++) {
@@ -66,7 +66,7 @@ accordion[2].addEventListener('click', function (e) {
     accordion[i].style.fontWeight = 'normal';
   }
 
-  accordionBox[2].style.borderBottom = 'solid 1px black';
+  accordionBox[2].style.borderBottom = 'solid 1px #477A7B';
   this.style.fontWeight = 'bold';
 
   for (let i = 0; i < contents.length; i++) {
@@ -85,7 +85,7 @@ accordion[3].addEventListener('click', function (e) {
     accordion[i].style.fontWeight = 'normal';
   }
 
-  accordionBox[3].style.borderBottom = 'solid 1px black';
+  accordionBox[3].style.borderBottom = 'solid 1px #477A7B';
   this.style.fontWeight = 'bold';
   for (let i = 0; i < contents.length; i++) {
     contents[i].style.display = 'none';
@@ -103,7 +103,7 @@ accordion[4].addEventListener('click', function (e) {
     accordion[i].style.fontWeight = 'normal';
   }
 
-  accordionBox[4].style.borderBottom = 'solid 1px black';
+  accordionBox[4].style.borderBottom = 'solid 1px #477A7B';
   this.style.fontWeight = 'bold';
   for (let i = 0; i < contents.length; i++) {
     contents[i].style.display = 'none';
@@ -121,7 +121,7 @@ accordion[5].addEventListener('click', function (e) {
     accordion[i].style.fontWeight = 'normal';
   }
 
-  accordionBox[5].style.borderBottom = 'solid 1px black';
+  accordionBox[5].style.borderBottom = 'solid 1px #477A7B';
   this.style.fontWeight = 'bold';
   for (let i = 0; i < contents.length; i++) {
     contents[i].style.display = 'none';

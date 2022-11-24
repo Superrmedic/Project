@@ -49,7 +49,8 @@
         <tr>
           <td colspan="2">
             <div>
-              <textarea name="content" id="" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea>
+              <textarea name="content" id="" cols="30" rows="10" placeholder="내용을 입력해주세요"
+                oninvalid="this.setCustomValidity(' ')" required></textarea>
             </div>
           </td>
         </tr>
@@ -70,7 +71,8 @@
           <tr>
             <th> 비밀번호 </th>
             <td class="inputPassword">
-              <input c1ass="c_password" autocomplete="off" maxlength="6" type="password">
+              <input c1ass="c_password" autocomplete="off" maxlength="6" oninvalid="this.setCustomValidity(' ')"
+                type="password">
               <p>
                 <span>* 숫자만 입력 총 6글자</span>
               </p>

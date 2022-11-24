@@ -29,9 +29,9 @@ body {
 }
 
 .c_community_head {
-  background-color: rgb(223, 233, 232);
   font-weight: bolder;
   font-size: 3rem;
+  color: #477A7B;
 }
 
 .c_community_contents {
@@ -58,13 +58,13 @@ body {
 }
 
 .c_page_catagory li a {
-  color: black;
+  color: #477A7B;
   text-decoration: none;
   text-align: center;
   width: 100px;
   line-height: 40px;
   border-radius: 30px;
-  background-color: white;
+  background-color: #f3f3f3;
   font-size: initial;
 }
 
@@ -81,7 +81,7 @@ body {
 .c_menucategory ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   max-width: 1000px;
   margin: auto;
 
@@ -106,8 +106,8 @@ body {
 }
 
 .c_menucategory ul li a {
-  color: black;
-  padding: 10px;
+  color: #477A7B;
+  /* padding: 10px; */
   text-align: center;
   line-height: 50px;
   text-decoration: none;
@@ -127,8 +127,8 @@ body {
 .c_noticed {
   margin: 60px auto 150px;
   font-size: 14px;
-  height: 620px;
-  width: 80%;
+  height: 650px;
+  width: 55%;
 }
 
 .c_service_container {
@@ -137,7 +137,7 @@ body {
 }
 
 .c_service_header {
-  font-size: 18px;
+  font-size: 1.02em;
   line-height: 50px;
   background: #f8f8f8;
   border-bottom: 1px solid #bbbbbb;
@@ -147,7 +147,7 @@ body {
 }
 
 .c_service_body {
-  padding: 10px;
+  padding: 30px;
   font-size: 15px;
   overflow: hidden;
   background-color: white;
