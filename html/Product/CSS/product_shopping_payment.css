@@ -88,6 +88,8 @@ main input {
 .shop_orderlist .detailnum_box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 20%;
 }
 
 .shop_orderlist a {
