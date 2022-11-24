@@ -147,7 +147,7 @@
       <tbody>
         <tr>
           <th> 첨부파일1 </th>
-          <td><input type="file"></td>
+          <td class="files"><input type="file" oninvalid="this.setCustomValidity(' ')" required></td>
         </tr>
         <tr>
           <th> 첨부파일2 </th>
@@ -161,7 +161,14 @@
           <th> 비밀번호 </th>
           <td class="inputPassword">
             <input c1ass="c_password" autocomplete="off" maxlength="6" oninvalid="this.setCustomValidity(' ')"
-              type="password">
+              type="password" required style="outline: none;
+              background-color: #dfe9e8;
+              padding: 6px;
+              border: none;">
+            <!-- <p>
+              <span>*</span>
+              <span>6자리 숫자만 입력가능합니다.</span>
+            </p> -->
           </td>
         </tr>
         <tr>

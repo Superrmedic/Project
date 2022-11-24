@@ -114,19 +114,26 @@ select {
   outline: none;
 }
 
-.c_password {
+.inputPassword .c_password {
   outline: none;
   background-color: #dfe9e8;
   padding: 6px;
   border: none;
 }
 
+/* P{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 p span {
   font-size: 10px;
   letter-spacing: -0.5px;
-  /* display: none; */
-  color: red;
-}
+  display: none;
+  color: crimson;
+} */
+
 
 option {
   padding: 10px;
@@ -141,8 +148,6 @@ label {
   padding: 10px 0;
   width: 1024px;
   text-align: right;
-  /* min-width: 1024px;
-  max-width: 1024px; */
 }
 
 .c_button a {
