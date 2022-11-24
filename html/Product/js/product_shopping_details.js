@@ -44,7 +44,9 @@ const optionSelect = [
 ];
 
 function loginCheck() {
-    confirm('로그인이 필요한 서비스입니다, 로그인 하시겠습니까?');
+    if (confirm('로그인이 필요한 서비스입니다, 로그인 하시겠습니까?')) {
+        window.open('../User/login/login.html', '_self');
+    }
 }
 
 function clip() {
