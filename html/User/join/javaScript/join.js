@@ -3,22 +3,27 @@
 const joinContainer = document.querySelector('.joinContainer'),
     inputJoin = joinContainer.getElementsByTagName('input'),
     checkBox = document.querySelector('.agree'),
-    checkList = checkBox.getElementsByTagName('input');
+    checkList = checkBox.getElementsByTagName('input'),
+    petInfoBox = document.querySelector('.petInfoCover'),
+    [dogSelct, catSelect] = petInfoBox.getElementsByTagName('select');
+
 
 function checkAlert(check, input) {
     if (!check.test(input.value)) {
-        input.style.border = "1px solid rgb(182, 182, 182)"
+        input.style.border = "1px solid rgb(182, 182, 182)";
     } else {
-        input.style.border = "1px solid red"
+        input.style.border = "1px solid red";
     }
 }       // 유효성 검사 style 함수
 
+let password = '';
 for (let i = 0; i < inputJoin.length; i++) {
     inputJoin[i].addEventListener('input', (e) => {
         let eventObj = e.target,
             checkKor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/,   // 한글만
             checkNum = /[0-9]+$/,       // 숫자만
-            checkkorEng = /[a-z|A-Z|ㄱ-ㅎ|가-힣]/;      // 한글 영어만
+            checkkorEng = /[a-z|A-Z|ㄱ-ㅎ|가-힣]/,      // 한글 영어만
+            pwdCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
 
         if (eventObj.name === 'id') {
             checkAlert(checkKor, eventObj);
@@ -26,6 +31,26 @@ for (let i = 0; i < inputJoin.length; i++) {
             checkAlert(checkNum, eventObj);
         } else if (eventObj.name === 'email') {
             checkAlert(checkKor, eventObj);
+        } else if (eventObj.name === 'phone2' || eventObj.name === 'phone3') {
+            checkAlert(checkkorEng, eventObj);
+        } else if (eventObj.name === 'password') {
+            if (!!pwdCheck.test(eventObj.value)) {
+                if (eventObj.value.length >= 10) {
+                    password = eventObj.value;
+                    eventObj.style.border = "1px solid rgb(182, 182, 182)";
+                    console.log(password);
+                }
+            } else {
+                eventObj.style.border = "1px solid red";
+            }
+        } else if (eventObj.name === 'passwordConfirm') {
+            console.log(eventObj.value);
+            console.log(password);
+            if (password == eventObj.value) {
+                eventObj.style.border = "1px solid rgb(182, 182, 182)";
+            } else {
+                eventObj.style.border = "1px solid red";
+            }
         }
     });
 }   // 정규식 유효성 검사
@@ -44,14 +69,13 @@ checkBox.addEventListener('click', (e) => {
     }
 });     // 개인정보 약관 동의
 
-// cardSelect[0].addEventListener('click', (e) => {
-//     if (e.target.value != 0) {
-//         cardSelect[1].style.backgroundColor = "white";
-//         cardSelect[1].style.color = "#353535";
-//         cardSelect[1].disabled = false;
-//     } else {
-//         cardSelect[1].style.backgroundColor = "#f5f5f5";
-//         cardSelect[1].style.color = "#bdbdbd";
-//         cardSelect[1].disabled = true;
-//     }
-// });     // 반려동물 정보 탭
+petInfoBox.addEventListener('click', (e) => {
+    if (e.target.id === 'dog') {
+        dogSelct.style.display = 'block';
+        catSelect.style.display = 'none';
+    } else if (e.target.id === 'cat') {
+        catSelect.style.display = 'block';
+        dogSelct.style.display = 'none';
+    }
+});     // 반려동물 선택
+
