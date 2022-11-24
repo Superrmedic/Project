@@ -138,11 +138,11 @@ label {
 }
 
 .c_button {
-  margin-top: 10px;
+  margin: 10px auto;
   padding: 10px 0;
   width: 85%;
   text-align: right;
-  min-width: 1000px;
+  min-width: 1024px;
   margin-bottom: 15px;
 }
 
