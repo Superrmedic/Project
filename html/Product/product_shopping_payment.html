@@ -53,7 +53,7 @@
                 <div class="shop_ordername">
                     <label>
                         <span>이름</span>
-                        <input name="name" class="nameInput" maxlength="10" value="유미현" required>
+                        <input name="name" class="nameInput" maxlength="10" value="유미현">
                     </label>
                     <div>
                         <span class="alertName">한글 혹은 영문만 입력 가능합니다!</span>
@@ -73,10 +73,10 @@
                             <option value="5">019</option>
                         </select>
                         <input type="tell" class="phoneInput" value="8282-5353" placeholder="입력해주세요" size="6"
-                            maxlength="9" required>
+                            maxlength="9">
                     </label>
                     <div>
-                        <span class="alertPhone">한글 혹은 영문만 입력 가능합니다!</span>
+                        <span class="alertPhone">숫자만 입력 가능합니다!</span>
                     </div>
                 </div>
 
@@ -84,7 +84,7 @@
                     <label>
                         <span>이메일</span>
                         <input type="text" value="greencomputer" class="emailInput" placeholder="이메일" maxlength="17"
-                            title="이메일 앞부분" required>
+                            title="이메일 앞부분">
                         <div class="emailWhelk">@</div>
                         <input type="text" class="selfTextbox" id="5">
                         <select class="emailSelect">
@@ -153,30 +153,34 @@
                             </div>
                         </div>
 
-                        <div class="paycontainer_Box">
-                            <div class="paycontainer_easy">
-                                <label>
-                                    <input type="radio" name="pay" checked>
-                                    <span>카카오페이</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="pay">
-                                    <span>네이버페이</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="pay">
-                                    <span>토스</span>
-                                </label>
-                                <br>
-                                <label>
-                                    <input type="radio" name="pay">
-                                    <span>페이코</span>
-                                </label>
-                                <label class="smilepay">
-                                    <input type="radio" name="pay">
-                                    <span>스마일페이</span>
-                                </label>
-                            </div>
+                        <div class="paycontainer_Box checkBox2">
+                            <ul class="paycontainer_easy">
+                                <li>
+                                    <input type="radio" name="pay" id="pay1" checked>
+                                    <label for="pay1" id="pay1"></label>
+                                    <label for="pay1"><span>카카오페이</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="pay" id="pay2">
+                                    <label for="pay2" id="pay2"></label>
+                                    <label for="pay2"><span>네이버페이</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="pay" id="pay3">
+                                    <label for="pay3" id="pay3"></label>
+                                    <label for="pay3"><span>토스</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="pay" id="pay4">
+                                    <label for="pay4" id="pay4"></label>
+                                    <label for="pay4"><span>페이코</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="pay" id="pay5">
+                                    <label for="pay5" id="pay5"></label>
+                                    <label for="pay5"><span>스마일페이</span></label>
+                                </li>
+                            </ul>
 
                             <div class="paycontainer_card">
                                 <select class="cardSelect">
@@ -268,7 +272,7 @@
                         <div class="agreeAll checkBox">
                             <input type="checkbox" name="agreeAll" id="agreeAll" />
                             <label for="agreeAll" id="agreeAll"></label>
-                            <label for="agreeAll">결제 진행 필수 전체 동의</label>
+                            <label for="agreeAll"><span>결제 진행 필수 전체 동의</span></label>
                         </div>
                     </li>
 
@@ -276,7 +280,7 @@
                         <div class="agreeCheck checkBox">
                             <input type="checkbox" name="agreeCheck1" id="agreeCheck1" />
                             <label for="agreeCheck1" id="agreeCheck1"></label>
-                            <label for="agreeCheck1">(필수) 개인정보 수집/이용 및 처리 동의</label>
+                            <label for="agreeCheck1"><span>(필수) 개인정보 수집/이용 및 처리 동의</span></label>
                         </div>
                     </li>
 
@@ -284,7 +288,7 @@
                         <div class="agreeCheck checkBox">
                             <input type="checkbox" name="agreeCheck2" id="agreeCheck2" />
                             <label for="agreeCheck2" id="agreeCheck2"></label>
-                            <label for="agreeCheck2">(필수) 개인정보 제3자 제공 동의</label>
+                            <label for="agreeCheck2"><span>(필수) 개인정보 제3자 제공 동의</span></label>
                         </div>
                     </li>
 
@@ -292,13 +296,13 @@
                         <div class="agreeCheck checkBox">
                             <input type="checkbox" name="agreeCheck3" id="agreeCheck3" />
                             <label for="agreeCheck3" id="agreeCheck3"></label>
-                            <label for="agreeCheck3">(필수) 전자지급 결제대행 서비스 이용약관 동의</label>
+                            <label for="agreeCheck3"><span>(필수) 전자지급 결제대행 서비스 이용약관 동의</span></label>
                         </div>
                     </li>
                 </ul>
 
                 <div class="orderbuttonpar">
-                    <button type="submit" class="totalorderbutton" style='cursor:pointer;'>28,500원
+                    <button class="totalorderbutton" style='cursor:pointer;'>28,500원
                         결제하기</button>
                 </div>
             </article>

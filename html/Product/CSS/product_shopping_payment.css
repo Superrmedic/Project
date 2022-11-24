@@ -280,10 +280,6 @@ main input {
     margin-left: 20.8%;
 }
 
-.paycontainer_Box span {
-    width: 27%;
-}
-
 /* 간편 결제 */
 
 .paycontainer_Box .paycontainer_easy {
@@ -597,3 +593,72 @@ main input {
     margin-top: 8px;
     display: none;
 }
+
+/* ----------------------------------------------- */
+
+
+
+/* 라디오 버튼 커스텀 */
+.checkBox2 {
+    position: relative;
+    display: flex;
+}
+
+.checkBox2 label {
+    display: inline-block;
+    font-size: 15px !important;
+    cursor: pointer;
+}
+
+.checkBox2 input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.checkBox2 input[type="radio"]+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+.checkBox2 input[type="radio"]+label:before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    bottom: -6px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 100%;
+    box-shadow: none;
+}
+
+.checkBox2 input[type="radio"]:checked+label:before {
+    width: 18px;
+    height: 18px;
+    background: #477A7B;
+    border-color: #477A7B;
+}
+
+.checkBox2 input[type="radio"]:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 13px;
+    bottom: -1px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: none;
+}
+
+/* ----------------------------------------------- */
