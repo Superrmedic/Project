@@ -52,5 +52,6 @@
 
     .category {
         display: none;
+        color :hsl(240, 100%, 50%)
     }
 }

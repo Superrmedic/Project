@@ -125,8 +125,9 @@ body {
 }
 
 .c_noticed {
-  margin: 60px auto;
+  margin: 60px auto 150px;
   font-size: 14px;
+  height: 500px;
   width: 80%;
 }
 
