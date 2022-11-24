@@ -77,7 +77,7 @@ a {
     position: absolute;
     font-size: 12px;
     left: 12px;
-    bottom: 3px;
+    bottom: 1px;
     width: 10px;
     height: 10px;
     color: #fff;
@@ -141,8 +141,12 @@ a {
 
 .myPageAddressContainer table tbody td:nth-child(n+2):nth-child(-n+4) {
     padding: 20px 20px;
+    white-space: nowrap;
 }
 
+.myPageAddressContainer table tbody td:last-child {
+    white-space: nowrap;
+}
 
 
 

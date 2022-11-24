@@ -27,39 +27,73 @@
                 <ul class="ulContainer joinContainer">
                     <li class="id">
                         <label>아이디 *</label>
-                        <input type="text" name="id">
+                        <div class="inputBox">
+                            <input type="text" name="id">
+                            <p name="id">
+                                <span>*</span>
+                                <span>대문자/공백/특수문자가 포함되었거나, 숫자로 시작 또는 숫자로만 이루어진 아이디는 사용할 수 없습니다.</span>
+                            </p>
+                        </div>
                     </li>
                     <li class="password">
                         <label>비밀번호 *</label>
-                        <input type="password" name="password">
-                        <p>* 영문대소문자/숫자/특수문자 중 2가지 이상 조합</p>
+                        <div class="inputBox">
+                            <input type="password" name="password">
+                            <p>
+                                <span>*</span>
+                                <span>영문대소문자/숫자/특수문자 중 2가지 이상 조합</span>
+                            </p>
+                        </div>
                     </li>
                     <li class="passwordConfirm">
                         <label>비밀번호 확인 *</label>
-                        <input type="password" name="passwordConfirm">
+                        <div class="inputBox">
+                            <input type="password" name="passwordConfirm">
+                            <p>
+                                <span>*</span>
+                                <span>비밀번호가 일치하지 않습니다.</span>
+                            </p>
+                        </div>
                     </li>
                     <li class="authMember">
                         <label>본인 인증 *</label>
-                        <button>휴대폰 본인 인증</button>
-                        <p>* 본인 명의의 휴대폰으로 본인인증을 진행합니다.</p>
+                        <div class="inputBox">
+                            <button>휴대폰 본인 인증</button>
+                            <p>* 본인 명의의 휴대폰으로 본인인증을 진행합니다.</p>
+                        </div>
                     </li>
                     <li class="name">
                         <label>이름 *</label>
-                        <input type="text" name="name">
+                        <div class="inputBox">
+                            <input type="text" name="name">
+                            <p>
+                                <span>*</span>
+                                <span>유효한 이름을 입력해주세요</span>
+                            </p>
+                        </div>
                     </li>
                     <li class="phone">
                         <label>휴대전화 *</label>
                         <div class="phoneBox">
-                            <input name="phone1" value="010" readonly>
-                            <span>-</span>
-                            <input name="phone2" maxlength="4">
-                            <span>-</span>
-                            <input name="phone3" maxlength="4">
+                            <div class="inputBox">
+                                <input name="phone1" value="010" readonly>
+                                <span>-</span>
+                                <input name="phone2" maxlength="4">
+                                <span>-</span>
+                                <input name="phone3" maxlength="4">
+                            </div>
+                            <p class="phoneText">* 유효한 전화번호를 입력해주세요</p>
                         </div>
                     </li>
                     <li class="email">
                         <label>이메일 *</label>
-                        <input type="email" name="email">
+                        <div class="inputBox">
+                            <input type="email" name="email">
+                            <p>
+                                <span>*</span>
+                                <span>유효한 이메일을 입력해주세요</span>
+                            </p>
+                        </div>
                     </li>
                 </ul>
 

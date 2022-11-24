@@ -73,7 +73,7 @@ input[type=number] {
     content: '';
     position: absolute;
     left: 8px;
-    bottom: 8px;
+    bottom: 0px;
     width: 18px;
     height: 18px;
     text-align: center;
@@ -94,7 +94,7 @@ input[type=number] {
     content: '';
     position: absolute;
     left: 13px;
-    bottom: 13px;
+    bottom: 5px;
     width: 10px;
     height: 10px;
     background: #fff;
@@ -222,8 +222,7 @@ input[type=number] {
 .joinForm .ulContainer li {
     display: flex;
     justify-content: space-between;
-    line-height: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .joinForm .ulContainer li input {
@@ -253,17 +252,15 @@ input[type=number] {
 /* 비밀번호 입력 */
 .joinForm .ulContainer li.password {
     flex-wrap: wrap;
-    position: relative;
 }
 
 .joinForm .ulContainer li p {
-    display: block;
     font-size: 10px;
     color: #b4b4b4;
-    position: absolute;
-    top: 70%;
-    right: 45px;
-    letter-spacing: -1px;
+    display: flex;
+    gap: 5px;
+    color: crimson;
+    display: none;
 }
 
 /* 본인인증 */
@@ -280,19 +277,25 @@ input[type=number] {
     line-height: 35px;
 }
 
+.joinForm .ulContainer li.authMember p {
+    color: #6b6b6b;
+}
+
 /* 핸드폰 번호 입력 */
 .joinForm .ulContainer li.phone .phoneBox {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.joinForm .ulContainer li.phone .phoneBox span {
+.joinForm .ulContainer li.phone .phoneBox .inputBox {
+    display: flex;
+    height: 40px;
     line-height: 40px;
 }
 
 .joinForm .ulContainer li.phone input {
-    width: 28%;
+    width: 80%;
     display: inline-block;
 }
 

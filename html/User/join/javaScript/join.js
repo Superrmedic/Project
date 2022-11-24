@@ -2,18 +2,31 @@
 
 const joinContainer = document.querySelector('.joinContainer'),
     inputJoin = joinContainer.getElementsByTagName('input'),
+    phoneText = joinContainer.querySelector('.phoneText'),
     checkBox = document.querySelector('.agree'),
     checkList = checkBox.getElementsByTagName('input'),
     petInfoBox = document.querySelector('.petInfoCover'),
+    pTag = checkBox.querySelector('input p'),
     [dogSelct, catSelect] = petInfoBox.getElementsByTagName('select');
 
+console.log(phoneText);
 
 function checkAlert(check, input) {
     if (!check.test(input.value)) {
         input.style.borderBottom = "1px solid rgb(182, 182, 182)";
+        input.name == "phone2" || input.name == "phone3" ?
+            phoneText.style.display = "none"
+            :
+            input.nextSibling.nextSibling.style.display = "none";
         // 맞을 때
     } else {
         input.style.borderBottom = "1px solid red";
+        console.log(input.name)
+        input.name == "phone2" || input.name == "phone3" ?
+            phoneText.style.display = "block"
+            :
+            input.nextSibling.nextSibling.style.display = "block";
+
         // 아닐 때
     }
 }       // 유효성 검사 style 함수
@@ -40,15 +53,20 @@ for (let i = 0; i < inputJoin.length; i++) {
                 if (eventObj.value.length >= 10) {
                     password = eventObj.value;
                     eventObj.style.borderBottom = "1px solid rgb(182, 182, 182)";
+                    eventObj.nextSibling.nextSibling.style.display = "none";
+
                 }
             } else {
-                eventObj.style.border = "1px solid red";
+                eventObj.style.borderBottom = "1px solid red";
+                eventObj.nextSibling.nextSibling.style.display = "block";
             }
         } else if (eventObj.name === 'passwordConfirm') {
             if (password == eventObj.value) {
                 eventObj.style.borderBottom = "1px solid rgb(182, 182, 182)";
+                eventObj.nextSibling.nextSibling.style.display = "none";
             } else {
                 eventObj.style.borderBottom = "1px solid red";
+                eventObj.nextSibling.nextSibling.style.display = "block";
             }
         }
     });
