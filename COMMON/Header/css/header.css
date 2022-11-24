@@ -76,7 +76,7 @@ li strong {
   opacity: 1;
 }
 
-.hidden {
+.hidden_ {
   visibility: hidden;
   /* display: none; */
 }

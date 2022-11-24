@@ -25,9 +25,9 @@ window.addEventListener("scroll", btnView);
 // 탑버튼이 스크롤 일정구간 밑에서 보이게
 function btnView() {
   if (window.pageYOffset > this.innerHeight / 1.5) {
-    toTop.classList.remove("hidden");
+    toTop.classList.remove("hidden_");
   } else {
-    toTop.classList.add("hidden");
+    toTop.classList.add("hidden_");
   }
 }
 
@@ -56,10 +56,10 @@ for (let i = 0; i < prdImg1.length; i++) {
 headerTop.addEventListener("click", function (e) {
   if (e.target == searchBtn) {
     searchBarWrap.style.opacity = "1";
-    searchBarWrap.classList.remove("hidden");
+    searchBarWrap.classList.remove("hidden_");
     console.log(e.target);
   } else if (e.target == searchCloseBtn) {
-    searchBarWrap.classList.add("hidden");
+    searchBarWrap.classList.add("hidden_");
     searchBarWrap.style.opacity = "0";
   }
 });
