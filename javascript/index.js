@@ -10,7 +10,6 @@ let slideWrapper = document.querySelector(".slideWrapper"),
   slidesLi = document.querySelectorAll(".slides li"),
   slideCount = slidesLi.length / 2, //끝인지 마지막인지 구분할 용도
   currentIdx = 0, //시작인덱스
-  // slideWidth = 100 + "%", // 슬라이드 이미지 넓이
   prevBtn = document.querySelector(".prevBtn"), // 이전 버튼
   nextBtn = document.querySelector(".nextBtn"); // 다음 버튼
 
@@ -22,10 +21,11 @@ const categoryHover = document.querySelectorAll(".categoryHover");
 
 const category = document.querySelectorAll(".category");
 const searchBarWrap = document.querySelector(".searchBarWrap"); // 숨긴 검색바
-const searchBtn = headerTop.querySelector(".searchBtn"); // 검색버튼
+const searchBtn = headerTop.querySelector(".searchBtn_a"); // 검색버튼
 const searchCloseBtn = headerTop.querySelector(".searchCloseBtn"); //창닫기
 
-console.log(slideCount);
+const hbgBtn = headerTop.querySelector('.headerLogo .hamburgerBtn');
+
 // ==============================================================================
 window.addEventListener("scroll", btnView);
 
@@ -74,9 +74,19 @@ headerTop.addEventListener("click", function (e) {
 // ====================================  드롭다운 메뉴
 function showMenu(v) {
   categoryHover[v].style.visibility = "visible";
-  categoryHover[v].style.opacity = "0.5";
+  categoryHover[v].style.opacity = "0";
+  categoryHover[v].style.backgroundColor = "rgb(255, 255, 255)";
   subTitle[v].style.opacity = "0.5";
+
+  if (matchMedia("screen and (min-width: 901px)").matches) {
+    categoryHover[1].style.background = "none";
+  }
+
+  if (matchMedia("screen and (max-width: 900px)").matches) {
+    subTitle[v].style.backgroundColor = "white";
+  }
 }
+
 for (let i = 0; i < subTitle.length; i++) {
   subTitle[i].addEventListener("mouseenter", function (e) {
     for (let x = 0; x < subTitle.length; x++) {
@@ -93,6 +103,11 @@ for (let i = 0; i < subTitle.length; i++) {
       (categoryHover[x].style.visibility = "hidden"),
         (categoryHover[x].style.opacity = "0"),
         (categoryHover[x].style.transition = ".5s");
+
+      if (matchMedia("screen and (min-width: 900px)").matches) {
+        category[i].style.background = "none";
+        subTitle[i].style.background = "none";
+      }
     }
   });
 }
@@ -124,4 +139,25 @@ prevBtn.addEventListener("click", function () {
   }
 });
 
-// setInterval(leftMove, 5000);
+setInterval(leftMove, 5000);
+
+
+// ------------------------------ 햄버거버튼
+let idx = 0;
+hbgBtn.addEventListener('click', function () {
+  idx++;
+  for (let i = 0; i < category.length; i++) {
+    if (idx % 2 == 1) {
+      category[i].style.visibility = 'visible';
+    } else {
+      category[i].style.visibility = 'hidden';
+    }
+
+    category[i].addEventListener('mouseenter', function (e) {
+      if (matchMedia("screen and (max-width: 900px)").matches) { }
+      category[i].style.background = 'none';
+    });
+
+
+  }
+});

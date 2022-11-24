@@ -1,23 +1,21 @@
 @font-face {
   font-family: "IBMPlexSansKR-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 /* 헤더 전체 */
 #headerTop {
+  display: flex;
   font-size: 2em;
   position: fixed;
   width: 100%;
   height: 100px;
   letter-spacing: 1px;
   top: 0;
-  /* background: none; */
   z-index: 2;
   font-family: "IBMPlexSansKR-Regular";
-  /* background-color: aqua; */
 }
 
 /* 로고 */
@@ -30,12 +28,28 @@
   white-space: noWrap;
   box-sizing: border-box;
   font-size: 2em;
-  background-color: green;
   margin-left: 1em;
+  justify-content: center;
 }
 
 .headerLogo a {
-  height: 2em;
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: rgb(83, 121, 122);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.headerLogo a:nth-of-type(1) {
+  display: none;
+}
+
+.headerLogo a:nth-of-type(2) {
+  background-color: rgb(83, 121, 122);
   color: white;
 }
 
@@ -76,6 +90,7 @@ li strong {
   top: 0;
   width: 100%;
   height: 100px;
+  transition: all .3s;
 }
 
 /* SHOP, BEST, EVENT, COMMUNITY 카테고리들 */
@@ -95,21 +110,21 @@ li strong {
 
 /* 큰 카테고리 a 태그 */
 .subContainer a {
-  /* color: rgb(83, 121, 122); */
+  color: rgb(83, 121, 122);
   font-size: 0.8em;
 }
 
 .categoryContainer .subList {
   /* background-color: tomato; */
   width: 100%;
+
 }
 
 /* 카테고리 큰 제목 써있는 태그 */
 .categoryContainer .subTitle {
-  width: 8em;
+  width: 200px;
   height: 100px;
   line-height: 100px;
-  background-color: skyblue;
 }
 
 /* header에서 SHOP, BEST, EVENT, COMMUNITY 와 우측 검색항목 개별로 묶은 박스  */
@@ -126,23 +141,28 @@ li strong {
 .categoryHover {
   visibility: hidden;
   opacity: 0;
-  background-color: white;
   display: flex;
   justify-content: center;
-  height: 205px;
+  height: 100%;
   transition: 0.5s;
   font-weight: bold;
+}
+
+.categoryHover:nth-of-type(1):hover {
+  background: none;
 }
 
 .categoryHover ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 20px;
+  gap: 10px;
 }
 
 .categoryHover li {
   line-height: 100%;
+
 }
 
 .categoryHover li:hover a {
@@ -154,18 +174,6 @@ li strong {
   transition: all 0.5s;
 }
 
-/* .subContainer1:not(ul):hover .categoryHover {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 1s;
-} */
-
-/* .subContainer:hover {
-  background-color: rgb(255, 255, 255, 0.95);
-  height: 300px;
-  transition: 0.3s ease-in-out;
-} */
-
 /* ------------------ 우측 검색 항목-------------------------------------------- */
 
 /* 검색, 카트, 로그인, 회원가입, 마이페이지 박스 */
@@ -175,10 +183,10 @@ li strong {
 
 /* 검색, 카트, 로그인, 회원가입, 마이페이지 항목 */
 .categoryContainer .list5 {
-  background-color: pink;
+  /* background-color: pink; */
   height: 100px;
   display: flex;
-  gap: 10px;
+  gap: 1em;
   line-height: 100px;
   white-space: noWrap;
   margin-right: 1em;
@@ -198,9 +206,7 @@ li strong {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  /* margin-top: 3.6em; */
-  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg)
-    brightness(95%) contrast(85%);
+  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
 }
 
 .list5 .searchBtn_a {
@@ -211,13 +217,12 @@ li strong {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg)
-    brightness(95%) contrast(85%);
+  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
 }
 
-.list5 > li > a:hover {
+.list5>li>a:hover {
   opacity: 0.5;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .list5 a {
@@ -292,15 +297,14 @@ li strong {
   background: url(../image/search.svg) no-repeat center;
   width: 20px;
   height: 20px;
-  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg)
-    brightness(95%) contrast(85%);
+  filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
   text-indent: -9999px;
   margin: 1em;
 }
 
 .mainSearch input[type="submit"]:hover {
   opacity: 0.7;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .mainSearch input[type="text"]::placeholder {
@@ -318,7 +322,7 @@ li strong {
 
 .searchCloseBtn:hover {
   opacity: 0.7;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 /* ====================== 창 축소시 메뉴 변경 */
@@ -327,12 +331,32 @@ li strong {
   #headerTop {
     display: flex;
     flex-direction: column;
-    height: 5em;
+    height: 100px;
   }
 
   .headerLogo {
-    background-color: green;
-    /* line-height: 100px; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .headerLogo a:nth-of-type(1) {
+    background: url("../image/bars-solid.svg") no-repeat;
+    display: flex;
+    border-radius: 0;
+    position: fixed;
+    left: 0;
+    margin-left: 1.2em;
+    filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
+    width: 20px;
+    height: 20px;
+  }
+
+  .headerLogo a:nth-of-type(2) {
+    background-color: rgb(83, 121, 122);
+    color: white;
   }
 
   .categoryContainer {
@@ -343,24 +367,31 @@ li strong {
   .categoryContainer .subContainer {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .categoryContainer .category:nth-of-type(1) {
-    margin-top: 1em;
     height: 100%;
   }
 
-  .categoryContainer .categoryHover {
+  .subContainer .category {
+    visibility: hidden;
+  }
+
+  .categoryHover {
     display: flex;
     flex-direction: column;
     position: absolute;
     z-index: 2;
-    left: 120%;
-    top: 15%;
+    left: 100%;
+    top: 0em;
+  }
+
+  .categoryHover ul {
+    width: 150px;
+    padding: 0;
+    margin-top: 0;
+    gap: 0
   }
 
   .categoryHover li {
-    margin: 20px;
+    top: 5em;
   }
 
   .categoryContainer .subList {
@@ -372,10 +403,14 @@ li strong {
   .categoryContainer .subTitle {
     height: 100%;
     line-height: 100px;
-    /* box-shadow: 0 0 5px rgb(0 0 0 / 10%); */
     text-align: center;
     cursor: pointer;
-    background-color: hsl(0, 0%, 95%);
+    background-color: none;
+    width: 100%;
+  }
+
+  .categoryContainer .subTitle:hover {
+    background-color: white;
   }
 
   .categoryContainer .list5 {
@@ -383,14 +418,17 @@ li strong {
     flex-direction: column;
     line-height: 50px;
     gap: 15px;
+    align-items: center;
+    width: 100px;
   }
 
   .categoryContainer .list5 a {
     display: flex;
   }
 
-  .categoryContainer:hover {
-    background: none;
+  .headerLogo:hover {
+    background: white;
     transition: all 0.5s;
   }
+
 }

@@ -233,10 +233,27 @@ body {
   left: 0;
 }
 
+
+/* -------------------------- */
+
+.footerTop {
+  background-color: hsl(0, 16%, 94%);
+  text-align: center;
+  height: 5em;
+  line-height: 5em;
+  color: rgb(83, 121, 122);
+  font-size: 1.5em;
+}
+
+.footerTop a {
+  color: rgb(83, 121, 122);
+  font-weight: bold;
+  margin: 3em;
+}
+
 /* -----------창 축소시 메인 상품 이미지 조절----------------------------- */
 /* === 상품 상단 글자 === */
 @media (max-width: 900px) {
-  .mainContainer {}
 
   .productMent {
     display: grid;
