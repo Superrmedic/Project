@@ -231,24 +231,13 @@ li strong {
 
 .list5 a {
   color: #53797a;
-  font-size: 0.6rem;
+  font-size: 1.5rem;
 }
 
 /* ====================================================== */
 /* 클릭시 내려오는 search바 박스 */
 
 .searchBarWrap {
-  /* @keyframes fadeInDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  } */
   position: absolute;
   top: 0;
   left: 0;

@@ -16,22 +16,6 @@ body {
   height: 100vh;
 }
 
-/* @font-face {
-  font-family: "IBMPlexSansKR-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-} */
-
-/* @font-face {
-  font-family: "GimpoGothicRegular00";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-} */
-
 /* -------------------------- 메인 컨테이너---------------------------------- */
 
 /* 헤더 영역 포함 / Footer 제외 컨테이너 */

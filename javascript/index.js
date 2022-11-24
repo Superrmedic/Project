@@ -5,13 +5,6 @@ const headerTop = document.getElementById("headerTop"), // 헤더
 const prdContainer = body.querySelector(".productContainer"); //싱픔이미지리스트
 const prdImg1 = prdContainer.querySelectorAll(".prdImg1"), // 마우스 호버를 위한 이미지1
   prdImg2 = prdContainer.querySelectorAll(".prdImg2"); // 마우스 호버를 위한 이미지2
-let slideWrapper = document.querySelector(".slideWrapper"),
-  slides = document.querySelector(".slides"),
-  slidesLi = document.querySelectorAll(".slides li"),
-  slideCount = slidesLi.length / 2, //끝인지 마지막인지 구분할 용도
-  currentIdx = 0, //시작인덱스
-  prevBtn = document.querySelector(".prevBtn"), // 이전 버튼
-  nextBtn = document.querySelector(".nextBtn"); // 다음 버튼
 
 const toTop = body.querySelector(".toTop"); // 탑버튼
 
@@ -111,35 +104,6 @@ for (let i = 0; i < subTitle.length; i++) {
     }
   });
 }
-// ----------------------------------- 자동 슬라이드
-
-function moveSlide(num) {
-  slides.style.left = -num * 100 + "%";
-  currentIdx = num;
-}
-
-function leftMove() {
-  if (currentIdx < slideCount - 1) {
-    moveSlide(currentIdx + 1);
-  } else {
-    moveSlide(0);
-  }
-}
-
-nextBtn.addEventListener("click", leftMove);
-
-prevBtn.addEventListener("click", function () {
-  if (currentIdx > 0) {
-    moveSlide(currentIdx - 1);
-    console.log(currentIdx);
-  } else if (currentIdx <= 0) {
-    moveSlide(slideCount - 1);
-  } else {
-    moveSlide(0);
-  }
-});
-
-setInterval(leftMove, 5000);
 
 
 // ------------------------------ 햄버거버튼
@@ -147,6 +111,9 @@ let idx = 0;
 hbgBtn.addEventListener('click', function () {
   idx++;
   for (let i = 0; i < category.length; i++) {
+
+    console.log(hbgBtn);
+    console.log(category[0]);
     if (idx % 2 == 1) {
       category[i].style.visibility = 'visible';
     } else {
