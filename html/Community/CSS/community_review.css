@@ -160,7 +160,7 @@ body {
   height: auto;
 }
 
-form {
+.c_search_bar {
   position: relative;
   transition: all 1s;
   width: 50px;
@@ -172,7 +172,7 @@ form {
   padding: 5px;
 }
 
-input {
+.input_search {
   position: absolute;
   top: 0;
   left: 0;
@@ -187,7 +187,7 @@ input {
   padding: 0 20px;
 }
 
-.fa-sharp {
+.c_search {
   box-sizing: border-box;
   padding: 12px;
   position: absolute;
@@ -200,20 +200,20 @@ input {
   transition: all 1s;
 }
 
-form:hover,
-form:valid {
+.c_search_bar:hover,
+.c_search_bar:valid {
   width: 400px;
   cursor: pointer;
   border: 3px solid #477A7B;
 }
 
-form:hover input,
-form:valid input {
+.c_search_bar:hover .input_search,
+.c_search_bar:valid .input_search {
   display: block;
 }
 
-form:hover .fa-sharp,
-form:valid .fa-sharp {
+.c_search_bar:hover .c_search,
+.c_search_bar:valid .c_search {
   background: #477A7B;
   color: white;
 }
@@ -372,8 +372,8 @@ form:valid .fa-sharp {
     height: 250px;
   }
 
-  form:hover,
-  form:valid {
+  .c_search_bar:hover,
+  .c_search_bar:valid {
     width: 250px;
   }
 }

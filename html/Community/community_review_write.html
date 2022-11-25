@@ -18,6 +18,9 @@
 
 <body>
 
+  <a class="toTop hidden_"> </a>
+
+
   <header id="headerTop">
     <div class="categoryContainer">
       <div class="subContainer">
@@ -136,7 +139,8 @@
         <tr>
           <td colspan="2">
             <div>
-              <textarea name="content" id="" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea>
+              <textarea name="content" id="" cols="30" rows="10" placeholder="내용을 입력해주세요"
+                oninvalid="this.setCustomValidity(' ')" required></textarea>
             </div>
           </td>
         </tr>
