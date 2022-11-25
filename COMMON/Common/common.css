@@ -17,7 +17,8 @@ body {
     height: 5em;
     line-height: 5em;
     color: rgb(83, 121, 122);
-    font-size: 1.5em;
+    font-size: 1rem;
+    white-space: noWrap;
 }
 
 .footerTop a {
