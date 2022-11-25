@@ -16,15 +16,13 @@
     user-select: none
 }
 
-body {
+main {
     box-sizing: bcart-box;
     margin: auto;
-    width: 1024px
-}
-
-main {
+    width: 1024px;
     color: #353535;
-    margin: 0 auto
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 main h1 {

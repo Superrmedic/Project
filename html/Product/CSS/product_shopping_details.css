@@ -14,13 +14,15 @@
     padding: 0;
     font-family: 'IBMPlexSansKR-Regular';
     user-select: none;
+    list-style-type: none;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
+main,
+nav {
     width: 1024px;
     margin: auto;
 }
@@ -558,10 +560,10 @@ main select {
 
 /* ===================== 카테고리 리스트 ================================ */
 
-.category {
+.categoryProduct {
     position: fixed;
     right: 40px;
-    bottom: 110px;
+    bottom: 120px;
     list-style-type: none;
     border-radius: 5px;
     background-color: #fff;
@@ -571,7 +573,7 @@ main select {
     transition: all .5s;
 }
 
-.category li {
+.categoryProduct li {
     width: 90px;
     height: 40px;
     line-height: 40px;
@@ -580,17 +582,17 @@ main select {
     box-sizing: border-box;
 }
 
-.category li a {
+.categoryProduct li a {
     font-size: 0.8em;
     display: block;
     color: #353535;
     text-decoration: none;
 }
 
-.category li:hover {
+.categoryProduct li:hover {
     background-color: #477A7B;
 }
 
-.category li a:hover {
+.categoryProduct li a:hover {
     color: white;
 }
