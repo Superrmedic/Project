@@ -49,19 +49,19 @@ function loginCheck() {
     }
 }
 
-// function clip() {
-//     let url = '';
-//     let textarea = document.createElement("textarea");
+function clip() {
+    let url = '';
+    let textarea = document.createElement("textarea");
 
-//     document.body.appendChild(textarea);
-//     url = window.document.location.href;
-//     textarea.value = url;
-//     textarea.select();
-//     document.execCommand("copy");
-//     document.body.removeChild(textarea);
+    document.body.appendChild(textarea);
+    url = window.document.location.href;
+    textarea.value = url;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
 
-//     alert("URL이 복사되었습니다.");
-// }
+    alert("URL이 복사되었습니다.");
+}
 
 for (let i = 0; i < sub_image.length; i++) {
     sub_image[i].addEventListener('mouseenter', function (event) {
@@ -199,4 +199,4 @@ document.addEventListener('scroll', () => {
 //===========================================================
 // 공유버튼 (카피 이벤트)
 
-// urlCopyBtn.addEventListener('click', clip);
+urlCopyBtn.addEventListener('click', clip);
