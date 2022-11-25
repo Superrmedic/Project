@@ -148,7 +148,7 @@ body {
 }
 
 .productContainer .productMent h1 {
-  grid-column: 6 / -1;
+  grid-column: 5 / -1;
   grid-row: 3 / 3;
   font-weight: bold;
   font-size: 3rem;
