@@ -12,7 +12,7 @@
 
 html,
 body {
-  font-size: 10px;
+  /* font-size: 10px; */
   height: 100vh;
 }
 
@@ -64,7 +64,7 @@ body {
   position: relative;
   display: block;
   text-align: center;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -87,7 +87,6 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   /* background-color: tomato; */
-  font-size: 0;
 }
 
 .pageList li {
@@ -104,7 +103,7 @@ body {
   padding: 0 20px;
   height: 35px;
   line-height: 35px;
-  font-size: 15px;
+  /* font-size: 15px; */
   font-weight: 500;
   background: #f3f3f3;
   color: #477a7b;
@@ -124,7 +123,7 @@ body {
 
 /* 상품 정렬 체크박스 */
 .sort {
-  font-size: 13px;
+  /* font-size: 13px; */
   line-height: 40px;
 }
 
@@ -229,7 +228,7 @@ body {
 
 /* 상품명 칸 */
 .productImgList .name {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #4c4c4c;
   font-weight: bold;
   height: 9em;
@@ -282,7 +281,7 @@ body {
 
   /* 상품명 칸 */
   .productImgList .name {
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #4c4c4c;
     font-weight: bold;
     height: 9em;
