@@ -118,6 +118,7 @@ selectBox.addEventListener('change', function (e) {
 
 for (let i = 0; i < deleteBtn.length; i++) {
     deleteBtn[i].addEventListener('click', function (event) {
+        event.preventDefault();
         if (event.target.className === "deleteoptionBtn") {
             if (confirm('정말 삭제하시겠습니까?')) {
                 deleteBtn[i].classList.add('hidden');
