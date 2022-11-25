@@ -335,6 +335,7 @@ li strong {
     align-items: center;
   }
 
+  /* 햄버거버튼 */
   .headerLogo a:nth-of-type(1) {
     background: url("../image/bars-solid.svg") no-repeat;
     display: flex;
@@ -345,6 +346,7 @@ li strong {
     filter: invert(45%) sepia(9%) saturate(1174%) hue-rotate(133deg) brightness(95%) contrast(85%);
     width: 20px;
     height: 20px;
+    cursor: pointer;
   }
 
   .headerLogo a:nth-of-type(2) {

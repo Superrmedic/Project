@@ -93,8 +93,10 @@ for (let i = 0; i < subTitle.length; i++) {
 
 // ------------------------------ 햄버거버튼
 let idx = 0;
-hbgBtn.addEventListener("click", function () {
+hbgBtn.addEventListener("click", function (e) {
   idx++;
+  console.log(idx);
+  e.target.preventDefault;
   for (let i = 0; i < category.length; i++) {
     console.log(hbgBtn);
     console.log(category[0]);
@@ -110,4 +112,5 @@ hbgBtn.addEventListener("click", function () {
       category[i].style.background = "none";
     });
   }
+  return false;
 });
