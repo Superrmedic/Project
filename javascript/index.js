@@ -9,6 +9,7 @@ const toTop = body.querySelector(".toTop"); // 탑버튼
 const categoryContainer = document.querySelector(".categoryContainer");
 const subTitle = document.querySelectorAll(".subTitle");
 const categoryHover = document.querySelectorAll(".categoryHover");
+const categoryHoverA = document.querySelectorAll(".categoryHover a");
 
 const category = document.querySelectorAll(".category");
 const searchBarWrap = document.querySelector(".searchBarWrap"); // 숨긴 검색바
@@ -75,6 +76,7 @@ for (let i = 0; i < subTitle.length; i++) {
     if (e.target == subTitle[i]) {
       categoryHover[i].style.opacity = "1";
       subTitle[i].style.opacity = "1";
+      // categoryHoverUl[i].style.display = "flex";
     }
   });
   category[i].addEventListener("mouseleave", function (e) {
@@ -87,6 +89,10 @@ for (let i = 0; i < subTitle.length; i++) {
         category[i].style.background = "none";
         subTitle[i].style.background = "none";
       }
+    }
+
+    for (let i = 0; i < categoryHoverA.length; i++) {
+      categoryHoverA[i].style.cursor = 'default';
     }
   });
 }
