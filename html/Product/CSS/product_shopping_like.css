@@ -246,7 +246,7 @@ main .shop_likeboxnone {
 }
 
 @media screen and (max-width:1024px) {
-    body {
+    main {
         box-sizing: border-box;
         margin: 0 auto;
         padding: 2%;

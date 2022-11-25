@@ -1,5 +1,5 @@
 @media screen and (max-width: 1024px) {
-    body {
+    main {
         width: 100%;
         margin: 0 auto;
     }
@@ -52,6 +52,6 @@
 
     .category {
         display: none;
-        color :hsl(240, 100%, 50%)
+        color: hsl(240, 100%, 50%)
     }
 }
