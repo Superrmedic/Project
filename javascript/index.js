@@ -56,7 +56,6 @@ function showMenu(v) {
   categoryHover[v].style.height = "auto";
   categoryHover[v].style.opacity = "0";
   categoryHover[v].style.backgroundColor = "rgb(255, 255, 255)";
-  subTitle[v].style.opacity = "0.5";
 
   if (matchMedia("screen and (min-width: 901px)").matches) {
     categoryHover[1].style.background = "none";
@@ -71,6 +70,10 @@ for (let i = 0; i < subTitle.length; i++) {
   subTitle[i].addEventListener("mouseenter", function (e) {
     for (let x = 0; x < subTitle.length; x++) {
       showMenu(x);
+    }
+    for (let i = 0; i < categoryHoverA.length; i++) {
+      categoryHoverA[i].style.cursor = 'pointer';
+      categoryHoverA[i].style.display = 'block';
     }
 
     if (e.target == subTitle[i]) {
@@ -93,6 +96,7 @@ for (let i = 0; i < subTitle.length; i++) {
 
     for (let i = 0; i < categoryHoverA.length; i++) {
       categoryHoverA[i].style.cursor = 'default';
+      categoryHoverA[i].style.display = 'none';
     }
   });
 }
