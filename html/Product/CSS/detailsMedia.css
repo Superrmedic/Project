@@ -1,5 +1,7 @@
 @media screen and (max-width: 1024px) {
-    main {
+
+    main,
+    nav {
         width: 100%;
         margin: 0 auto;
     }
@@ -24,9 +26,9 @@
         width: 90%;
     }
 
-    .category {
-        right: 5px;
-        bottom: 5px;
+    .categoryProduct {
+        right: 10px;
+        bottom: 120px;
     }
 
     .shareProduct {
@@ -50,7 +52,7 @@
         width: 95%;
     }
 
-    .category {
+    .categoryProduct {
         display: none;
         color: hsl(240, 100%, 50%)
     }

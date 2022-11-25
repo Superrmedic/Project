@@ -186,7 +186,7 @@ qnaBtn.addEventListener('click', loginCheck);
 document.addEventListener('scroll', () => {
     let posY = parseInt(window.scrollY);
 
-    if (posY > 700) {
+    if (posY > 600) {
         sideCategory.style.opacity = '1';
         sideCategory.style.visibility = 'visible';
     } else {
