@@ -8,7 +8,7 @@
 /* 헤더 전체 */
 #headerTop {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   position: fixed;
   width: 100%;
   height: 100px;
@@ -16,6 +16,10 @@
   top: 0;
   z-index: 2;
   font-family: "IBMPlexSansKR-Regular";
+}
+
+#headerTop * {
+  text-decoration: none;
 }
 
 /* 로고 */
@@ -35,9 +39,8 @@
 .headerLogo a {
   width: 100px;
   height: 100px;
-  color: white;
-  background-color: rgb(83, 121, 122);
-  color: white;
+  /* background-color: rgb(83, 121, 122); */
+  /* color: white; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -49,8 +52,9 @@
 }
 
 .headerLogo a:nth-of-type(2) {
-  background-color: rgb(83, 121, 122);
-  color: white;
+  background: url(../../../image/logo.png);
+  /* background-color: rgb(83, 121, 122); */
+  /* color: white; */
 }
 
 li strong {
@@ -351,8 +355,9 @@ li strong {
   }
 
   .headerLogo a:nth-of-type(2) {
-    background-color: rgb(83, 121, 122);
-    color: white;
+    background: url(../../../image/logo.png);
+    /* background-color: rgb(83, 121, 122); */
+    /* color: white; */
   }
 
   .categoryContainer {
