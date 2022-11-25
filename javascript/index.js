@@ -52,7 +52,7 @@ headerTop.addEventListener("click", function (e) {
 
 // ====================================  드롭다운 메뉴
 function showMenu(v) {
-  categoryHover[v].style.visibility = "visible";
+  categoryHover[v].style.height = "auto";
   categoryHover[v].style.opacity = "0";
   categoryHover[v].style.backgroundColor = "rgb(255, 255, 255)";
   subTitle[v].style.opacity = "0.5";
@@ -79,7 +79,7 @@ for (let i = 0; i < subTitle.length; i++) {
   });
   category[i].addEventListener("mouseleave", function (e) {
     for (let x = 0; x < categoryHover.length; x++) {
-      (categoryHover[x].style.visibility = "hidden"),
+      (categoryHover[x].style.height = "0"),
         (categoryHover[x].style.opacity = "0"),
         (categoryHover[x].style.transition = ".5s");
 
@@ -96,7 +96,7 @@ let idx = 0;
 hbgBtn.addEventListener("click", function (e) {
   idx++;
   console.log(idx);
-  e.target.preventDefault;
+  e.target.preventDefault
   for (let i = 0; i < category.length; i++) {
     console.log(hbgBtn);
     console.log(category[0]);

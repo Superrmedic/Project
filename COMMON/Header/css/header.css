@@ -143,7 +143,7 @@ li strong {
 
 /* -------------------------마우스 호버했을 때 나오는 리스트들 ---------------------*/
 .categoryHover {
-  visibility: hidden;
+  height: 0;
   /* display: none; */
   opacity: 0;
   display: flex;
