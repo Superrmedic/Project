@@ -1,1 +1,1 @@
-const active = document.querySelectorAll("");
+const active = document.querySelectorAll(".pageList .active");
