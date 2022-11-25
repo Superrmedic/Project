@@ -272,7 +272,7 @@ li strong {
 /* 상품명검색 글씨 입력하는 부분 */
 .mainSearch input[type="text"] {
   width: 350px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-right: -6px;
   padding-left: 40px;
   box-sizing: border-box;
