@@ -23,6 +23,7 @@ body {
 
 .footerTop a {
     color: rgb(83, 121, 122);
+    text-decoration: none;
     font-weight: bold;
     margin: 3em;
 }
