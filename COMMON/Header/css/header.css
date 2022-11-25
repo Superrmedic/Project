@@ -268,7 +268,7 @@ li strong {
 /* 상품명검색 글씨 입력하는 부분 */
 .mainSearch input[type="text"] {
   width: 350px;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-right: -6px;
   padding-left: 40px;
   box-sizing: border-box;
@@ -376,17 +376,23 @@ li strong {
     z-index: 2;
     left: 100%;
     top: 0em;
+    height: 150px;
   }
 
   .categoryHover ul {
     width: 150px;
     padding: 0;
     margin-top: 0;
-    gap: 0
+    gap: 0;
+    /* height: 150px; */
   }
 
   .categoryHover li {
     top: 5em;
+  }
+
+  .list3 .categoryHover {
+    height: 100%;
   }
 
   .categoryContainer .subList {
