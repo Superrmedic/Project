@@ -31,6 +31,7 @@ a {
 .checkBox label {
     display: inline-block;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .checkBox input[type="radio"] {

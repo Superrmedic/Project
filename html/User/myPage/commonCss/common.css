@@ -36,6 +36,7 @@
 }
 
 
-.myPageContainer {
+.myPageContainer,
+.myPageOrderContainer {
     margin-bottom: 200px;
 }

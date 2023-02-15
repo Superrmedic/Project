@@ -19,6 +19,7 @@ a {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
+    padding-bottom: 50px;
     border: 1px solid #dfe9e8;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -272,6 +273,11 @@ input[type=number] {
     display: flex;
 }
 
+.modifyForm .ulContainer li.birth .birthBox input {
+    text-align: right;
+    padding-right: 5px;
+}
+
 .modifyForm .ulContainer li.birth .birthBox span {
     vertical-align: bottom;
 }
@@ -297,6 +303,11 @@ input[type=number] {
 
 .modifyForm .moreInformation li.petBirth .birthBox {
     display: flex;
+}
+
+.modifyForm .moreInformation li.petBirth .birthBox input {
+    text-align: right;
+    padding-right: 5px;
 }
 
 .modifyForm .moreInformation li.petBirth .birthBox span {
