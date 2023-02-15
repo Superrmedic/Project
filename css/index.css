@@ -96,30 +96,6 @@ body {
   display: flex;
 }
 
-/* 넓은 화면시 배너 이미지 */
-@media (min-width: 901px) {
-  .slideWrapper img {
-    left: 0%;
-  }
-
-  .mobileImg {
-    display: none;
-  }
-}
-
-/* 창 축소시 배너 이미지 */
-@media (max-width: 900px) {
-  body {
-    overflow-x: hidden;
-    /* width: 100vw; */
-  }
-
-  .pcImg {
-    display: none;
-  }
-
-
-}
 
 /* --------------- 상품 리스트 박스--------------- */
 .productContainer {
@@ -231,77 +207,4 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-
-/* -----------창 축소시 메인 상품 이미지 조절----------------------------- */
-/* === 상품 상단 글자 === */
-@media (max-width: 900px) {
-
-  .productMent {
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(11, 1fr);
-    height: 15em;
-  }
-
-  .productMent h1 {
-    grid-column: 4 / -1;
-    grid-row: 2 / 3;
-    font-weight: bold;
-    font-size: 3rem;
-    color: rgb(83, 121, 122);
-    white-space: noWrap;
-  }
-
-  /* === 이미지 조절 === */
-  .productImgList {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-  }
-
-  /* 이미지 1번째줄 */
-  .productImg1,
-  .productImg3,
-  .productImg5,
-  .productImg7,
-  .productImg9,
-  .productImg11 {
-    grid-column: 1 / span 1;
-    position: relative;
-  }
-
-  /* 이미지 2번째줄 */
-  .productImg2,
-  .productImg4,
-  .productImg6,
-  .productImg8,
-  .productImg10,
-  .productImg12 {
-    grid-column: 2 / span 1;
-    position: relative;
-  }
-
-  .productImgList .img1 {
-    position: relative;
-  }
-
-  .productImgList .img1 img {
-    position: relative;
-    z-index: 1;
-  }
-
-  .productImgList .img2 img {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  /* 상품명 가격 */
-  .productImgList p,
-  .productImgList span {
-    white-space: noWrap;
-    text-align: left;
-  }
 }
