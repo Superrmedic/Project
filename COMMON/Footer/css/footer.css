@@ -1,17 +1,25 @@
 footer {
-  margin: 0 auto;
-  padding: 8px;
-  font-size: .7rem;
-  background-color: rgb(83, 121, 122, 0.7);
+  padding: 10px;
+  font-size: .8rem;
+  background-color: rgb(37, 37, 37);
   color: white;
-}
-
-footer pre {
-  font-family: "GimpoGothicRegular00";
-  margin-left: 10em;
+  line-height: 5vh;
 }
 
 footer p {
+  color: rgb(135, 135, 135);
+}
+
+footer .footerContent {
+  color: rgb(135, 135, 135);
+  text-align: center;
+}
+
+footer .footerTitle {
+  color: rgb(255, 208, 70);
+}
+
+.fcTitle {
   text-align: center;
 }
 

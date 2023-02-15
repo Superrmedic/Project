@@ -52,54 +52,54 @@ headerTop.addEventListener("click", function (e) {
 });
 
 // ====================================  드롭다운 메뉴
-function showMenu(v) {
-  categoryHover[v].style.height = "auto";
-  categoryHover[v].style.opacity = "0";
-  categoryHover[v].style.backgroundColor = "rgb(255, 255, 255)";
+// function showMenu(v) {
+//   categoryHover[v].style.height = "auto";
+//   categoryHover[v].style.opacity = "0";
+//   categoryHover[v].style.backgroundColor = "rgb(255, 255, 255)";
 
-  if (matchMedia("screen and (min-width: 901px)").matches) {
-    categoryHover[1].style.background = "none";
-  }
+//   if (matchMedia("screen and (min-width: 901px)").matches) {
+//     categoryHover[1].style.background = "none";
+//   }
 
-  if (matchMedia("screen and (max-width: 900px)").matches) {
-    subTitle[v].style.backgroundColor = "white";
-  }
-}
+//   if (matchMedia("screen and (max-width: 900px)").matches) {
+//     subTitle[v].style.backgroundColor = "white";
+//   }
+// }
 
-for (let i = 0; i < subTitle.length; i++) {
-  subTitle[i].addEventListener("mouseenter", function (e) {
-    for (let x = 0; x < subTitle.length; x++) {
-      showMenu(x);
-    }
-    for (let i = 0; i < categoryHoverA.length; i++) {
-      categoryHoverA[i].style.cursor = 'pointer';
-      categoryHoverA[i].style.display = 'block';
-    }
+// for (let i = 0; i < subTitle.length; i++) {
+//   subTitle[i].addEventListener("mouseenter", function (e) {
+//     for (let x = 0; x < subTitle.length; x++) {
+//       showMenu(x);
+//     }
+//     for (let i = 0; i < categoryHoverA.length; i++) {
+//       categoryHoverA[i].style.cursor = 'pointer';
+//       categoryHoverA[i].style.display = 'block';
+//     }
 
-    if (e.target == subTitle[i]) {
-      categoryHover[i].style.opacity = "1";
-      subTitle[i].style.opacity = "1";
-      // categoryHoverUl[i].style.display = "flex";
-    }
-  });
-  category[i].addEventListener("mouseleave", function (e) {
-    for (let x = 0; x < categoryHover.length; x++) {
-      (categoryHover[x].style.height = "0"),
-        (categoryHover[x].style.opacity = "0"),
-        (categoryHover[x].style.transition = ".5s");
+//     if (e.target == subTitle[i]) {
+//       categoryHover[i].style.opacity = "1";
+//       subTitle[i].style.opacity = "1";
+//       // categoryHoverUl[i].style.display = "flex";
+//     }
+//   });
+//   category[i].addEventListener("mouseleave", function (e) {
+//     for (let x = 0; x < categoryHover.length; x++) {
+//       (categoryHover[x].style.height = "0"),
+//         (categoryHover[x].style.opacity = "0"),
+//         (categoryHover[x].style.transition = ".5s");
 
-      if (matchMedia("screen and (min-width: 900px)").matches) {
-        category[i].style.background = "none";
-        subTitle[i].style.background = "none";
-      }
-    }
+//       if (matchMedia("screen and (min-width: 900px)").matches) {
+//         category[i].style.background = "none";
+//         subTitle[i].style.background = "none";
+//       }
+//     }
 
-    for (let i = 0; i < categoryHoverA.length; i++) {
-      categoryHoverA[i].style.cursor = 'default';
-      categoryHoverA[i].style.display = 'none';
-    }
-  });
-}
+//     for (let i = 0; i < categoryHoverA.length; i++) {
+//       categoryHoverA[i].style.cursor = 'default';
+//       categoryHoverA[i].style.display = 'none';
+//     }
+//   });
+// }
 
 // ------------------------------ 햄버거버튼
 let idx = 0;

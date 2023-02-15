@@ -34,6 +34,7 @@ body {
 
 /* ----------- 메인 컨테이너 ------------- */
 .mainContainer {
+  margin-top: 15vh;
   background-color: #f6f6f6;
   overflow: hidden;
   display: flex;
