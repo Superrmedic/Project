@@ -81,7 +81,7 @@ li strong {
   display: flex;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: auto;
   transition: all .3s;
 }
 
@@ -106,7 +106,7 @@ li strong {
 .categoryContainer .subList {
   /* background-color: tomato; */
   width: 100%;
-
+  position: relative;
 }
 
 /* 카테고리 큰 제목 써있는 태그 */
@@ -128,15 +128,20 @@ li strong {
 
 /* -------------------------마우스 호버했을 때 나오는 리스트들 ---------------------*/
 .categoryHover {
-  height: 0;
-  visibility: hidden;
+  /* height: 0; */
+  /* visibility: hidden; */
   /* opacity: 0; */
   /* display: flex; */
   /* justify-content: center; */
   /* height: 100%; */
-  transition: all 5s;
+  /* transition: all 5s; */
   font-weight: bold;
-
+  width: 200px;
+  position: absolute;
+  top: -170px;
+  left: 0;
+  z-index: -9999;
+  transition: top 0.5s;
 }
 
 .categoryHover:nth-of-type(1):hover {
@@ -161,17 +166,31 @@ li strong {
 }
 
 .categoryContainer:hover {
-  background-color: white;
-  transition: all 0.5s;
+  /* background-color: white; */
+  /* transition: all 0.5s; */
 }
 
-.categoryContainer:hover .categoryHover {
-  visibility: visible;
-  height: auto;
+header:hover .categoryHover {
+  top: 100px;
 }
 
 .categoryHover a {
   font-size: 1rem;
+}
+
+.fullDown {
+  position: absolute;
+  top: -170px;
+  left: 0;
+  width: 100%;
+  height: 270px;
+  background-color: #fff;
+  z-index: -10000;
+  transition: top 0.5s;
+}
+
+header:hover .fullDown {
+  top: 100px;
 }
 
 /* ------------------ 우측 검색 항목-------------------------------------------- */
@@ -184,7 +203,7 @@ li strong {
 }
 
 .categoryContainer .subContainer:hover {
-  height: 400px;
+  /* height: 400px; */
 }
 
 /* 검색, 카트, 로그인, 회원가입, 마이페이지 항목 */
