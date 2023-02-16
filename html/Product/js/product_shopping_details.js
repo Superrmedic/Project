@@ -63,6 +63,8 @@ function clip() {
     alert("URL이 복사되었습니다.");
 }
 
+// 함수 ==========================================================
+
 for (let i = 0; i < sub_image.length; i++) {
     sub_image[i].addEventListener('mouseenter', function (event) {
         if (event.target === sub_image[i]) {
@@ -74,7 +76,7 @@ for (let i = 0; i < sub_image.length; i++) {
 }       // 이미지 슬라이드
 
 let heart = false;
-heartBtn.addEventListener('click', function (event) {
+heartBtn.addEventListener('click', function () {
     if (!heart) {
         heartBtn.src = "./img/heartfill.png";
         heartBtn.style.opacity = "1";
@@ -153,7 +155,6 @@ for (let i = 0; i < deleteBtn.length; i++) {
 
 shop_container.addEventListener('click', function (event) {
     let eventObj = event.target;
-    console.log(eventObj);
 
     if (eventObj === butNow || eventObj === addCart) {
         if (price !== 0) {

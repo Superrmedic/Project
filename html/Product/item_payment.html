@@ -9,107 +9,11 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="../../COMMON/Common/common.css">
-    <link rel="stylesheet" href="../../COMMON/Header/css/header.css" />
-    <link rel="stylesheet" href="../../COMMON/Footer/css/footer.css" />
-    <script defer src="../../javascript/index.js"></script>
     <link rel="stylesheet" href="./CSS/product_shopping_payment.css">
-    <link rel="stylesheet" href="./CSS/paymentMedia.css">
     <script defer src="./js/product_shopping_payment.js"></script>
+</head>
 
 <body>
-    <a class="toTop hidden_" href="#"> </a>
-    <header id="headerTop">
-        <div class="categoryContainer">
-            <div class="subContainer">
-                <div class="headerLogo">
-                    <a class="hamburgerBtn"></a>
-                    <a href="../../index.html">
-                        Home
-                    </a>
-                </div>
-                <!--subContainer-->
-                <ul class="category list1">
-                    <div class="subList">
-                        <li class="subTitle"><strong>SHOP</strong></li>
-
-                        <div class="categoryHover">
-                            <ul>
-                                <li>
-                                    <a href="../../ProductList/productList_New.html">new</a>
-                                </li>
-                                <li><a href="../../ProductList/productList_New.html">living</a></li>
-                                <li><a href="../../ProductList/productList_New.html">working</a></li>
-                                <li><a href="../../ProductList/productList_New.html">food</a></li>
-                                <li><a href="../../ProductList/productList_New.html">for cat</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </ul>
-
-                <ul class="category list2">
-                    <div class="subList">
-                        <li class="subTitle"><strong>BEST</strong></li>
-                        <div class="categoryHover"></div>
-                    </div>
-                </ul>
-
-                <ul class="category list3">
-                    <div class="subList">
-                        <li class="subTitle"><strong>EVENT</strong></li>
-
-                        <div class="categoryHover">
-                            <ul>
-                                <li><a href="#">event</a></li>
-                                <li><a href="#">magazine</a></li>
-                                <li><a href="#">curation</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </ul>
-
-                <ul class="category list4">
-                    <div class="subList">
-                        <li class="subTitle"><strong>COMMUNITY</strong></li>
-
-                        <div class="categoryHover">
-                            <ul>
-                                <li><a href="../Community/community_notice.html">notice</a></li>
-                                <li><a href="../Community/communtiy_faq.html">faq</a></li>
-                                <li><a href="../Community/community_Q&A.html">q&a</a></li>
-                                <li><a href="../Community/community_review.html">review</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </ul>
-
-                <ul class="category list5">
-                    <li class="searchBtn">
-                        <a href="#" class="searchBtn_a">검색</a>
-                    </li>
-                    <li class="cartBtn">
-                        <a href="./product_shopping_cart.html" class="cartBtn_a">카트</a>
-                    </li>
-
-                    <li><a href="../User/login/login.html">Login</a></li>
-                    <li><a href="../User/join/join.html">Join</a></li>
-                    <li><a href="../User/myPage/home/home.html">My Page</a></li>
-                </ul>
-            </div>
-            <!--subContainer-->
-        </div>
-        <!--categoryContainer-->
-        <div class="searchBarWrap hidden_">
-            <form class="mainSearch">
-                <!-- <h1>What are you looking for?</h1> -->
-                <input type="text" id="keyword" placeholder="상품명 검색" />
-                <input type="submit" value="Search" />
-                <a href="#" class="searchCloseBtn searchClose" alt="검색창닫기"></a>
-            </form>
-        </div>
-    </header>
-
-    <!-- 헤더 -->
     <main>
         <h1>주문/결제</h1>
         <article class="shop_orderlist">
@@ -145,7 +49,7 @@
 
         <form>
             <article class="shop_oderinfo">
-                <h2>주문자 정보</h2>
+                <h2>받는 사람</h2>
                 <hr>
                 <div class="shop_ordername">
                     <label>
@@ -214,16 +118,12 @@
 
                         <div class="delivery_info">
                             <ul>
-                                <li><strong>경기도 성남시 분당구 돌마로 46, 5층 그린컴퓨터학원</strong></li>
+                                <li><strong>경기도 성남시 분당구 돌마로 46 <br> 5층 그린컴퓨터학원</strong></li>
                                 <li class="delivery_infonav">유미현, 010-8282-5353</li>
                             </ul>
                         </div>
 
                         <label>
-                            <!-- <div class="shop_defaultAd">
-                                <input type="checkbox" name="defaultadress">
-                                <span>기본 배송지로 저장</span>
-                            </div> -->
                             <select class="shop_deliveryplz">
                                 <option value="0">배송시 요청사항을 선택해주세요.</option>
                                 <option value="1">부재시 문앞에 놓아주세요</option>
@@ -299,10 +199,10 @@
                                     <option value="0">일시불</option>
                                     <option value="1">2개월 (무이자)</option>
                                     <option value="2">3개월 (무이자)</option>
-                                    <option value="3">4개월 (무이자)</option>
-                                    <option value="4">5개월 (무이자)</option>
-                                    <option value="5">6개월 (무이자)</option>
-                                    <option value="6">7개월 (무이자)</option>
+                                    <option value="3">4개월</option>
+                                    <option value="4">5개월</option>
+                                    <option value="5">6개월</option>
+                                    <option value="6">7개월</option>
                                     <option value="7">8개월</option>
                                     <option value="8">9개월</option>
                                     <option value="9">10개월</option>
@@ -314,19 +214,19 @@
                     </article>
 
                     <article class="shop_ordercoupon">
-                        <h2>쿠폰 / 적립금</h2>
+                        <h2>쿠폰</h2>
                         <hr>
 
                         <div class="order_coupon">
                             <span>쿠폰 적용</span>
                             <button type="button" class="couponnumber">사용가능 쿠폰 0장 / 전체 0장</button>
                         </div>
-                        <div class="order_point">
+                        <!-- <div class="order_point">
                             <span>적립금 적용</span>
                             <input type="text" placeholder="0" name="pointuse" maxlength="10" disabled>
                             <button type="button" style='cursor:pointer;' class="pointBtn">모두 사용</button>
                             <div>사용 가능 적립금 <strong>0원</strong></div>
-                        </div>
+                        </div> -->
                     </article>
                 </div>
 
@@ -344,10 +244,10 @@
                         <div>쿠폰 사용</div>
                         <span>0원</span>
                     </div>
-                    <div class="order_pointpay">
+                    <!-- <div class="order_pointpay">
                         <div>적립금 사용</div>
                         <span>0원</span>
-                    </div>
+                    </div> -->
                     <hr>
 
                     <div class="order_totalpay">
@@ -405,35 +305,6 @@
             </article>
         </form>
     </main>
-    <div class="footerTop">
-        <a href="#"> 이용약관 </a>
-        |
-        <a href="#"> 개인정보처리방침 </a>
-        |
-        <a href="#"> 이용안내 </a>
-    </div>
 </body>
-<footer>
-    <pre>
-
-
-  Service Center : 031-712-7447
-  
-  Business Hours : 평일 9:30 ~ 18:10 (점심시간 13:20 ~ 14:20) │ 토·일·공휴일 휴무
-  
-  Bank : 그린은행 100-220818-230317 │ 주식회사 PSY_C
-  
-  E-Mail : PSY_C@google.com
-  
-  Representative : 정선주, 최병현, 김민성, 유미현
-  
-  Address : 경기도 성남시 분당구 돌마로 46 (광천빌딩 5층)
-  
-  사업자 등록번호 안내 : [111-11-1111] | 통신판매업 신고 2019-서울강남-11111
-  
-  
-  </pre>
-    <p>Copyright © PSYC. All rights reserved.</p>
-</footer>
 
 </html>
