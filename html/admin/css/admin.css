@@ -27,6 +27,14 @@ a {
 /* ----------------------------------------------- */
 
 
+/* body */
+
+body {
+    display: flex;
+}
+
+/* ----------------------------------------------- */
+
 /* 타이틀 */
 
 .title h1 {
@@ -42,7 +50,6 @@ header {
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 100vh;
     gap: 50px;
     padding-left: 20px;
 }
@@ -70,10 +77,12 @@ header {
 /* contents  */
 
 #contents {
-    position: absolute;
-    left: 250px;
-    top: 0;
+    padding-top: 50px;
+    margin-bottom: 200px;
     width: calc(100% - 250px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -82,7 +91,12 @@ header {
     width: 50%;
     height: 500px;
     padding: 40px 30px 0 50px;
-    position: absolute;
+    position: relative;
+}
+
+.box.product {
+    width: 100%;
+    margin-top: 50px;
 }
 
 .box .bg .title {
@@ -120,18 +134,172 @@ header {
 }
 
 .graph ul {
-    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    height: 403px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px 30px 0 50px;
 }
 
 .graph ul li {
     width: 8%;
-    height: 60%;
+    height: 48%;
     background-color: #dfe9e8;
+    position: relative;
+}
 
+.box.product .graph ul li {
+    width: 6%;
+    white-space: nowrap;
+}
+
+.graph ul li:nth-child(2) {
+    height: 32%;
+}
+
+.graph ul li:nth-child(3) {
+    height: 68%;
+}
+
+.graph ul li:nth-child(4) {
+    height: 77%;
+}
+
+.graph ul li:nth-child(5) {
+    height: 91%;
+}
+
+.graph ul li:nth-child(6) {
+    height: 56%;
+}
+
+.graph ul li:nth-child(7) {
+    height: 23%;
+}
+
+.graph ul li span {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.graph ul li strong {
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
+
+
+
+
+.box.age {
+    white-space: nowrap;
+}
+
 /* ----------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrap {
+    position: absolute;
+    top: 0px;
+    left: 57%;
+    perspective: 400px;
+}
+
+.wrap .cube {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 3.6s;
+
+}
+
+.wrap .cube:hover {
+    transform: rotateX(500deg) rotateY(500deg);
+}
+
+.wrap .cube div {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    transform-style: preserve-3d;
+}
+
+.cube .top {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: -25px;
+    left: 0;
+    transform: rotateX(90deg);
+}
+
+.cube .bottom {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 25px;
+    left: 0;
+    transform: rotateX(-90deg);
+}
+
+.cube .left {
+    background-color: rgba(0, 160, 233, 0.7);
+    top: 0;
+    left: -25px;
+    transform: rotateY(-90deg);
+}
+
+.cube .right {
+    background-color: rgba(0, 160, 233, 0.7);
+    top: 0;
+    left: 25px;
+    transform: rotateY(90deg);
+}
+
+.cube .front {
+    background-color: rgba(215, 0, 81, 0.7);
+    top: 0;
+    left: 0;
+    transform: translateZ(25px);
+}
+
+.cube .back {
+    background-color: rgba(215, 0, 81, 0.7);
+    top: 0;
+    left: 0;
+    transform: translateZ(-25px) rotate(180deg);
+}
