@@ -30,7 +30,7 @@ body {
 /* 컨텐츠박스 감싸는 컨테이너 */
 #container {
   /* width: 100%; */
-  margin: 0 1% 7% 1%;
+  margin: 0 auto 7% auto;
   padding: 0;
   *zoom: 1;
   overflow: hidden;
@@ -43,6 +43,10 @@ body {
   /* margin: 0 auto; */
   width: 100%;
   position: relative;
+}
+
+.productContainer {
+  margin: 0 auto;
 }
 
 /* 큰 제목 감싸는 박스 */

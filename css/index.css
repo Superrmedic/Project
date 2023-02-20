@@ -104,7 +104,7 @@ body {
 }
 
 .productContainer a {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: #4c4c4c;
   font-weight: bold;
 }
@@ -129,6 +129,18 @@ body {
   font-weight: bold;
   font-size: 2rem;
   color: rgb(83, 121, 122);
+}
+
+.productContainer .productMent h1 span {
+  color: #cad300;
+}
+
+.productContainer .prdMore {
+  margin-bottom: 2%;
+}
+
+.productContainer .prdMore a {
+  margin-left: 93%;
 }
 
 
